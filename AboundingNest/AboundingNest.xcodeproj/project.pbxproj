@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA7DEF91148AF85C00DD0E05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DEF90148AF85C00DD0E05 /* Foundation.framework */; };
+		AA7DEF97148AF85C00DD0E05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA7DEF95148AF85C00DD0E05 /* InfoPlist.strings */; };
+		AA7DEFA0148AF85C00DD0E05 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DEF9F148AF85C00DD0E05 /* SenTestingKit.framework */; };
+		AA7DEFA2148AF85C00DD0E05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DEFA1148AF85C00DD0E05 /* UIKit.framework */; };
+		AA7DEFA3148AF85C00DD0E05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DEF90148AF85C00DD0E05 /* Foundation.framework */; };
+		AA7DEFA8148AF85C00DD0E05 /* AboundingNest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DEF8D148AF85C00DD0E05 /* AboundingNest.framework */; };
+		AA7DEFA9148AF85C00DD0E05 /* AboundingNest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DEF8D148AF85C00DD0E05 /* AboundingNest.framework */; };
+		AA7DEFAF148AF85C00DD0E05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA7DEFAD148AF85C00DD0E05 /* InfoPlist.strings */; };
+		AA7DEFB2148AF85C00DD0E05 /* AboundingNestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFB1148AF85C00DD0E05 /* AboundingNestTests.m */; };
+		AA7DEFD4148AFD9000DD0E05 /* AboundingNest.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFD3148AFD8F00DD0E05 /* AboundingNest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA7DEFD8148AFDE300DD0E05 /* NSDictionary+AboundingNest.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFD6148AFDE300DD0E05 /* NSDictionary+AboundingNest.h */; };
+		AA7DEFD9148AFDE300DD0E05 /* NSDictionary+AboundingNest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFD7148AFDE300DD0E05 /* NSDictionary+AboundingNest.m */; };
+		AA7DEFDA148AFDE300DD0E05 /* NSDictionary+AboundingNest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFD7148AFDE300DD0E05 /* NSDictionary+AboundingNest.m */; };
+		AA7DEFDE148AFDF400DD0E05 /* ClockServices.c in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFDC148AFDF400DD0E05 /* ClockServices.c */; };
+		AA7DEFDF148AFDF400DD0E05 /* ClockServices.c in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFDC148AFDF400DD0E05 /* ClockServices.c */; };
+		AA7DEFE0148AFDF400DD0E05 /* ClockServices.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFDD148AFDF400DD0E05 /* ClockServices.h */; };
+		AA7DEFE6148AFE1F00DD0E05 /* ANCoreDataController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFE2148AFE1F00DD0E05 /* ANCoreDataController.h */; };
+		AA7DEFE7148AFE1F00DD0E05 /* ANCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFE3148AFE1F00DD0E05 /* ANCoreDataController.m */; };
+		AA7DEFE8148AFE1F00DD0E05 /* ANCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFE3148AFE1F00DD0E05 /* ANCoreDataController.m */; };
+		AA7DEFE9148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFE4148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.h */; };
+		AA7DEFEA148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFE5148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.m */; };
+		AA7DEFEB148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFE5148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.m */; };
+		AA7DEFF6148AFEB800DD0E05 /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFED148AFEB800DD0E05 /* GTMBase64.h */; };
+		AA7DEFF7148AFEB800DD0E05 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFEE148AFEB800DD0E05 /* GTMBase64.m */; };
+		AA7DEFF8148AFEB800DD0E05 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFEE148AFEB800DD0E05 /* GTMBase64.m */; };
+		AA7DEFF9148AFEB800DD0E05 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFEF148AFEB800DD0E05 /* GTMDefines.h */; };
+		AA7DEFFA148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFF0148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.h */; };
+		AA7DEFFB148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFF1148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.m */; };
+		AA7DEFFC148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFF1148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.m */; };
+		AA7DEFFD148AFEB800DD0E05 /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFF2148AFEB800DD0E05 /* GTMIPhoneUnitTestMain.m */; };
+		AA7DEFFE148AFEB800DD0E05 /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFF2148AFEB800DD0E05 /* GTMIPhoneUnitTestMain.m */; };
+		AA7DEFFF148AFEB800DD0E05 /* GTMObjectSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFF3148AFEB800DD0E05 /* GTMObjectSingleton.h */; };
+		AA7DF000148AFEB800DD0E05 /* GTMSenTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFF4148AFEB800DD0E05 /* GTMSenTestCase.h */; };
+		AA7DF001148AFEB800DD0E05 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFF5148AFEB800DD0E05 /* GTMSenTestCase.m */; };
+		AA7DF002148AFEB800DD0E05 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFF5148AFEB800DD0E05 /* GTMSenTestCase.m */; };
+		AA7DF004148AFF0600DD0E05 /* ANCoreHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF003148AFF0600DD0E05 /* ANCoreHeader.h */; };
+		AA7DF006148AFF6600DD0E05 /* ANCoreDataHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF005148AFF6600DD0E05 /* ANCoreDataHeader.h */; };
+		AA7DF00A148B023800DD0E05 /* ANMemory.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF008148B023800DD0E05 /* ANMemory.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA7DEFA4148AF85C00DD0E05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA7DEF81148AF85C00DD0E05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA7DEF8C148AF85C00DD0E05;
+			remoteInfo = AboundingNest;
+		};
+		AA7DEFA6148AF85C00DD0E05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA7DEF81148AF85C00DD0E05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA7DEF8C148AF85C00DD0E05;
+			remoteInfo = AboundingNest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA7DEF8D148AF85C00DD0E05 /* AboundingNest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = AboundingNest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA7DEF90148AF85C00DD0E05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AA7DEF94148AF85C00DD0E05 /* AboundingNest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AboundingNest-Info.plist"; sourceTree = "<group>"; };
+		AA7DEF96148AF85C00DD0E05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA7DEF98148AF85C00DD0E05 /* AboundingNest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AboundingNest-Prefix.pch"; sourceTree = "<group>"; };
+		AA7DEF9E148AF85C00DD0E05 /* AboundingNestTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AboundingNestTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA7DEF9F148AF85C00DD0E05 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		AA7DEFA1148AF85C00DD0E05 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		AA7DEFAC148AF85C00DD0E05 /* AboundingNestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AboundingNestTests-Info.plist"; sourceTree = "<group>"; };
+		AA7DEFAE148AF85C00DD0E05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA7DEFB0148AF85C00DD0E05 /* AboundingNestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboundingNestTests.h; sourceTree = "<group>"; };
+		AA7DEFB1148AF85C00DD0E05 /* AboundingNestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboundingNestTests.m; sourceTree = "<group>"; };
+		AA7DEFD3148AFD8F00DD0E05 /* AboundingNest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboundingNest.h; sourceTree = "<group>"; };
+		AA7DEFD6148AFDE300DD0E05 /* NSDictionary+AboundingNest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+AboundingNest.h"; sourceTree = "<group>"; };
+		AA7DEFD7148AFDE300DD0E05 /* NSDictionary+AboundingNest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+AboundingNest.m"; sourceTree = "<group>"; };
+		AA7DEFDC148AFDF400DD0E05 /* ClockServices.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ClockServices.c; sourceTree = "<group>"; };
+		AA7DEFDD148AFDF400DD0E05 /* ClockServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockServices.h; sourceTree = "<group>"; };
+		AA7DEFE2148AFE1F00DD0E05 /* ANCoreDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCoreDataController.h; sourceTree = "<group>"; };
+		AA7DEFE3148AFE1F00DD0E05 /* ANCoreDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANCoreDataController.m; sourceTree = "<group>"; };
+		AA7DEFE4148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCoreDataGrandCentralController.h; sourceTree = "<group>"; };
+		AA7DEFE5148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANCoreDataGrandCentralController.m; sourceTree = "<group>"; };
+		AA7DEFED148AFEB800DD0E05 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		AA7DEFEE148AFEB800DD0E05 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		AA7DEFEF148AFEB800DD0E05 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		AA7DEFF0148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMIPhoneUnitTestDelegate.h; sourceTree = "<group>"; };
+		AA7DEFF1148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMIPhoneUnitTestDelegate.m; sourceTree = "<group>"; };
+		AA7DEFF2148AFEB800DD0E05 /* GTMIPhoneUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMIPhoneUnitTestMain.m; sourceTree = "<group>"; };
+		AA7DEFF3148AFEB800DD0E05 /* GTMObjectSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMObjectSingleton.h; sourceTree = "<group>"; };
+		AA7DEFF4148AFEB800DD0E05 /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMSenTestCase.h; sourceTree = "<group>"; };
+		AA7DEFF5148AFEB800DD0E05 /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSenTestCase.m; sourceTree = "<group>"; };
+		AA7DF003148AFF0600DD0E05 /* ANCoreHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCoreHeader.h; sourceTree = "<group>"; };
+		AA7DF005148AFF6600DD0E05 /* ANCoreDataHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCoreDataHeader.h; sourceTree = "<group>"; };
+		AA7DF008148B023800DD0E05 /* ANMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANMemory.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA7DEF88148AF85C00DD0E05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA7DEF91148AF85C00DD0E05 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA7DEF9A148AF85C00DD0E05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA7DEFA0148AF85C00DD0E05 /* SenTestingKit.framework in Frameworks */,
+				AA7DEFA2148AF85C00DD0E05 /* UIKit.framework in Frameworks */,
+				AA7DEFA3148AF85C00DD0E05 /* Foundation.framework in Frameworks */,
+				AA7DEFA8148AF85C00DD0E05 /* AboundingNest.framework in Frameworks */,
+				AA7DEFA9148AF85C00DD0E05 /* AboundingNest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA7DEF7F148AF85C00DD0E05 = {
+			isa = PBXGroup;
+			children = (
+				AA7DEF92148AF85C00DD0E05 /* AboundingNest */,
+				AA7DEFAA148AF85C00DD0E05 /* AboundingNestTests */,
+				AA7DEF8F148AF85C00DD0E05 /* Frameworks */,
+				AA7DEF8E148AF85C00DD0E05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA7DEF8E148AF85C00DD0E05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA7DEF8D148AF85C00DD0E05 /* AboundingNest.framework */,
+				AA7DEF9E148AF85C00DD0E05 /* AboundingNestTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA7DEF8F148AF85C00DD0E05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA7DEF90148AF85C00DD0E05 /* Foundation.framework */,
+				AA7DEF9F148AF85C00DD0E05 /* SenTestingKit.framework */,
+				AA7DEFA1148AF85C00DD0E05 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA7DEF92148AF85C00DD0E05 /* AboundingNest */ = {
+			isa = PBXGroup;
+			children = (
+				AA7DEFD3148AFD8F00DD0E05 /* AboundingNest.h */,
+				AA7DEFE1148AFE1F00DD0E05 /* CoreData */,
+				AA7DEFBB148AF8A200DD0E05 /* Core */,
+				AA7DEF93148AF85C00DD0E05 /* Supporting Files */,
+			);
+			path = AboundingNest;
+			sourceTree = "<group>";
+		};
+		AA7DEF93148AF85C00DD0E05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA7DEF94148AF85C00DD0E05 /* AboundingNest-Info.plist */,
+				AA7DEF95148AF85C00DD0E05 /* InfoPlist.strings */,
+				AA7DEF98148AF85C00DD0E05 /* AboundingNest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA7DEFAA148AF85C00DD0E05 /* AboundingNestTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA7DEFB0148AF85C00DD0E05 /* AboundingNestTests.h */,
+				AA7DEFB1148AF85C00DD0E05 /* AboundingNestTests.m */,
+				AA7DEFAB148AF85C00DD0E05 /* Supporting Files */,
+			);
+			path = AboundingNestTests;
+			sourceTree = "<group>";
+		};
+		AA7DEFAB148AF85C00DD0E05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA7DEFAC148AF85C00DD0E05 /* AboundingNestTests-Info.plist */,
+				AA7DEFAD148AF85C00DD0E05 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA7DEFBB148AF8A200DD0E05 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AA7DF003148AFF0600DD0E05 /* ANCoreHeader.h */,
+				AA7DF007148B021800DD0E05 /* ANMemory */,
+				AA7DEFEC148AFEB800DD0E05 /* GoogleToolkitForMac */,
+				AA7DEFDB148AFDF400DD0E05 /* Apple */,
+				AA7DEFD5148AFDE300DD0E05 /* Additions */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		AA7DEFD5148AFDE300DD0E05 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				AA7DEFD6148AFDE300DD0E05 /* NSDictionary+AboundingNest.h */,
+				AA7DEFD7148AFDE300DD0E05 /* NSDictionary+AboundingNest.m */,
+			);
+			name = Additions;
+			path = Core/Additions;
+			sourceTree = "<group>";
+		};
+		AA7DEFDB148AFDF400DD0E05 /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				AA7DEFDC148AFDF400DD0E05 /* ClockServices.c */,
+				AA7DEFDD148AFDF400DD0E05 /* ClockServices.h */,
+			);
+			name = Apple;
+			path = Core/Apple;
+			sourceTree = "<group>";
+		};
+		AA7DEFE1148AFE1F00DD0E05 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				AA7DF005148AFF6600DD0E05 /* ANCoreDataHeader.h */,
+				AA7DEFE2148AFE1F00DD0E05 /* ANCoreDataController.h */,
+				AA7DEFE3148AFE1F00DD0E05 /* ANCoreDataController.m */,
+				AA7DEFE4148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.h */,
+				AA7DEFE5148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		AA7DEFEC148AFEB800DD0E05 /* GoogleToolkitForMac */ = {
+			isa = PBXGroup;
+			children = (
+				AA7DEFED148AFEB800DD0E05 /* GTMBase64.h */,
+				AA7DEFEE148AFEB800DD0E05 /* GTMBase64.m */,
+				AA7DEFEF148AFEB800DD0E05 /* GTMDefines.h */,
+				AA7DEFF0148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.h */,
+				AA7DEFF1148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.m */,
+				AA7DEFF2148AFEB800DD0E05 /* GTMIPhoneUnitTestMain.m */,
+				AA7DEFF3148AFEB800DD0E05 /* GTMObjectSingleton.h */,
+				AA7DEFF4148AFEB800DD0E05 /* GTMSenTestCase.h */,
+				AA7DEFF5148AFEB800DD0E05 /* GTMSenTestCase.m */,
+			);
+			name = GoogleToolkitForMac;
+			path = Core/GoogleToolkitForMac;
+			sourceTree = "<group>";
+		};
+		AA7DF007148B021800DD0E05 /* ANMemory */ = {
+			isa = PBXGroup;
+			children = (
+				AA7DF008148B023800DD0E05 /* ANMemory.h */,
+			);
+			name = ANMemory;
+			path = Core/ANMemory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AA7DEF89148AF85C00DD0E05 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA7DEFD4148AFD9000DD0E05 /* AboundingNest.h in Headers */,
+				AA7DEFD8148AFDE300DD0E05 /* NSDictionary+AboundingNest.h in Headers */,
+				AA7DEFE0148AFDF400DD0E05 /* ClockServices.h in Headers */,
+				AA7DEFE6148AFE1F00DD0E05 /* ANCoreDataController.h in Headers */,
+				AA7DEFE9148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.h in Headers */,
+				AA7DEFF6148AFEB800DD0E05 /* GTMBase64.h in Headers */,
+				AA7DEFF9148AFEB800DD0E05 /* GTMDefines.h in Headers */,
+				AA7DEFFA148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.h in Headers */,
+				AA7DEFFF148AFEB800DD0E05 /* GTMObjectSingleton.h in Headers */,
+				AA7DF000148AFEB800DD0E05 /* GTMSenTestCase.h in Headers */,
+				AA7DF004148AFF0600DD0E05 /* ANCoreHeader.h in Headers */,
+				AA7DF006148AFF6600DD0E05 /* ANCoreDataHeader.h in Headers */,
+				AA7DF00A148B023800DD0E05 /* ANMemory.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AA7DEF8C148AF85C00DD0E05 /* AboundingNest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA7DEFB5148AF85C00DD0E05 /* Build configuration list for PBXNativeTarget "AboundingNest" */;
+			buildPhases = (
+				AA7DEF86148AF85C00DD0E05 /* ShellScript */,
+				AA7DEF87148AF85C00DD0E05 /* Sources */,
+				AA7DEF88148AF85C00DD0E05 /* Frameworks */,
+				AA7DEF89148AF85C00DD0E05 /* Headers */,
+				AA7DEF8A148AF85C00DD0E05 /* Resources */,
+				AA7DEF8B148AF85C00DD0E05 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AboundingNest;
+			productName = AboundingNest;
+			productReference = AA7DEF8D148AF85C00DD0E05 /* AboundingNest.framework */;
+			productType = "com.apple.product-type.framework.static";
+		};
+		AA7DEF9D148AF85C00DD0E05 /* AboundingNestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA7DEFB8148AF85C00DD0E05 /* Build configuration list for PBXNativeTarget "AboundingNestTests" */;
+			buildPhases = (
+				AA7DEF99148AF85C00DD0E05 /* Sources */,
+				AA7DEF9A148AF85C00DD0E05 /* Frameworks */,
+				AA7DEF9B148AF85C00DD0E05 /* Resources */,
+				AA7DEF9C148AF85C00DD0E05 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA7DEFA5148AF85C00DD0E05 /* PBXTargetDependency */,
+				AA7DEFA7148AF85C00DD0E05 /* PBXTargetDependency */,
+			);
+			name = AboundingNestTests;
+			productName = AboundingNestTests;
+			productReference = AA7DEF9E148AF85C00DD0E05 /* AboundingNestTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA7DEF81148AF85C00DD0E05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Samuel Grau";
+			};
+			buildConfigurationList = AA7DEF84148AF85C00DD0E05 /* Build configuration list for PBXProject "AboundingNest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AA7DEF7F148AF85C00DD0E05;
+			productRefGroup = AA7DEF8E148AF85C00DD0E05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA7DEF8C148AF85C00DD0E05 /* AboundingNest */,
+				AA7DEF9D148AF85C00DD0E05 /* AboundingNestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA7DEF8A148AF85C00DD0E05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA7DEF97148AF85C00DD0E05 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA7DEF9B148AF85C00DD0E05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA7DEFAF148AF85C00DD0E05 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AA7DEF86148AF85C00DD0E05 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n\tUFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version  from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n  ([[ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]] || \\\n    ([[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n     [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n     [[ ! \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\n    )\n  )\nthen\n    exit 0\nfi\n\n\n# Clean other platform if needed\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n\techo \"Platform \\\"$UFW_SDK_PLATFORM\\\" was cleaned recently. Cleaning \\\"$UFW_OTHER_PLATFORM\\\" as well\"\n\techo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\n\txcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\nfi\n\n\n# Make sure we are building from fresh binaries\n\nrm -rf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\n\nif [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nfi\n";
+		};
+		AA7DEF8B148AF85C00DD0E05 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]\nthen\n    echo \"ONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM}: Skipping other platform build\"\nelse\n    # Make sure the other platform gets built\n    \n    echo \"Build other platform\"\n    \n    echo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    \n    \n    # Build the fat static library binary\n    \n    echo \"Create universal static library\"\n    \n    echo \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \n    echo mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nfi\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]\nthen\n    # Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n    \n    echo \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n    \n    echo rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    echo cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nfi\n";
+		};
+		AA7DEF9C148AF85C00DD0E05 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA7DEF87148AF85C00DD0E05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA7DEFD9148AFDE300DD0E05 /* NSDictionary+AboundingNest.m in Sources */,
+				AA7DEFDE148AFDF400DD0E05 /* ClockServices.c in Sources */,
+				AA7DEFE7148AFE1F00DD0E05 /* ANCoreDataController.m in Sources */,
+				AA7DEFEA148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.m in Sources */,
+				AA7DEFF7148AFEB800DD0E05 /* GTMBase64.m in Sources */,
+				AA7DEFFB148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.m in Sources */,
+				AA7DEFFD148AFEB800DD0E05 /* GTMIPhoneUnitTestMain.m in Sources */,
+				AA7DF001148AFEB800DD0E05 /* GTMSenTestCase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA7DEF99148AF85C00DD0E05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA7DEFB2148AF85C00DD0E05 /* AboundingNestTests.m in Sources */,
+				AA7DEFDA148AFDE300DD0E05 /* NSDictionary+AboundingNest.m in Sources */,
+				AA7DEFDF148AFDF400DD0E05 /* ClockServices.c in Sources */,
+				AA7DEFE8148AFE1F00DD0E05 /* ANCoreDataController.m in Sources */,
+				AA7DEFEB148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.m in Sources */,
+				AA7DEFF8148AFEB800DD0E05 /* GTMBase64.m in Sources */,
+				AA7DEFFC148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.m in Sources */,
+				AA7DEFFE148AFEB800DD0E05 /* GTMIPhoneUnitTestMain.m in Sources */,
+				AA7DF002148AFEB800DD0E05 /* GTMSenTestCase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA7DEFA5148AF85C00DD0E05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA7DEF8C148AF85C00DD0E05 /* AboundingNest */;
+			targetProxy = AA7DEFA4148AF85C00DD0E05 /* PBXContainerItemProxy */;
+		};
+		AA7DEFA7148AF85C00DD0E05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA7DEF8C148AF85C00DD0E05 /* AboundingNest */;
+			targetProxy = AA7DEFA6148AF85C00DD0E05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA7DEF95148AF85C00DD0E05 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA7DEF96148AF85C00DD0E05 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AA7DEFAD148AF85C00DD0E05 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA7DEFAE148AF85C00DD0E05 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA7DEFB3148AF85C00DD0E05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AA7DEFB4148AF85C00DD0E05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA7DEFB6148AF85C00DD0E05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AboundingNest/AboundingNest-Prefix.pch";
+				INFOPLIST_FILE = "AboundingNest/AboundingNest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		AA7DEFB7148AF85C00DD0E05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AboundingNest/AboundingNest-Prefix.pch";
+				INFOPLIST_FILE = "AboundingNest/AboundingNest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		AA7DEFB9148AF85C00DD0E05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AboundingNest/AboundingNest-Prefix.pch";
+				INFOPLIST_FILE = "AboundingNestTests/AboundingNestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		AA7DEFBA148AF85C00DD0E05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AboundingNest/AboundingNest-Prefix.pch";
+				INFOPLIST_FILE = "AboundingNestTests/AboundingNestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA7DEF84148AF85C00DD0E05 /* Build configuration list for PBXProject "AboundingNest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA7DEFB3148AF85C00DD0E05 /* Debug */,
+				AA7DEFB4148AF85C00DD0E05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA7DEFB5148AF85C00DD0E05 /* Build configuration list for PBXNativeTarget "AboundingNest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA7DEFB6148AF85C00DD0E05 /* Debug */,
+				AA7DEFB7148AF85C00DD0E05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AA7DEFB8148AF85C00DD0E05 /* Build configuration list for PBXNativeTarget "AboundingNestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA7DEFB9148AF85C00DD0E05 /* Debug */,
+				AA7DEFBA148AF85C00DD0E05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA7DEF81148AF85C00DD0E05 /* Project object */;
+}
