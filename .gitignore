@@ -1,0 +1,23 @@
+build/
+*.mode*
+*.pbxuser
+.svn
+*.orig
+*.perspective
+*.perspectivev3
+*.trace
+*project.xcworkspace/
+*.xcuserdatad
+
+com.vaseltior.*
+xcodebuild_output
+
+# OSX Noise
+.DS_Store
+
+# Git Noise
+*.orig
+*.BACKUP.*
+*.REMOTE.*
+*.LOCAL.*
+*.BASE.*
