@@ -95,12 +95,12 @@
     return NO;
 }
 
-- (id<QHTTPOperationAuthenticationDelegate>)authenticationDelegate
+- (id<ANQHTTPOperationAuthenticationDelegate>)authenticationDelegate
 {
     return self->_authenticationDelegate;
 }
 
-- (void)setAuthenticationDelegate:(id<QHTTPOperationAuthenticationDelegate>)newValue
+- (void)setAuthenticationDelegate:(id<ANQHTTPOperationAuthenticationDelegate>)newValue
 {
     if (self.state != kANQRunLoopOperationStateInited) {
         assert(NO);
@@ -497,7 +497,7 @@
             if (length <= (long long) self.maximumResponseSize) {
                 self.dataAccumulator = [NSMutableData dataWithCapacity:(NSUInteger)length];
             } else {
-                [self finishWithError:[NSError errorWithDomain:kQHTTPOperationErrorDomain code:kQHTTPOperationErrorResponseTooLarge userInfo:nil]];
+                [self finishWithError:[NSError errorWithDomain:kANQHTTPOperationErrorDomain code:kANQHTTPOperationErrorResponseTooLarge userInfo:nil]];
                 success = NO;
             }
         }
@@ -521,7 +521,7 @@
             if ( ([self.dataAccumulator length] + [data length]) <= self.maximumResponseSize ) {
                 [self.dataAccumulator appendData:data];
             } else {
-                [self finishWithError:[NSError errorWithDomain:kQHTTPOperationErrorDomain code:kQHTTPOperationErrorResponseTooLarge userInfo:nil]];
+                [self finishWithError:[NSError errorWithDomain:kANQHTTPOperationErrorDomain code:kANQHTTPOperationErrorResponseTooLarge userInfo:nil]];
             }
         } else {
             NSUInteger      dataOffset;
@@ -544,7 +544,7 @@
                 if (bytesWritten <= 0) {
                     error = [self.responseOutputStream streamError];
                     if (error == nil) {
-                        error = [NSError errorWithDomain:kQHTTPOperationErrorDomain code:kQHTTPOperationErrorOnOutputStream userInfo:nil];
+                        error = [NSError errorWithDomain:kANQHTTPOperationErrorDomain code:kANQHTTPOperationErrorOnOutputStream userInfo:nil];
                     }
                     break;
                 } else {
@@ -583,9 +583,9 @@
     }
     
     if ( ! self.isStatusCodeAcceptable ) {
-        [self finishWithError:[NSError errorWithDomain:kQHTTPOperationErrorDomain code:self.lastResponse.statusCode userInfo:nil]];
+        [self finishWithError:[NSError errorWithDomain:kANQHTTPOperationErrorDomain code:self.lastResponse.statusCode userInfo:nil]];
     } else if ( ! self.isContentTypeAcceptable ) {
-        [self finishWithError:[NSError errorWithDomain:kQHTTPOperationErrorDomain code:kQHTTPOperationErrorBadContentType userInfo:nil]];
+        [self finishWithError:[NSError errorWithDomain:kANQHTTPOperationErrorDomain code:kANQHTTPOperationErrorBadContentType userInfo:nil]];
     } else {
         [self finishWithError:nil];
     }
@@ -604,4 +604,4 @@
 
 @end
 
-NSString * kQHTTPOperationErrorDomain = @"kQHTTPOperationErrorDomain";
+NSString * kANQHTTPOperationErrorDomain = @"kANQHTTPOperationErrorDomain";

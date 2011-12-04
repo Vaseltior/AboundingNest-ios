@@ -59,14 +59,14 @@
     stream based on the specific details of the response.
 */
 
-@protocol QHTTPOperationAuthenticationDelegate;
+@protocol ANQHTTPOperationAuthenticationDelegate;
 
 @interface ANQHTTPOperation : ANQRunLoopOperation /* <NSURLConnectionDelegate> */
 {
     NSURLRequest *      _request;
     NSIndexSet *        _acceptableStatusCodes;
     NSSet *             _acceptableContentTypes;
-    id<QHTTPOperationAuthenticationDelegate>    _authenticationDelegate;
+    id<ANQHTTPOperationAuthenticationDelegate>    _authenticationDelegate;
     NSOutputStream *    _responseOutputStream;
     NSUInteger          _defaultResponseSize;
     NSUInteger          _maximumResponseSize;
@@ -99,7 +99,7 @@
 // runLoopThread and runLoopModes inherited from QRunLoopOperation
 @property (nonatomic, copy, readwrite) NSIndexSet * acceptableStatusCodes;  // default is nil, implying 200..299
 @property (nonatomic, copy, readwrite) NSSet * acceptableContentTypes; // default is nil, implying anything is acceptable
-@property (nonatomic, assign, readwrite) id<QHTTPOperationAuthenticationDelegate> authenticationDelegate;
+@property (nonatomic, assign, readwrite) id<ANQHTTPOperationAuthenticationDelegate> authenticationDelegate;
 
 #if ! defined(NDEBUG)
 @property (nonatomic, copy, readwrite) NSError * debugError; // default is nil
@@ -172,7 +172,7 @@
 
 @end
 
-@protocol QHTTPOperationAuthenticationDelegate <NSObject>
+@protocol ANQHTTPOperationAuthenticationDelegate <NSObject>
 @required
 
 // These are called on the operation's run loop thread and have the same semantics as their 
@@ -186,7 +186,7 @@
 
 @end
 
-extern NSString * kQHTTPOperationErrorDomain;
+extern NSString * kANQHTTPOperationErrorDomain;
 
 // positive error codes are HTML status codes (when they are not allowed via acceptableStatusCodes)
 //
@@ -195,7 +195,7 @@ extern NSString * kQHTTPOperationErrorDomain;
 // negative error codes are errors from the module
 
 enum {
-    kQHTTPOperationErrorResponseTooLarge = -1, 
-    kQHTTPOperationErrorOnOutputStream   = -2, 
-    kQHTTPOperationErrorBadContentType   = -3
+    kANQHTTPOperationErrorResponseTooLarge = -1, 
+    kANQHTTPOperationErrorOnOutputStream   = -2, 
+    kANQHTTPOperationErrorBadContentType   = -3
 };

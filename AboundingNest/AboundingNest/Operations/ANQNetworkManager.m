@@ -6,10 +6,10 @@
 
 */
 
-#import "ANNetworkManager.h"
+#import "ANQNetworkManager.h"
 #import "ANQHTTPOperation.h"
 
-@interface ANNetworkManager ()
+@interface ANQNetworkManager ()
 
 // private properties
 
@@ -21,9 +21,9 @@
 
 @end
 
-@implementation ANNetworkManager
+@implementation ANQNetworkManager
 
-ANOBJECT_SINGLETON_BOILERPLATE(ANNetworkManager, sharedInstance)
+ANOBJECT_SINGLETON_BOILERPLATE(ANQNetworkManager, sharedInstance)
 
 - (id)init
 {

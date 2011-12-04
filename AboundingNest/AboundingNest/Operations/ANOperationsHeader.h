@@ -13,6 +13,6 @@
 #import "ANQReachabilityOperation.h"
 #import "ANQRetryingHTTPOperation.h"
 #import "ANQHTTPOperation.h"
-#import "ANNetworkManager.h"
+#import "ANQNetworkManager.h"
 
 #endif

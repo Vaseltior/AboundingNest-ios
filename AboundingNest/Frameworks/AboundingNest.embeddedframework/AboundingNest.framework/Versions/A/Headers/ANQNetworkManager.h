@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ANNetworkManager : NSObject
+@interface ANQNetworkManager : NSObject
 {
     NSThread *                      _networkRunLoopThread;
     NSOperationQueue *              _queueForNetworkManagement;
@@ -19,7 +19,7 @@
     NSUInteger                      _runningNetworkTransferCount;
 }
 
-+ (ANNetworkManager *)sharedInstance;
++ (ANQNetworkManager *)sharedInstance;
     // Returns the network manager singleton.
     //
     // Can be called from any thread.

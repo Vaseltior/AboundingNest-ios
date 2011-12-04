@@ -49,14 +49,14 @@
 @class ANQHTTPOperation;
 @class ANQReachabilityOperation;
 
-enum RetryingHTTPOperationState {
-    kRetryingHTTPOperationStateNotStarted, 
-    kRetryingHTTPOperationStateGetting, 
-    kRetryingHTTPOperationStateWaitingToRetry, 
-    kRetryingHTTPOperationStateRetrying,
-    kRetryingHTTPOperationStateFinished
+enum ANQRetryingHTTPOperationState {
+    kANQRetryingHTTPOperationStateNotStarted, 
+    kANQRetryingHTTPOperationStateGetting, 
+    kANQRetryingHTTPOperationStateWaitingToRetry, 
+    kANQRetryingHTTPOperationStateRetrying,
+    kANQRetryingHTTPOperationStateFinished
 };
-typedef enum RetryingHTTPOperationState RetryingHTTPOperationState;
+typedef enum ANQRetryingHTTPOperationState ANQRetryingHTTPOperationState;
 
 @interface ANQRetryingHTTPOperation : ANQRunLoopOperation
 {
@@ -66,8 +66,8 @@ typedef enum RetryingHTTPOperationState RetryingHTTPOperationState;
     NSString *                  _responseFilePath;
     NSHTTPURLResponse *         _response;
     NSData *                    _responseContent;
-    RetryingHTTPOperationState  _retryState;
-    RetryingHTTPOperationState  _retryStateClient;
+    ANQRetryingHTTPOperationState  _retryState;
+    ANQRetryingHTTPOperationState  _retryStateClient;
     ANQHTTPOperation *            _networkOperation;
     BOOL                        _hasHadRetryableFailure;
     NSUInteger                  _retryCount;
@@ -91,8 +91,8 @@ typedef enum RetryingHTTPOperationState RetryingHTTPOperationState;
 
 // Things that change as part of the progress of the operation.
 
-@property (nonatomic, assign, readonly ) RetryingHTTPOperationState    retryState;             // observable, always changes on actualRunLoopthread
-@property (nonatomic, assign, readonly ) RetryingHTTPOperationState    retryStateClient;       // observable, always changes on /main/ thread
+@property (nonatomic, assign, readonly ) ANQRetryingHTTPOperationState    retryState;             // observable, always changes on actualRunLoopthread
+@property (nonatomic, assign, readonly ) ANQRetryingHTTPOperationState    retryStateClient;       // observable, always changes on /main/ thread
 @property (nonatomic, assign, readonly ) BOOL                          hasHadRetryableFailure; // observable, always changes on /main/ thread
 @property (nonatomic, assign, readonly ) NSUInteger                    retryCount;             // observable, always changes on actualRunLoopthread
 

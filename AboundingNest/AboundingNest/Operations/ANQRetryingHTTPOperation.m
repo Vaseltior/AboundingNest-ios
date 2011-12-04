@@ -7,7 +7,7 @@
 
 #import "ANQRetryingHTTPOperation.h"
 
-#import "ANNetworkManager.h"
+#import "ANQNetworkManager.h"
 #import "ANQHTTPOperation.h"
 #import "ANQReachabilityOperation.h"
 
@@ -15,15 +15,15 @@
 // listen for that notification and, if the host name matches, expedite their retry. 
 // This means that, if one request succeeds, subsequent requests will retry quickly.
 
-static NSString * kRetryingHTTPOperationTransferDidSucceedNotification = @"com.vaseltior.sg.kRetryingHTTPOperationTransferDidSucceedNotification";
-static NSString * kRetryingHTTPOperationTransferDidSucceedHostKey = @"hostName";
+static NSString * kANQRetryingHTTPOperationTransferDidSucceedNotification = @"com.vaseltior.sg.kRetryingHTTPOperationTransferDidSucceedNotification";
+static NSString * kANQRetryingHTTPOperationTransferDidSucceedHostKey = @"hostName";
 
 @interface ANQRetryingHTTPOperation ()
 
 // read/write versions of public properties
 
-@property (nonatomic, assign, readwrite) RetryingHTTPOperationState    retryState;
-@property (nonatomic, assign, readwrite) RetryingHTTPOperationState    retryStateClient;
+@property (nonatomic, assign, readwrite) ANQRetryingHTTPOperationState    retryState;
+@property (nonatomic, assign, readwrite) ANQRetryingHTTPOperationState    retryStateClient;
 @property (nonatomic, assign, readwrite) BOOL                          hasHadRetryableFailure;
 @property (nonatomic, assign, readwrite) NSUInteger                    retryCount;
 @property (nonatomic, copy,   readwrite) NSData *                      responseContent;   
@@ -78,7 +78,7 @@ static NSString * kRetryingHTTPOperationTransferDidSucceedHostKey = @"hostName";
             sSequenceNumber += 1;
         }
         self->_request = [request copy];
-        assert(self->_retryState       == kRetryingHTTPOperationStateNotStarted);
+        assert(self->_retryState       == kANQRetryingHTTPOperationStateNotStarted);
     }
     return self;
 }
@@ -100,12 +100,12 @@ static NSString * kRetryingHTTPOperationTransferDidSucceedHostKey = @"hostName";
 
 @synthesize request                = _request;
 
-- (RetryingHTTPOperationState)retryState
+- (ANQRetryingHTTPOperationState)retryState
 {
     return self->_retryState;
 }
 
-- (void)setRetryState:(RetryingHTTPOperationState)newValue
+- (void)setRetryState:(ANQRetryingHTTPOperationState)newValue
     // We don't really need this custom setter, but it's a great way to flush 
     // out redundant update problems.
 {
@@ -167,7 +167,7 @@ static NSString * kRetryingHTTPOperationTransferDidSucceedHostKey = @"hostName";
 {
     BOOL    shouldRetry;
     
-    if ( [[error domain] isEqual:kQHTTPOperationErrorDomain] ) {
+    if ( [[error domain] isEqual:kANQHTTPOperationErrorDomain] ) {
     
         // We can easily understand the consequence of coming directly from 
         // QHTTPOperation.
@@ -182,9 +182,9 @@ static NSString * kRetryingHTTPOperationTransferDidSucceedHostKey = @"hostName";
                 default:
                     assert(NO);     // what is this error?
                     // fall through
-                case kQHTTPOperationErrorResponseTooLarge:
-                case kQHTTPOperationErrorOnOutputStream:
-                case kQHTTPOperationErrorBadContentType: {
+                case kANQHTTPOperationErrorResponseTooLarge:
+                case kANQHTTPOperationErrorOnOutputStream:
+                case kANQHTTPOperationErrorBadContentType: {
                     shouldRetry = NO;   // all of these conditions are unlikely to fail
                 } break;
             }
@@ -239,13 +239,13 @@ static NSString * kRetryingHTTPOperationTransferDidSucceedHostKey = @"hostName";
     // initial HTTP request.
 {
     assert([self isActualRunLoopThread]);
-    assert(self.retryState == kRetryingHTTPOperationStateNotStarted);
+    assert(self.retryState == kANQRetryingHTTPOperationStateNotStarted);
 
     [super operationDidStart];
     
     //[[SGQLog log] logOption:kLogOptionNetworkDetails withFormat:@"http %zu start %@", (size_t) self->_sequenceNumber, [self.request URL]];
 
-    self.retryState = kRetryingHTTPOperationStateGetting;
+    self.retryState = kANQRetryingHTTPOperationStateGetting;
     [self startRequest];
 }
 
@@ -253,7 +253,8 @@ static NSString * kRetryingHTTPOperationTransferDidSucceedHostKey = @"hostName";
     // Starts the HTTP request.  This might be the first request or a retry.
 {
     assert([self isActualRunLoopThread]);
-    assert( (self.retryState == kRetryingHTTPOperationStateGetting) || (self.retryState == kRetryingHTTPOperationStateRetrying) );
+    assert((self.retryState == kANQRetryingHTTPOperationStateGetting) || 
+           (self.retryState == kANQRetryingHTTPOperationStateRetrying) );
     assert(self.networkOperation == nil);
 
     //[[SGQLog log] logOption:kLogOptionNetworkDetails withFormat:@"http %zu request start", (size_t) self->_sequenceNumber];
@@ -280,7 +281,7 @@ static NSString * kRetryingHTTPOperationTransferDidSucceedHostKey = @"hostName";
         assert(self.networkOperation.responseOutputStream != nil);
     }
     
-    [[ANNetworkManager sharedInstance] addNetworkTransferOperation:self.networkOperation 
+    [[ANQNetworkManager sharedInstance] addNetworkTransferOperation:self.networkOperation 
                                                     finishedTarget:self 
                                                             action:@selector(networkOperationDone:)];
 }
@@ -289,7 +290,8 @@ static NSString * kRetryingHTTPOperationTransferDidSucceedHostKey = @"hostName";
     // Called when the network operation finishes.  We look at the error to decide how to proceed.
 {
     assert([self isActualRunLoopThread]);
-    assert( (self.retryState == kRetryingHTTPOperationStateGetting) || (self.retryState == kRetryingHTTPOperationStateRetrying) );
+    assert((self.retryState == kANQRetryingHTTPOperationStateGetting) || 
+           (self.retryState == kANQRetryingHTTPOperationStateRetrying) );
     assert(operation == self.networkOperation);
     self.networkOperation = nil;
 
@@ -319,7 +321,7 @@ static NSString * kRetryingHTTPOperationTransferDidSucceedHostKey = @"hostName";
         
             // If this is our first retry, tell our client that we are in retry mode.
             
-            if (self.retryState == kRetryingHTTPOperationStateGetting) {
+            if (self.retryState == kANQRetryingHTTPOperationStateGetting) {
                 [self performSelectorOnMainThread:@selector(setHasHadRetryableFailureOnMainThread) withObject:nil waitUntilDone:NO];
             }
 
@@ -330,7 +332,10 @@ static NSString * kRetryingHTTPOperationTransferDidSucceedHostKey = @"hostName";
             // other transfers will succeed as well.
 
             if ( ! self.notificationInstalled ) {
-                [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(transferDidSucceed:) name:kRetryingHTTPOperationTransferDidSucceedNotification object:nil];
+                [[NSNotificationCenter defaultCenter] addObserver:self 
+                                                         selector:@selector(transferDidSucceed:) 
+                                                             name:kANQRetryingHTTPOperationTransferDidSucceedNotification 
+                                                           object:nil];
                 self.notificationInstalled = YES;
             }
             
@@ -347,7 +352,7 @@ static NSString * kRetryingHTTPOperationTransferDidSucceedHostKey = @"hostName";
         
             // Start a time-based retry.
         
-            self.retryState = kRetryingHTTPOperationStateWaitingToRetry;
+            self.retryState = kANQRetryingHTTPOperationStateWaitingToRetry;
             [self startRetryAfterTimeInterval:[self randomRetryDelay]];
         }
     }
@@ -361,13 +366,13 @@ static NSString * kRetryingHTTPOperationTransferDidSucceedHostKey = @"hostName";
     // Can't look at state at this point, but it is safe to look at request because 
     // that's immutable.
 
-    assert( [[note name] isEqual:kRetryingHTTPOperationTransferDidSucceedNotification] );
-    assert( [[[note userInfo] objectForKey:kRetryingHTTPOperationTransferDidSucceedHostKey] isKindOfClass:[NSString class]] );
+    assert( [[note name] isEqual:kANQRetryingHTTPOperationTransferDidSucceedNotification] );
+    assert( [[[note userInfo] objectForKey:kANQRetryingHTTPOperationTransferDidSucceedHostKey] isKindOfClass:[NSString class]] );
 
     // If the successful transfer was to /our/ host, we pass the notification off to 
     // our run loop thread.
     
-    if ( [[[note userInfo] objectForKey:kRetryingHTTPOperationTransferDidSucceedHostKey] isEqual:[[self.request URL] host]] ) {
+    if ( [[[note userInfo] objectForKey:kANQRetryingHTTPOperationTransferDidSucceedHostKey] isEqual:[[self.request URL] host]] ) {
 
         // This raises the question of what happens if the operation changes state (most critically, 
         // if it finishes) while waiting for this selector to be performed.  It turns out that's OK. 
@@ -386,7 +391,7 @@ static NSString * kRetryingHTTPOperationTransferDidSucceedHostKey = @"hostName";
 
     // If some other transfer to the same host succeeded, radically reduce our retry delay.
     
-    if (self.retryState == kRetryingHTTPOperationStateWaitingToRetry) {
+    if (self.retryState == kANQRetryingHTTPOperationStateWaitingToRetry) {
         assert(self.retryTimer != nil);
         [self.retryTimer invalidate];
         self.retryTimer = nil;
@@ -398,7 +403,7 @@ static NSString * kRetryingHTTPOperationTransferDidSucceedHostKey = @"hostName";
 - (void)startRetryAfterTimeInterval:(NSTimeInterval)delay
     // Schedules a retry to occur after the specified delay.
 {
-    assert(self.retryState == kRetryingHTTPOperationStateWaitingToRetry);
+    assert(self.retryState == kANQRetryingHTTPOperationStateWaitingToRetry);
     assert(self.retryTimer == nil);
 
     //[[SGQLog log] logOption:kLogOptionNetworkDetails withFormat:@"http %zu retry wait start %.3f", (size_t) self->_sequenceNumber, delay];
@@ -422,8 +427,8 @@ static NSString * kRetryingHTTPOperationTransferDidSucceedHostKey = @"hostName";
     [self.retryTimer invalidate];
     self.retryTimer = nil;
     
-    assert(self.retryState == kRetryingHTTPOperationStateWaitingToRetry);
-    self.retryState = kRetryingHTTPOperationStateRetrying;
+    assert(self.retryState == kANQRetryingHTTPOperationStateWaitingToRetry);
+    self.retryState = kANQRetryingHTTPOperationStateRetrying;
     self.retryCount += 1;
     [self startRequest];
 }
@@ -450,7 +455,7 @@ static NSString * kRetryingHTTPOperationTransferDidSucceedHostKey = @"hostName";
     self.reachabilityOperation.runLoopThread = self.runLoopThread;
     self.reachabilityOperation.runLoopModes  = self.runLoopModes;
 
-    [[ANNetworkManager sharedInstance] addNetworkManagementOperation:self.reachabilityOperation 
+    [[ANQNetworkManager sharedInstance] addNetworkManagementOperation:self.reachabilityOperation 
                                                       finishedTarget:self 
                                                               action:@selector(reachabilityOperationDone:)];
 }
@@ -463,7 +468,7 @@ static NSString * kRetryingHTTPOperationTransferDidSucceedHostKey = @"hostName";
     // such an operation if the host is current unreachable), we force a fast retry.
 {
     assert([self isActualRunLoopThread]);
-    assert(self.retryState >= kRetryingHTTPOperationStateWaitingToRetry);
+    assert(self.retryState >= kANQRetryingHTTPOperationStateWaitingToRetry);
     assert(operation == self.reachabilityOperation);
     self.reachabilityOperation = nil;
     
@@ -485,7 +490,7 @@ static NSString * kRetryingHTTPOperationTransferDidSucceedHostKey = @"hostName";
         
         //[[SGQLog log] logOption:kLogOptionNetworkDetails withFormat:@"http %zu reachable done (0x%zx)", (size_t) self->_sequenceNumber, (size_t) operation.flags];
 
-        if (self.retryState == kRetryingHTTPOperationStateWaitingToRetry) {
+        if (self.retryState == kANQRetryingHTTPOperationStateWaitingToRetry) {
             assert(self.retryTimer != nil);
             [self.retryTimer invalidate];
             self.retryTimer = nil;
@@ -504,7 +509,7 @@ static NSString * kRetryingHTTPOperationTransferDidSucceedHostKey = @"hostName";
     [super operationWillFinish];
     
     if (self.networkOperation != nil) {
-        [[ANNetworkManager sharedInstance] cancelOperation:self.networkOperation];
+        [[ANQNetworkManager sharedInstance] cancelOperation:self.networkOperation];
         self.networkOperation = nil;
     }
     if (self.retryTimer != nil) {
@@ -512,14 +517,14 @@ static NSString * kRetryingHTTPOperationTransferDidSucceedHostKey = @"hostName";
         self.retryTimer = nil;
     }
     if (self.reachabilityOperation != nil) {
-        [[ANNetworkManager sharedInstance] cancelOperation:self.reachabilityOperation];
+        [[ANQNetworkManager sharedInstance] cancelOperation:self.reachabilityOperation];
         self.reachabilityOperation = nil;
     }
     if (self.notificationInstalled) {
-        [[NSNotificationCenter defaultCenter] removeObserver:self name:kRetryingHTTPOperationTransferDidSucceedNotification object:nil];
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:kANQRetryingHTTPOperationTransferDidSucceedNotification object:nil];
         self.notificationInstalled = NO;
     }
-    self.retryState = kRetryingHTTPOperationStateFinished;
+    self.retryState = kANQRetryingHTTPOperationStateFinished;
 
     if (self.error == nil) {
         //[[SGQLog log] logOption:kLogOptionNetworkDetails withFormat:@"http %zu success", (size_t) self->_sequenceNumber];
@@ -527,9 +532,11 @@ static NSString * kRetryingHTTPOperationTransferDidSucceedHostKey = @"hostName";
         // We were successful.  Broadcast a notification to that effect so that other transfers who 
         // are delayed waiting to retry know that now is a good time.
         
-        [[NSNotificationCenter defaultCenter] postNotificationName:kRetryingHTTPOperationTransferDidSucceedNotification 
+        [[NSNotificationCenter defaultCenter] postNotificationName:kANQRetryingHTTPOperationTransferDidSucceedNotification 
             object:nil 
-            userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[[self.request URL] host], kRetryingHTTPOperationTransferDidSucceedHostKey, nil]
+            userInfo:[NSDictionary dictionaryWithObjectsAndKeys:
+                      [[self.request URL] host], kANQRetryingHTTPOperationTransferDidSucceedHostKey, 
+                      nil]
         ];
     } else {
         //[[SGQLog log] logOption:kLogOptionNetworkDetails withFormat:@"http %zu error %@", (size_t) self->_sequenceNumber, self.error];
