@@ -39,27 +39,28 @@
 		AA7DF010148B0FD800DD0E05 /* ANCoreHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF00F148B0FD800DD0E05 /* ANCoreHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA7DF013148B28FE00DD0E05 /* ANMathematics.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF012148B28FE00DD0E05 /* ANMathematics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA7DF015148B295200DD0E05 /* ANMathematicsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF014148B295200DD0E05 /* ANMathematicsHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA7DF019148B2D1500DD0E05 /* NSString+EMail.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF017148B2D1500DD0E05 /* NSString+EMail.h */; };
+		AA7DF019148B2D1500DD0E05 /* NSString+EMail.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF017148B2D1500DD0E05 /* NSString+EMail.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA7DF01A148B2D1500DD0E05 /* NSString+EMail.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF018148B2D1500DD0E05 /* NSString+EMail.m */; };
 		AA7DF01B148B2D1500DD0E05 /* NSString+EMail.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF018148B2D1500DD0E05 /* NSString+EMail.m */; };
-		AA7DF01E148B2D4D00DD0E05 /* NSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF01C148B2D4B00DD0E05 /* NSString+HTML.h */; };
+		AA7DF01E148B2D4D00DD0E05 /* NSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF01C148B2D4B00DD0E05 /* NSString+HTML.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA7DF01F148B2D4E00DD0E05 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF01D148B2D4C00DD0E05 /* NSString+HTML.m */; };
 		AA7DF020148B2D4E00DD0E05 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF01D148B2D4C00DD0E05 /* NSString+HTML.m */; };
-		AA7DF027148B429000DD0E05 /* ANQRunLoopOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF025148B429000DD0E05 /* ANQRunLoopOperation.h */; };
+		AA7DF027148B429000DD0E05 /* ANQRunLoopOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF025148B429000DD0E05 /* ANQRunLoopOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA7DF028148B429000DD0E05 /* ANQRunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF026148B429000DD0E05 /* ANQRunLoopOperation.m */; };
 		AA7DF029148B429000DD0E05 /* ANQRunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF026148B429000DD0E05 /* ANQRunLoopOperation.m */; };
-		AA7DF030148B43AB00DD0E05 /* ANQReachabilityOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF02A148B43A900DD0E05 /* ANQReachabilityOperation.h */; };
+		AA7DF030148B43AB00DD0E05 /* ANQReachabilityOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF02A148B43A900DD0E05 /* ANQReachabilityOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA7DF031148B43AB00DD0E05 /* ANQReachabilityOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF02B148B43AA00DD0E05 /* ANQReachabilityOperation.m */; };
 		AA7DF032148B43AB00DD0E05 /* ANQReachabilityOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF02B148B43AA00DD0E05 /* ANQReachabilityOperation.m */; };
-		AA7DF033148B43AB00DD0E05 /* ANQHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF02C148B43AA00DD0E05 /* ANQHTTPOperation.h */; };
+		AA7DF033148B43AB00DD0E05 /* ANQHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF02C148B43AA00DD0E05 /* ANQHTTPOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA7DF034148B43AB00DD0E05 /* ANQHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF02D148B43AA00DD0E05 /* ANQHTTPOperation.m */; };
 		AA7DF035148B43AB00DD0E05 /* ANQHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF02D148B43AA00DD0E05 /* ANQHTTPOperation.m */; };
-		AA7DF036148B43AB00DD0E05 /* ANNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF02E148B43AB00DD0E05 /* ANNetworkManager.h */; };
+		AA7DF036148B43AB00DD0E05 /* ANNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF02E148B43AB00DD0E05 /* ANNetworkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA7DF037148B43AB00DD0E05 /* ANNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF02F148B43AB00DD0E05 /* ANNetworkManager.m */; };
 		AA7DF038148B43AB00DD0E05 /* ANNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF02F148B43AB00DD0E05 /* ANNetworkManager.m */; };
-		AA7DF03B148B448700DD0E05 /* ANQRetryingHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF039148B448600DD0E05 /* ANQRetryingHTTPOperation.h */; };
+		AA7DF03B148B448700DD0E05 /* ANQRetryingHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF039148B448600DD0E05 /* ANQRetryingHTTPOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA7DF03C148B448700DD0E05 /* ANQRetryingHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF03A148B448600DD0E05 /* ANQRetryingHTTPOperation.m */; };
 		AA7DF03D148B448700DD0E05 /* ANQRetryingHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF03A148B448600DD0E05 /* ANQRetryingHTTPOperation.m */; };
+		AA7DF03F148B833B00DD0E05 /* ANOperationsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF03E148B833A00DD0E05 /* ANOperationsHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +125,7 @@
 		AA7DF02F148B43AB00DD0E05 /* ANNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANNetworkManager.m; sourceTree = "<group>"; };
 		AA7DF039148B448600DD0E05 /* ANQRetryingHTTPOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANQRetryingHTTPOperation.h; sourceTree = "<group>"; };
 		AA7DF03A148B448600DD0E05 /* ANQRetryingHTTPOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANQRetryingHTTPOperation.m; sourceTree = "<group>"; };
+		AA7DF03E148B833A00DD0E05 /* ANOperationsHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANOperationsHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +304,7 @@
 		AA7DF024148B426700DD0E05 /* Operations */ = {
 			isa = PBXGroup;
 			children = (
+				AA7DF03E148B833A00DD0E05 /* ANOperationsHeader.h */,
 				AA7DF039148B448600DD0E05 /* ANQRetryingHTTPOperation.h */,
 				AA7DF03A148B448600DD0E05 /* ANQRetryingHTTPOperation.m */,
 				AA7DF02A148B43A900DD0E05 /* ANQReachabilityOperation.h */,
@@ -335,7 +338,7 @@
 				AA7DEFFF148AFEB800DD0E05 /* ANObjectSingleton.h in Headers */,
 				AA7DF015148B295200DD0E05 /* ANMathematicsHeader.h in Headers */,
 				AA7DF013148B28FE00DD0E05 /* ANMathematics.h in Headers */,
-				AA7DF00A148B023800DD0E05 /* ANMemory.h in Headers */,
+				AA7DF03F148B833B00DD0E05 /* ANOperationsHeader.h in Headers */,
 				AA7DF019148B2D1500DD0E05 /* NSString+EMail.h in Headers */,
 				AA7DF01E148B2D4D00DD0E05 /* NSString+HTML.h in Headers */,
 				AA7DF027148B429000DD0E05 /* ANQRunLoopOperation.h in Headers */,
@@ -343,6 +346,7 @@
 				AA7DF033148B43AB00DD0E05 /* ANQHTTPOperation.h in Headers */,
 				AA7DF036148B43AB00DD0E05 /* ANNetworkManager.h in Headers */,
 				AA7DF03B148B448700DD0E05 /* ANQRetryingHTTPOperation.h in Headers */,
+				AA7DF00A148B023800DD0E05 /* ANMemory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,5 +11,7 @@
 
 #import "ANCoreHeader.h"
 #import "ANCoreDataHeader.h"
+#import "ANMathematicsHeader.h"
+#import "ANOperationsHeader.h"
 
 #endif
