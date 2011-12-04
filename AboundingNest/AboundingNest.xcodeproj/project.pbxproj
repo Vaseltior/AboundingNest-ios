@@ -39,6 +39,12 @@
 		AA7DF010148B0FD800DD0E05 /* ANCoreHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF00F148B0FD800DD0E05 /* ANCoreHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA7DF013148B28FE00DD0E05 /* ANMathematics.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF012148B28FE00DD0E05 /* ANMathematics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA7DF015148B295200DD0E05 /* ANMathematicsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF014148B295200DD0E05 /* ANMathematicsHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA7DF019148B2D1500DD0E05 /* NSString+EMail.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF017148B2D1500DD0E05 /* NSString+EMail.h */; };
+		AA7DF01A148B2D1500DD0E05 /* NSString+EMail.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF018148B2D1500DD0E05 /* NSString+EMail.m */; };
+		AA7DF01B148B2D1500DD0E05 /* NSString+EMail.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF018148B2D1500DD0E05 /* NSString+EMail.m */; };
+		AA7DF01E148B2D4D00DD0E05 /* NSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF01C148B2D4B00DD0E05 /* NSString+HTML.h */; };
+		AA7DF01F148B2D4E00DD0E05 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF01D148B2D4C00DD0E05 /* NSString+HTML.m */; };
+		AA7DF020148B2D4E00DD0E05 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF01D148B2D4C00DD0E05 /* NSString+HTML.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +95,10 @@
 		AA7DF00F148B0FD800DD0E05 /* ANCoreHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ANCoreHeader.h; path = Core/ANCoreHeader.h; sourceTree = "<group>"; };
 		AA7DF012148B28FE00DD0E05 /* ANMathematics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANMathematics.h; sourceTree = "<group>"; };
 		AA7DF014148B295200DD0E05 /* ANMathematicsHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANMathematicsHeader.h; sourceTree = "<group>"; };
+		AA7DF017148B2D1500DD0E05 /* NSString+EMail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EMail.h"; sourceTree = "<group>"; };
+		AA7DF018148B2D1500DD0E05 /* NSString+EMail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EMail.m"; sourceTree = "<group>"; };
+		AA7DF01C148B2D4B00DD0E05 /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		AA7DF01D148B2D4C00DD0E05 /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +210,10 @@
 		AA7DEFD5148AFDE300DD0E05 /* Additions */ = {
 			isa = PBXGroup;
 			children = (
+				AA7DF01C148B2D4B00DD0E05 /* NSString+HTML.h */,
+				AA7DF01D148B2D4C00DD0E05 /* NSString+HTML.m */,
+				AA7DF017148B2D1500DD0E05 /* NSString+EMail.h */,
+				AA7DF018148B2D1500DD0E05 /* NSString+EMail.m */,
 				AA7DEFD6148AFDE300DD0E05 /* NSDictionary+AboundingNest.h */,
 				AA7DEFD7148AFDE300DD0E05 /* NSDictionary+AboundingNest.m */,
 			);
@@ -279,6 +293,8 @@
 				AA7DF015148B295200DD0E05 /* ANMathematicsHeader.h in Headers */,
 				AA7DF013148B28FE00DD0E05 /* ANMathematics.h in Headers */,
 				AA7DF00A148B023800DD0E05 /* ANMemory.h in Headers */,
+				AA7DF019148B2D1500DD0E05 /* NSString+EMail.h in Headers */,
+				AA7DF01E148B2D4D00DD0E05 /* NSString+HTML.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +454,8 @@
 				AA7DEFE7148AFE1F00DD0E05 /* ANCoreDataController.m in Sources */,
 				AA7DEFEA148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.m in Sources */,
 				AA7DEFF7148AFEB800DD0E05 /* ANBase64.m in Sources */,
+				AA7DF01A148B2D1500DD0E05 /* NSString+EMail.m in Sources */,
+				AA7DF01F148B2D4E00DD0E05 /* NSString+HTML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +469,8 @@
 				AA7DEFE8148AFE1F00DD0E05 /* ANCoreDataController.m in Sources */,
 				AA7DEFEB148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.m in Sources */,
 				AA7DEFF8148AFEB800DD0E05 /* ANBase64.m in Sources */,
+				AA7DF01B148B2D1500DD0E05 /* NSString+EMail.m in Sources */,
+				AA7DF020148B2D4E00DD0E05 /* NSString+HTML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
