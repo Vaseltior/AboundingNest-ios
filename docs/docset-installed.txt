@@ -1,4 +1,4 @@
 Documentation set was installed to Xcode!
 
 Path: /Users/vaseltior/Library/Developer/Shared/Documentation/DocSets/com.vaseltior.AboundingNest.docset
-Time: 2011-12-04 04:20:47 +0000
+Time: 2011-12-04 05:03:24 +0000
