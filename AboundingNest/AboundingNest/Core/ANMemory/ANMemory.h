@@ -18,7 +18,7 @@ static inline void ANInvalidateTimer(NSObject **object) {
     if (!*object) return;
     NSTimer *t = (NSTimer *)object;
     [t invalidate];
-    sgReleaseSafely(&t);
+    ANReleaseSafely(&t);
 }
 
 /**
