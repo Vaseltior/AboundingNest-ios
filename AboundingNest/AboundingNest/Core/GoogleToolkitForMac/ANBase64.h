@@ -1,5 +1,5 @@
 //
-//  GTMBase64.h
+//  ANBase64.h
 //
 //  Copyright 2006-2008 Google Inc.
 //
@@ -21,19 +21,19 @@
 // Give ourselves a consistent way to do inlines.  Apple's macros even use
 // a few different actual definitions, so we're based off of the foundation
 // one.
-#if !defined(GTM_INLINE)
+#if !defined(AN_INLINE)
 #if defined (__GNUC__) && (__GNUC__ == 4)
-#define GTM_INLINE static __inline__ __attribute__((always_inline))
+#define AN_INLINE static __inline__ __attribute__((always_inline))
 #else
-#define GTM_INLINE static __inline__
+#define AN_INLINE static __inline__
 #endif
 #endif
 
-#ifndef _GTMDevAssert
-#define _GTMDevAssert(condition, ...) do { } while (0)
+#ifndef _ANDevAssert
+#define _ANDevAssert(condition, ...) do { } while (0)
 #endif
 
-// GTMBase64
+// ANBase64
 //
 /// Helper for handling Base64 and WebSafeBase64 encodings
 //
@@ -43,7 +43,7 @@
 /// encoding.  You must use the webSafe* methods together, the data does not
 /// interop with the RFC methods.
 //
-@interface YAJL_GTMBase64 : NSObject
+@interface YAJL_ANBase64 : NSObject
 
 //
 // Standard Base64 (RFC) handling

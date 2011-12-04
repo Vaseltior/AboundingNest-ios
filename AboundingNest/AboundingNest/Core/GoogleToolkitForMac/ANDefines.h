@@ -1,5 +1,5 @@
 // 
-// GTMDefines.h
+// ANDefines.h
 //
 //  Copyright 2008 Google Inc.
 //
@@ -24,29 +24,29 @@
 // ----------------------------------------------------------------------------
 
 
-// GTMHTTPFetcher will support logging by default but only hook its input
+// ANHTTPFetcher will support logging by default but only hook its input
 // stream support for logging when requested.  You can control the inclusion of
 // the code by providing your own definitions for these w/in a prefix header.
 //
-#ifndef GTM_HTTPFETCHER_ENABLE_LOGGING
-# define GTM_HTTPFETCHER_ENABLE_LOGGING 1
-#endif // GTM_HTTPFETCHER_ENABLE_LOGGING
-#ifndef GTM_HTTPFETCHER_ENABLE_INPUTSTREAM_LOGGING
-# define GTM_HTTPFETCHER_ENABLE_INPUTSTREAM_LOGGING 0
-#endif // GTM_HTTPFETCHER_ENABLE_INPUTSTREAM_LOGGING
+#ifndef AN_HTTPFETCHER_ENABLE_LOGGING
+# define AN_HTTPFETCHER_ENABLE_LOGGING 1
+#endif // AN_HTTPFETCHER_ENABLE_LOGGING
+#ifndef AN_HTTPFETCHER_ENABLE_INPUTSTREAM_LOGGING
+# define AN_HTTPFETCHER_ENABLE_INPUTSTREAM_LOGGING 0
+#endif // AN_HTTPFETCHER_ENABLE_INPUTSTREAM_LOGGING
 
 
-// _GTMDevLog & _GTMDevAssert
+// _ANDevLog & _ANDevAssert
 //
-// _GTMDevLog & _GTMDevAssert are meant to be a very lightweight shell for
+// _ANDevLog & _ANDevAssert are meant to be a very lightweight shell for
 // developer level errors.  This implementation simply macros to NSLog/NSAssert.
 // It is not intended to be a general logging/reporting system.
 //
 // Please see http://code.google.com/p/google-toolbox-for-mac/wiki/DevLogNAssert
 // for a little more background on the usage of these macros.
 //
-//    _GTMDevLog           log some error/problem in debug builds
-//    _GTMDevAssert        assert if conditon isn't met w/in a method/function
+//    _ANDevLog           log some error/problem in debug builds
+//    _ANDevAssert        assert if conditon isn't met w/in a method/function
 //                           in all builds.
 // 
 // To replace this system, just provide different macro definitions in your
@@ -56,26 +56,26 @@
 // 
 
 // We only define the simple macros if nothing else has defined this.
-#ifndef _GTMDevLog
+#ifndef _ANDevLog
 
 #ifdef DEBUG
- #define _GTMDevLog(...) NSLog(__VA_ARGS__)
+ #define _ANDevLog(...) NSLog(__VA_ARGS__)
 #else
- #define _GTMDevLog(...) do { } while (0)
+ #define _ANDevLog(...) do { } while (0)
 #endif
 
-#endif // _GTMDevLog
+#endif // _ANDevLog
 
 // Declared here so that it can easily be used for logging tracking if
-// necessary. See GTMUnitTestDevLog.h for details.
+// necessary. See ANUnitTestDevLog.h for details.
 @class NSString;
-extern void _GTMUnittestDevLog(NSString *format, ...);
+extern void _ANUnittestDevLog(NSString *format, ...);
 
-#ifndef _GTMDevAssert
+#ifndef _ANDevAssert
 // we directly invoke the NSAssert handler so we can pass on the varargs
 // (NSAssert doesn't have a macro we can use that takes varargs)
 #if !defined(NS_BLOCK_ASSERTIONS)
-#define _GTMDevAssert(condition, ...)                                    \
+#define _ANDevAssert(condition, ...)                                    \
   do {                                                                   \
     if (!(condition)) {                                                  \
       [[NSAssertionHandler currentHandler]                               \
@@ -86,48 +86,48 @@ extern void _GTMUnittestDevLog(NSString *format, ...);
     }                                                                    \
   } while(0)
 #else // !defined(NS_BLOCK_ASSERTIONS)
-#define _GTMDevAssert(condition, ...) do { } while (0)
+#define _ANDevAssert(condition, ...) do { } while (0)
 #endif // !defined(NS_BLOCK_ASSERTIONS)
 
-#endif // _GTMDevAssert
+#endif // _ANDevAssert
 
-// _GTMCompileAssert
-// _GTMCompileAssert is an assert that is meant to fire at compile time if you
+// _ANCompileAssert
+// _ANCompileAssert is an assert that is meant to fire at compile time if you
 // want to check things at compile instead of runtime. For example if you
 // want to check that a wchar is 4 bytes instead of 2 you would use
-// _GTMCompileAssert(sizeof(wchar_t) == 4, wchar_t_is_4_bytes_on_OS_X)
+// _ANCompileAssert(sizeof(wchar_t) == 4, wchar_t_is_4_bytes_on_OS_X)
 // Note that the second "arg" is not in quotes, and must be a valid processor
 // symbol in it's own right (no spaces, punctuation etc).
 
 // Wrapping this in an #ifndef allows external groups to define their own
 // compile time assert scheme.
-#ifndef _GTMCompileAssert
+#ifndef _ANCompileAssert
 // We got this technique from here:
 // http://unixjunkie.blogspot.com/2007/10/better-compile-time-asserts_29.html
 
-#define _GTMCompileAssertSymbolInner(line, msg) _GTMCOMPILEASSERT ## line ## __ ## msg
-#define _GTMCompileAssertSymbol(line, msg) _GTMCompileAssertSymbolInner(line, msg)
-#define _GTMCompileAssert(test, msg) \
-  typedef char _GTMCompileAssertSymbol(__LINE__, msg) [ ((test) ? 1 : -1) ]
-#endif // _GTMCompileAssert
+#define _ANCompileAssertSymbolInner(line, msg) _ANCOMPILEASSERT ## line ## __ ## msg
+#define _ANCompileAssertSymbol(line, msg) _ANCompileAssertSymbolInner(line, msg)
+#define _ANCompileAssert(test, msg) \
+  typedef char _ANCompileAssertSymbol(__LINE__, msg) [ ((test) ? 1 : -1) ]
+#endif // _ANCompileAssert
 
 // ============================================================================
 
 // ----------------------------------------------------------------------------
-// CPP symbols defined based on the project settings so the GTM code has
+// CPP symbols defined based on the project settings so the AN code has
 // simple things to test against w/o scattering the knowledge of project
 // setting through all the code.
 // ----------------------------------------------------------------------------
 
-// Provide a single constant CPP symbol that all of GTM uses for ifdefing
+// Provide a single constant CPP symbol that all of AN uses for ifdefing
 // iPhone code.
 #include <TargetConditionals.h>
 #if TARGET_OS_IPHONE // iPhone SDK
   // For iPhone specific stuff
-  #define GTM_IPHONE_SDK 1
+  #define AN_IPHONE_SDK 1
 #else
   // For MacOS specific stuff
-  #define GTM_MACOS_SDK 1
+  #define AN_MACOS_SDK 1
 #endif
 
 // To simplify support for 64bit (and Leopard in general), we provide the type

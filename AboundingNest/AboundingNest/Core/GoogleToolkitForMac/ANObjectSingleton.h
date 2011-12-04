@@ -1,5 +1,5 @@
 //
-//  GTMObjectSingleton.h
+//  ANObjectSingleton.h
 //  Macro to implement methods for a singleton
 //
 //  Copyright 2005-2008 Google Inc.
@@ -17,7 +17,7 @@
 //  the License.
 //
 
-#import "GTMDefines.h"
+#import "ANDefines.h"
 
 /// This macro implements the various methods needed to make a safe singleton.
 //
@@ -26,10 +26,10 @@
 ///
 /// Sample usage:
 ///
-/// GTMOBJECT_SINGLETON_BOILERPLATE(SomeUsefulManager, sharedSomeUsefulManager)
+/// ANOBJECT_SINGLETON_BOILERPLATE(SomeUsefulManager, sharedSomeUsefulManager)
 /// (with no trailing semicolon)
 ///
-#define GTMOBJECT_SINGLETON_BOILERPLATE(_object_name_, _shared_obj_name_) \
+#define ANOBJECT_SINGLETON_BOILERPLATE(_object_name_, _shared_obj_name_) \
 static _object_name_ *z##_shared_obj_name_ = nil;  \
 + (_object_name_ *)_shared_obj_name_ {             \
   @synchronized(self) {                            \
@@ -37,7 +37,7 @@ static _object_name_ *z##_shared_obj_name_ = nil;  \
       /* Note that 'self' may not be the same as _object_name_ */                               \
       /* first assignment done in allocWithZone but we must reassign in case init fails */      \
       z##_shared_obj_name_ = [[self alloc] init];                                               \
-      _GTMDevAssert((z##_shared_obj_name_ != nil), @"didn't catch singleton allocation");       \
+      _ANDevAssert((z##_shared_obj_name_ != nil), @"didn't catch singleton allocation");       \
     }                                              \
   }                                                \
   return z##_shared_obj_name_;                     \
@@ -51,7 +51,7 @@ static _object_name_ *z##_shared_obj_name_ = nil;  \
   }                                                \
                                                    \
   /* We can't return the shared instance, because it's been init'd */ \
-  _GTMDevAssert(NO, @"use the singleton API, not alloc+init");        \
+  _ANDevAssert(NO, @"use the singleton API, not alloc+init");        \
   return nil;                                      \
 }                                                  \
 - (id)retain {                                     \

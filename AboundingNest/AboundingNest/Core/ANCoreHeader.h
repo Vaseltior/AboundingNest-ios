@@ -10,13 +10,13 @@
 #define AboundingNest_ANCoreHeader_h
 
 // GoogleToolboxForMac
-#import "Core/GoogleToolkitForMac/GTMObjectSingleton.h"
-#import "Core/GoogleToolkitForMac/GTMBase64.h"
+#import "ANObjectSingleton.h"
+#import "ANBase64.h"
 
 // Core Additions
-#import "Core/Additions/NSDictionary+AboundingNest.h"
+#import "NSDictionary+AboundingNest.h"
 
 // Memory
-#import "Core/ANMemory/ANMemory.h"
+#import "ANMemory.h"
 
 #endif

@@ -17,34 +17,26 @@
 		AA7DEFAF148AF85C00DD0E05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA7DEFAD148AF85C00DD0E05 /* InfoPlist.strings */; };
 		AA7DEFB2148AF85C00DD0E05 /* AboundingNestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFB1148AF85C00DD0E05 /* AboundingNestTests.m */; };
 		AA7DEFD4148AFD9000DD0E05 /* AboundingNest.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFD3148AFD8F00DD0E05 /* AboundingNest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA7DEFD8148AFDE300DD0E05 /* NSDictionary+AboundingNest.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFD6148AFDE300DD0E05 /* NSDictionary+AboundingNest.h */; };
+		AA7DEFD8148AFDE300DD0E05 /* NSDictionary+AboundingNest.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFD6148AFDE300DD0E05 /* NSDictionary+AboundingNest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA7DEFD9148AFDE300DD0E05 /* NSDictionary+AboundingNest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFD7148AFDE300DD0E05 /* NSDictionary+AboundingNest.m */; };
 		AA7DEFDA148AFDE300DD0E05 /* NSDictionary+AboundingNest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFD7148AFDE300DD0E05 /* NSDictionary+AboundingNest.m */; };
 		AA7DEFDE148AFDF400DD0E05 /* ClockServices.c in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFDC148AFDF400DD0E05 /* ClockServices.c */; };
 		AA7DEFDF148AFDF400DD0E05 /* ClockServices.c in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFDC148AFDF400DD0E05 /* ClockServices.c */; };
-		AA7DEFE0148AFDF400DD0E05 /* ClockServices.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFDD148AFDF400DD0E05 /* ClockServices.h */; };
-		AA7DEFE6148AFE1F00DD0E05 /* ANCoreDataController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFE2148AFE1F00DD0E05 /* ANCoreDataController.h */; };
+		AA7DEFE0148AFDF400DD0E05 /* ClockServices.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFDD148AFDF400DD0E05 /* ClockServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA7DEFE6148AFE1F00DD0E05 /* ANCoreDataController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFE2148AFE1F00DD0E05 /* ANCoreDataController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA7DEFE7148AFE1F00DD0E05 /* ANCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFE3148AFE1F00DD0E05 /* ANCoreDataController.m */; };
 		AA7DEFE8148AFE1F00DD0E05 /* ANCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFE3148AFE1F00DD0E05 /* ANCoreDataController.m */; };
-		AA7DEFE9148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFE4148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.h */; };
+		AA7DEFE9148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFE4148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA7DEFEA148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFE5148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.m */; };
 		AA7DEFEB148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFE5148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.m */; };
-		AA7DEFF6148AFEB800DD0E05 /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFED148AFEB800DD0E05 /* GTMBase64.h */; };
-		AA7DEFF7148AFEB800DD0E05 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFEE148AFEB800DD0E05 /* GTMBase64.m */; };
-		AA7DEFF8148AFEB800DD0E05 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFEE148AFEB800DD0E05 /* GTMBase64.m */; };
-		AA7DEFF9148AFEB800DD0E05 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFEF148AFEB800DD0E05 /* GTMDefines.h */; };
-		AA7DEFFA148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFF0148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.h */; };
-		AA7DEFFB148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFF1148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.m */; };
-		AA7DEFFC148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFF1148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.m */; };
-		AA7DEFFD148AFEB800DD0E05 /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFF2148AFEB800DD0E05 /* GTMIPhoneUnitTestMain.m */; };
-		AA7DEFFE148AFEB800DD0E05 /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFF2148AFEB800DD0E05 /* GTMIPhoneUnitTestMain.m */; };
-		AA7DEFFF148AFEB800DD0E05 /* GTMObjectSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFF3148AFEB800DD0E05 /* GTMObjectSingleton.h */; };
-		AA7DF000148AFEB800DD0E05 /* GTMSenTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFF4148AFEB800DD0E05 /* GTMSenTestCase.h */; };
-		AA7DF001148AFEB800DD0E05 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFF5148AFEB800DD0E05 /* GTMSenTestCase.m */; };
-		AA7DF002148AFEB800DD0E05 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFF5148AFEB800DD0E05 /* GTMSenTestCase.m */; };
-		AA7DF004148AFF0600DD0E05 /* ANCoreHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF003148AFF0600DD0E05 /* ANCoreHeader.h */; };
-		AA7DF006148AFF6600DD0E05 /* ANCoreDataHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF005148AFF6600DD0E05 /* ANCoreDataHeader.h */; };
-		AA7DF00A148B023800DD0E05 /* ANMemory.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF008148B023800DD0E05 /* ANMemory.h */; };
+		AA7DEFF6148AFEB800DD0E05 /* ANBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFED148AFEB800DD0E05 /* ANBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA7DEFF7148AFEB800DD0E05 /* ANBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFEE148AFEB800DD0E05 /* ANBase64.m */; };
+		AA7DEFF8148AFEB800DD0E05 /* ANBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFEE148AFEB800DD0E05 /* ANBase64.m */; };
+		AA7DEFF9148AFEB800DD0E05 /* ANDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFEF148AFEB800DD0E05 /* ANDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA7DEFFF148AFEB800DD0E05 /* ANObjectSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFF3148AFEB800DD0E05 /* ANObjectSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA7DF006148AFF6600DD0E05 /* ANCoreDataHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF005148AFF6600DD0E05 /* ANCoreDataHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA7DF00A148B023800DD0E05 /* ANMemory.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF008148B023800DD0E05 /* ANMemory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA7DF010148B0FD800DD0E05 /* ANCoreHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF00F148B0FD800DD0E05 /* ANCoreHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,18 +78,13 @@
 		AA7DEFE3148AFE1F00DD0E05 /* ANCoreDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANCoreDataController.m; sourceTree = "<group>"; };
 		AA7DEFE4148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCoreDataGrandCentralController.h; sourceTree = "<group>"; };
 		AA7DEFE5148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANCoreDataGrandCentralController.m; sourceTree = "<group>"; };
-		AA7DEFED148AFEB800DD0E05 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
-		AA7DEFEE148AFEB800DD0E05 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
-		AA7DEFEF148AFEB800DD0E05 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
-		AA7DEFF0148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMIPhoneUnitTestDelegate.h; sourceTree = "<group>"; };
-		AA7DEFF1148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMIPhoneUnitTestDelegate.m; sourceTree = "<group>"; };
-		AA7DEFF2148AFEB800DD0E05 /* GTMIPhoneUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMIPhoneUnitTestMain.m; sourceTree = "<group>"; };
-		AA7DEFF3148AFEB800DD0E05 /* GTMObjectSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMObjectSingleton.h; sourceTree = "<group>"; };
-		AA7DEFF4148AFEB800DD0E05 /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMSenTestCase.h; sourceTree = "<group>"; };
-		AA7DEFF5148AFEB800DD0E05 /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSenTestCase.m; sourceTree = "<group>"; };
-		AA7DF003148AFF0600DD0E05 /* ANCoreHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCoreHeader.h; sourceTree = "<group>"; };
+		AA7DEFED148AFEB800DD0E05 /* ANBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANBase64.h; sourceTree = "<group>"; };
+		AA7DEFEE148AFEB800DD0E05 /* ANBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANBase64.m; sourceTree = "<group>"; };
+		AA7DEFEF148AFEB800DD0E05 /* ANDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANDefines.h; sourceTree = "<group>"; };
+		AA7DEFF3148AFEB800DD0E05 /* ANObjectSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANObjectSingleton.h; sourceTree = "<group>"; };
 		AA7DF005148AFF6600DD0E05 /* ANCoreDataHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCoreDataHeader.h; sourceTree = "<group>"; };
 		AA7DF008148B023800DD0E05 /* ANMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANMemory.h; sourceTree = "<group>"; };
+		AA7DF00F148B0FD800DD0E05 /* ANCoreHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ANCoreHeader.h; path = Core/ANCoreHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,7 +183,7 @@
 		AA7DEFBB148AF8A200DD0E05 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				AA7DF003148AFF0600DD0E05 /* ANCoreHeader.h */,
+				AA7DF00F148B0FD800DD0E05 /* ANCoreHeader.h */,
 				AA7DF007148B021800DD0E05 /* ANMemory */,
 				AA7DEFEC148AFEB800DD0E05 /* GoogleToolkitForMac */,
 				AA7DEFDB148AFDF400DD0E05 /* Apple */,
@@ -240,15 +227,10 @@
 		AA7DEFEC148AFEB800DD0E05 /* GoogleToolkitForMac */ = {
 			isa = PBXGroup;
 			children = (
-				AA7DEFED148AFEB800DD0E05 /* GTMBase64.h */,
-				AA7DEFEE148AFEB800DD0E05 /* GTMBase64.m */,
-				AA7DEFEF148AFEB800DD0E05 /* GTMDefines.h */,
-				AA7DEFF0148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.h */,
-				AA7DEFF1148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.m */,
-				AA7DEFF2148AFEB800DD0E05 /* GTMIPhoneUnitTestMain.m */,
-				AA7DEFF3148AFEB800DD0E05 /* GTMObjectSingleton.h */,
-				AA7DEFF4148AFEB800DD0E05 /* GTMSenTestCase.h */,
-				AA7DEFF5148AFEB800DD0E05 /* GTMSenTestCase.m */,
+				AA7DEFED148AFEB800DD0E05 /* ANBase64.h */,
+				AA7DEFEE148AFEB800DD0E05 /* ANBase64.m */,
+				AA7DEFF3148AFEB800DD0E05 /* ANObjectSingleton.h */,
+				AA7DEFEF148AFEB800DD0E05 /* ANDefines.h */,
 			);
 			name = GoogleToolkitForMac;
 			path = Core/GoogleToolkitForMac;
@@ -271,17 +253,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA7DEFD4148AFD9000DD0E05 /* AboundingNest.h in Headers */,
+				AA7DF006148AFF6600DD0E05 /* ANCoreDataHeader.h in Headers */,
+				AA7DF010148B0FD800DD0E05 /* ANCoreHeader.h in Headers */,
 				AA7DEFD8148AFDE300DD0E05 /* NSDictionary+AboundingNest.h in Headers */,
 				AA7DEFE0148AFDF400DD0E05 /* ClockServices.h in Headers */,
 				AA7DEFE6148AFE1F00DD0E05 /* ANCoreDataController.h in Headers */,
 				AA7DEFE9148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.h in Headers */,
-				AA7DEFF6148AFEB800DD0E05 /* GTMBase64.h in Headers */,
-				AA7DEFF9148AFEB800DD0E05 /* GTMDefines.h in Headers */,
-				AA7DEFFA148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.h in Headers */,
-				AA7DEFFF148AFEB800DD0E05 /* GTMObjectSingleton.h in Headers */,
-				AA7DF000148AFEB800DD0E05 /* GTMSenTestCase.h in Headers */,
-				AA7DF004148AFF0600DD0E05 /* ANCoreHeader.h in Headers */,
-				AA7DF006148AFF6600DD0E05 /* ANCoreDataHeader.h in Headers */,
+				AA7DEFF6148AFEB800DD0E05 /* ANBase64.h in Headers */,
+				AA7DEFF9148AFEB800DD0E05 /* ANDefines.h in Headers */,
+				AA7DEFFF148AFEB800DD0E05 /* ANObjectSingleton.h in Headers */,
 				AA7DF00A148B023800DD0E05 /* ANMemory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,10 +406,7 @@
 				AA7DEFDE148AFDF400DD0E05 /* ClockServices.c in Sources */,
 				AA7DEFE7148AFE1F00DD0E05 /* ANCoreDataController.m in Sources */,
 				AA7DEFEA148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.m in Sources */,
-				AA7DEFF7148AFEB800DD0E05 /* GTMBase64.m in Sources */,
-				AA7DEFFB148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.m in Sources */,
-				AA7DEFFD148AFEB800DD0E05 /* GTMIPhoneUnitTestMain.m in Sources */,
-				AA7DF001148AFEB800DD0E05 /* GTMSenTestCase.m in Sources */,
+				AA7DEFF7148AFEB800DD0E05 /* ANBase64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,10 +419,7 @@
 				AA7DEFDF148AFDF400DD0E05 /* ClockServices.c in Sources */,
 				AA7DEFE8148AFE1F00DD0E05 /* ANCoreDataController.m in Sources */,
 				AA7DEFEB148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.m in Sources */,
-				AA7DEFF8148AFEB800DD0E05 /* GTMBase64.m in Sources */,
-				AA7DEFFC148AFEB800DD0E05 /* GTMIPhoneUnitTestDelegate.m in Sources */,
-				AA7DEFFE148AFEB800DD0E05 /* GTMIPhoneUnitTestMain.m in Sources */,
-				AA7DF002148AFEB800DD0E05 /* GTMSenTestCase.m in Sources */,
+				AA7DEFF8148AFEB800DD0E05 /* ANBase64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
