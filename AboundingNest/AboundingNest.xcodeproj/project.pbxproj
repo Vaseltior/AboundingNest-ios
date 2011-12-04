@@ -37,6 +37,8 @@
 		AA7DF006148AFF6600DD0E05 /* ANCoreDataHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF005148AFF6600DD0E05 /* ANCoreDataHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA7DF00A148B023800DD0E05 /* ANMemory.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF008148B023800DD0E05 /* ANMemory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA7DF010148B0FD800DD0E05 /* ANCoreHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF00F148B0FD800DD0E05 /* ANCoreHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA7DF013148B28FE00DD0E05 /* ANMathematics.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF012148B28FE00DD0E05 /* ANMathematics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA7DF015148B295200DD0E05 /* ANMathematicsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF014148B295200DD0E05 /* ANMathematicsHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		AA7DF005148AFF6600DD0E05 /* ANCoreDataHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCoreDataHeader.h; sourceTree = "<group>"; };
 		AA7DF008148B023800DD0E05 /* ANMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANMemory.h; sourceTree = "<group>"; };
 		AA7DF00F148B0FD800DD0E05 /* ANCoreHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ANCoreHeader.h; path = Core/ANCoreHeader.h; sourceTree = "<group>"; };
+		AA7DF012148B28FE00DD0E05 /* ANMathematics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANMathematics.h; sourceTree = "<group>"; };
+		AA7DF014148B295200DD0E05 /* ANMathematicsHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANMathematicsHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				AA7DEFD3148AFD8F00DD0E05 /* AboundingNest.h */,
+				AA7DF011148B28FD00DD0E05 /* Mathematics */,
 				AA7DEFE1148AFE1F00DD0E05 /* CoreData */,
 				AA7DEFBB148AF8A200DD0E05 /* Core */,
 				AA7DEF93148AF85C00DD0E05 /* Supporting Files */,
@@ -245,6 +250,15 @@
 			path = Core/ANMemory;
 			sourceTree = "<group>";
 		};
+		AA7DF011148B28FD00DD0E05 /* Mathematics */ = {
+			isa = PBXGroup;
+			children = (
+				AA7DF014148B295200DD0E05 /* ANMathematicsHeader.h */,
+				AA7DF012148B28FE00DD0E05 /* ANMathematics.h */,
+			);
+			path = Mathematics;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -262,6 +276,8 @@
 				AA7DEFF6148AFEB800DD0E05 /* ANBase64.h in Headers */,
 				AA7DEFF9148AFEB800DD0E05 /* ANDefines.h in Headers */,
 				AA7DEFFF148AFEB800DD0E05 /* ANObjectSingleton.h in Headers */,
+				AA7DF015148B295200DD0E05 /* ANMathematicsHeader.h in Headers */,
+				AA7DF013148B28FE00DD0E05 /* ANMathematics.h in Headers */,
 				AA7DF00A148B023800DD0E05 /* ANMemory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +295,7 @@
 				AA7DEF89148AF85C00DD0E05 /* Headers */,
 				AA7DEF8A148AF85C00DD0E05 /* Resources */,
 				AA7DEF8B148AF85C00DD0E05 /* ShellScript */,
+				AA7DF016148B29DA00DD0E05 /* Generate Documentation */,
 			);
 			buildRules = (
 			);
@@ -394,6 +411,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		AA7DF016148B29DA00DD0E05 /* Generate Documentation */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Documentation";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\npwd\ncd ..\n./builddocs.bash\n\necho \"DONE\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

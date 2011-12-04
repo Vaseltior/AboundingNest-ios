@@ -1,9 +1,10 @@
+#!/bin/sh
 
 ######################
 # Clean the existing docs.
 rm -rf docs/docs
 
-appledoc \
+/usr/local/bin/appledoc \
 --project-name AboundingNest \
 --project-version 1.0 \
 --project-company Samuel Grau \
