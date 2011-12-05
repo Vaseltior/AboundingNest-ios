@@ -700,6 +700,7 @@
 				AA7DEFB7148AF85C00DD0E05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA7DEFB8148AF85C00DD0E05 /* Build configuration list for PBXNativeTarget "AboundingNestTests" */ = {
 			isa = XCConfigurationList;
@@ -708,6 +709,7 @@
 				AA7DEFBA148AF85C00DD0E05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
