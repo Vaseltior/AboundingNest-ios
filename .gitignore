@@ -12,6 +12,8 @@ build/
 com.vaseltior.*
 xcodebuild_output
 
+AboundingNest/Frameworks
+
 # OSX Noise
 .DS_Store
 
