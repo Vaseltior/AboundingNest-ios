@@ -607,7 +607,6 @@
 			buildSettings = {
 				ARCHS = (
 					"$(ARCHS_STANDARD_32_BIT)",
-					armv7,
 					armv6,
 				);
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -628,7 +627,6 @@
 			buildSettings = {
 				ARCHS = (
 					"$(ARCHS_STANDARD_32_BIT)",
-					armv7,
 					armv6,
 				);
 				DYLIB_COMPATIBILITY_VERSION = 1;
