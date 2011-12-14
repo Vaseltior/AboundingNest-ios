@@ -625,6 +625,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = (
+					armv7,
 					"$(ARCHS_STANDARD_32_BIT)",
 					armv6,
 				);
@@ -634,6 +635,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AboundingNest/AboundingNest-Prefix.pch";
 				INFOPLIST_FILE = "AboundingNest/AboundingNest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
@@ -644,6 +646,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = (
+					armv7,
 					"$(ARCHS_STANDARD_32_BIT)",
 					armv6,
 				);
@@ -653,6 +656,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AboundingNest/AboundingNest-Prefix.pch";
 				INFOPLIST_FILE = "AboundingNest/AboundingNest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
