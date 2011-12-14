@@ -20,9 +20,6 @@
 		AA7DEFD8148AFDE300DD0E05 /* NSDictionary+AboundingNest.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFD6148AFDE300DD0E05 /* NSDictionary+AboundingNest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA7DEFD9148AFDE300DD0E05 /* NSDictionary+AboundingNest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFD7148AFDE300DD0E05 /* NSDictionary+AboundingNest.m */; };
 		AA7DEFDA148AFDE300DD0E05 /* NSDictionary+AboundingNest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFD7148AFDE300DD0E05 /* NSDictionary+AboundingNest.m */; };
-		AA7DEFDE148AFDF400DD0E05 /* ClockServices.c in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFDC148AFDF400DD0E05 /* ClockServices.c */; };
-		AA7DEFDF148AFDF400DD0E05 /* ClockServices.c in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFDC148AFDF400DD0E05 /* ClockServices.c */; };
-		AA7DEFE0148AFDF400DD0E05 /* ClockServices.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFDD148AFDF400DD0E05 /* ClockServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA7DEFE6148AFE1F00DD0E05 /* ANCoreDataController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFE2148AFE1F00DD0E05 /* ANCoreDataController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA7DEFE7148AFE1F00DD0E05 /* ANCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFE3148AFE1F00DD0E05 /* ANCoreDataController.m */; };
 		AA7DEFE8148AFE1F00DD0E05 /* ANCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFE3148AFE1F00DD0E05 /* ANCoreDataController.m */; };
@@ -96,8 +93,6 @@
 		AA7DEFD3148AFD8F00DD0E05 /* AboundingNest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboundingNest.h; sourceTree = "<group>"; };
 		AA7DEFD6148AFDE300DD0E05 /* NSDictionary+AboundingNest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+AboundingNest.h"; sourceTree = "<group>"; };
 		AA7DEFD7148AFDE300DD0E05 /* NSDictionary+AboundingNest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+AboundingNest.m"; sourceTree = "<group>"; };
-		AA7DEFDC148AFDF400DD0E05 /* ClockServices.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ClockServices.c; sourceTree = "<group>"; };
-		AA7DEFDD148AFDF400DD0E05 /* ClockServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockServices.h; sourceTree = "<group>"; };
 		AA7DEFE2148AFE1F00DD0E05 /* ANCoreDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCoreDataController.h; sourceTree = "<group>"; };
 		AA7DEFE3148AFE1F00DD0E05 /* ANCoreDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANCoreDataController.m; sourceTree = "<group>"; };
 		AA7DEFE4148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCoreDataGrandCentralController.h; sourceTree = "<group>"; };
@@ -229,7 +224,6 @@
 				AA7DF00F148B0FD800DD0E05 /* ANCoreHeader.h */,
 				AA7DF007148B021800DD0E05 /* ANMemory */,
 				AA7DEFEC148AFEB800DD0E05 /* GoogleToolkitForMac */,
-				AA7DEFDB148AFDF400DD0E05 /* Apple */,
 				AA7DEFD5148AFDE300DD0E05 /* Additions */,
 			);
 			name = Core;
@@ -247,16 +241,6 @@
 			);
 			name = Additions;
 			path = Core/Additions;
-			sourceTree = "<group>";
-		};
-		AA7DEFDB148AFDF400DD0E05 /* Apple */ = {
-			isa = PBXGroup;
-			children = (
-				AA7DEFDC148AFDF400DD0E05 /* ClockServices.c */,
-				AA7DEFDD148AFDF400DD0E05 /* ClockServices.h */,
-			);
-			name = Apple;
-			path = Core/Apple;
 			sourceTree = "<group>";
 		};
 		AA7DEFE1148AFE1F00DD0E05 /* CoreData */ = {
@@ -330,7 +314,6 @@
 				AA7DF006148AFF6600DD0E05 /* ANCoreDataHeader.h in Headers */,
 				AA7DF010148B0FD800DD0E05 /* ANCoreHeader.h in Headers */,
 				AA7DEFD8148AFDE300DD0E05 /* NSDictionary+AboundingNest.h in Headers */,
-				AA7DEFE0148AFDF400DD0E05 /* ClockServices.h in Headers */,
 				AA7DEFE6148AFE1F00DD0E05 /* ANCoreDataController.h in Headers */,
 				AA7DEFE9148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.h in Headers */,
 				AA7DEFF6148AFEB800DD0E05 /* ANBase64.h in Headers */,
@@ -502,7 +485,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA7DEFD9148AFDE300DD0E05 /* NSDictionary+AboundingNest.m in Sources */,
-				AA7DEFDE148AFDF400DD0E05 /* ClockServices.c in Sources */,
 				AA7DEFE7148AFE1F00DD0E05 /* ANCoreDataController.m in Sources */,
 				AA7DEFEA148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.m in Sources */,
 				AA7DEFF7148AFEB800DD0E05 /* ANBase64.m in Sources */,
@@ -522,7 +504,6 @@
 			files = (
 				AA7DEFB2148AF85C00DD0E05 /* AboundingNestTests.m in Sources */,
 				AA7DEFDA148AFDE300DD0E05 /* NSDictionary+AboundingNest.m in Sources */,
-				AA7DEFDF148AFDF400DD0E05 /* ClockServices.c in Sources */,
 				AA7DEFE8148AFE1F00DD0E05 /* ANCoreDataController.m in Sources */,
 				AA7DEFEB148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.m in Sources */,
 				AA7DEFF8148AFEB800DD0E05 /* ANBase64.m in Sources */,
@@ -625,8 +606,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = (
-					armv7,
 					"$(ARCHS_STANDARD_32_BIT)",
+					armv7,
 					armv6,
 				);
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -646,8 +627,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = (
-					armv7,
 					"$(ARCHS_STANDARD_32_BIT)",
+					armv7,
 					armv6,
 				);
 				DYLIB_COMPATIBILITY_VERSION = 1;
