@@ -10,7 +10,7 @@
 		AA2967D6149A9CDC00363E44 /* ANTextManipulationHyphenator.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2967D4149A9CDC00363E44 /* ANTextManipulationHyphenator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA2967D7149A9CDC00363E44 /* ANTextManipulationHyphenator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2967D5149A9CDC00363E44 /* ANTextManipulationHyphenator.m */; };
 		AA2967D8149A9CDC00363E44 /* ANTextManipulationHyphenator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2967D5149A9CDC00363E44 /* ANTextManipulationHyphenator.m */; };
-		AA2967DA149A9EB300363E44 /* ANTextManipulationHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2967D9149A9EB300363E44 /* ANTextManipulationHeader.h */; };
+		AA2967DA149A9EB300363E44 /* ANTextManipulationHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2967D9149A9EB300363E44 /* ANTextManipulationHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA2967DF149AA05100363E44 /* hyphens.txt in Resources */ = {isa = PBXBuildFile; fileRef = AA2967DE149AA05100363E44 /* hyphens.txt */; };
 		AA2967E0149AA05100363E44 /* hyphens.txt in Resources */ = {isa = PBXBuildFile; fileRef = AA2967DE149AA05100363E44 /* hyphens.txt */; };
 		AA7DEF91148AF85C00DD0E05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DEF90148AF85C00DD0E05 /* Foundation.framework */; };
@@ -383,8 +383,8 @@
 				AA7DF033148B43AB00DD0E05 /* ANQHTTPOperation.h in Headers */,
 				AA7DF036148B43AB00DD0E05 /* ANQNetworkManager.h in Headers */,
 				AA7DF03B148B448700DD0E05 /* ANQRetryingHTTPOperation.h in Headers */,
-				AA2967D6149A9CDC00363E44 /* ANTextManipulationHyphenator.h in Headers */,
 				AA2967DA149A9EB300363E44 /* ANTextManipulationHeader.h in Headers */,
+				AA2967D6149A9CDC00363E44 /* ANTextManipulationHyphenator.h in Headers */,
 				AA7DF00A148B023800DD0E05 /* ANMemory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

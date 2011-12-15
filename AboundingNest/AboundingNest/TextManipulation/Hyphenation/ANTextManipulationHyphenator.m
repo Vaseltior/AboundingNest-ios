@@ -91,7 +91,7 @@ ANOBJECT_SINGLETON_BOILERPLATE( ANTextManipulationHyphenator, sharedHyphenator )
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- (Boolean)addPattern:(NSString *)aPattern {
+- (BOOL)addPattern:(NSString *)aPattern {
 	NSString *pat = [aPattern stringByTrimmingCharactersInSet:[NSCharacterSet decimalDigitCharacterSet]];
 	NSArray *numbers = [aPattern componentsSeparatedByCharactersInSet:[[NSCharacterSet decimalDigitCharacterSet] invertedSet]];
 	
@@ -109,13 +109,13 @@ ANOBJECT_SINGLETON_BOILERPLATE( ANTextManipulationHyphenator, sharedHyphenator )
 	
 	[points release];
 	
-	return true;
+	return YES;
 }
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- (Boolean)addException:(NSString *)aPattern {
-	return true;
+- (BOOL)addException:(NSString *)aPattern {
+	return YES;
 }
 
 

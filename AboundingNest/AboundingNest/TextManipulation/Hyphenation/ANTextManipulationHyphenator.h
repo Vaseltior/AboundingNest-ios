@@ -50,8 +50,8 @@
  * indicate an acceptable location. Higher numbers are superior over lower
  * numbers.
  */
-- (Boolean)addPattern:(NSString *)aPattern;
-- (Boolean)addException:(NSString *)aPattern;
+- (BOOL)addPattern:(NSString *)aPattern;
+- (BOOL)addException:(NSString *)aPattern;
 
 #pragma mark -
 #pragma mark Singleton object methods
