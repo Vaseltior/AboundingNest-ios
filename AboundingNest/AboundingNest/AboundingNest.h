@@ -13,5 +13,6 @@
 #import "ANCoreDataHeader.h"
 #import "ANMathematicsHeader.h"
 #import "ANOperationsHeader.h"
+#import "ANTextManipulationHeader.h"
 
 #endif
