@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA2967D6149A9CDC00363E44 /* ANTextManipulationHyphenator.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2967D4149A9CDC00363E44 /* ANTextManipulationHyphenator.h */; };
+		AA2967D6149A9CDC00363E44 /* ANTextManipulationHyphenator.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2967D4149A9CDC00363E44 /* ANTextManipulationHyphenator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA2967D7149A9CDC00363E44 /* ANTextManipulationHyphenator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2967D5149A9CDC00363E44 /* ANTextManipulationHyphenator.m */; };
 		AA2967D8149A9CDC00363E44 /* ANTextManipulationHyphenator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2967D5149A9CDC00363E44 /* ANTextManipulationHyphenator.m */; };
 		AA2967DA149A9EB300363E44 /* ANTextManipulationHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2967D9149A9EB300363E44 /* ANTextManipulationHeader.h */; };
@@ -383,9 +383,9 @@
 				AA7DF033148B43AB00DD0E05 /* ANQHTTPOperation.h in Headers */,
 				AA7DF036148B43AB00DD0E05 /* ANQNetworkManager.h in Headers */,
 				AA7DF03B148B448700DD0E05 /* ANQRetryingHTTPOperation.h in Headers */,
-				AA7DF00A148B023800DD0E05 /* ANMemory.h in Headers */,
 				AA2967D6149A9CDC00363E44 /* ANTextManipulationHyphenator.h in Headers */,
 				AA2967DA149A9EB300363E44 /* ANTextManipulationHeader.h in Headers */,
+				AA7DF00A148B023800DD0E05 /* ANMemory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
