@@ -11,6 +11,8 @@
 		AA2967D7149A9CDC00363E44 /* ANTextManipulationHyphenator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2967D5149A9CDC00363E44 /* ANTextManipulationHyphenator.m */; };
 		AA2967D8149A9CDC00363E44 /* ANTextManipulationHyphenator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2967D5149A9CDC00363E44 /* ANTextManipulationHyphenator.m */; };
 		AA2967DA149A9EB300363E44 /* ANTextManipulationHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2967D9149A9EB300363E44 /* ANTextManipulationHeader.h */; };
+		AA2967DF149AA05100363E44 /* hyphens.txt in Resources */ = {isa = PBXBuildFile; fileRef = AA2967DE149AA05100363E44 /* hyphens.txt */; };
+		AA2967E0149AA05100363E44 /* hyphens.txt in Resources */ = {isa = PBXBuildFile; fileRef = AA2967DE149AA05100363E44 /* hyphens.txt */; };
 		AA7DEF91148AF85C00DD0E05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DEF90148AF85C00DD0E05 /* Foundation.framework */; };
 		AA7DEF97148AF85C00DD0E05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA7DEF95148AF85C00DD0E05 /* InfoPlist.strings */; };
 		AA7DEFA0148AF85C00DD0E05 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DEF9F148AF85C00DD0E05 /* SenTestingKit.framework */; };
@@ -85,6 +87,7 @@
 		AA2967D4149A9CDC00363E44 /* ANTextManipulationHyphenator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANTextManipulationHyphenator.h; sourceTree = "<group>"; };
 		AA2967D5149A9CDC00363E44 /* ANTextManipulationHyphenator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANTextManipulationHyphenator.m; sourceTree = "<group>"; };
 		AA2967D9149A9EB300363E44 /* ANTextManipulationHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANTextManipulationHeader.h; sourceTree = "<group>"; };
+		AA2967DE149AA05100363E44 /* hyphens.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hyphens.txt; sourceTree = "<group>"; };
 		AA7DEF8D148AF85C00DD0E05 /* AboundingNest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = AboundingNest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7DEF90148AF85C00DD0E05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AA7DEF94148AF85C00DD0E05 /* AboundingNest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AboundingNest-Info.plist"; sourceTree = "<group>"; };
@@ -172,6 +175,30 @@
 			path = Hyphenation;
 			sourceTree = "<group>";
 		};
+		AA2967DB149AA00400363E44 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA2967DC149AA04200363E44 /* TextManipulation */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AA2967DC149AA04200363E44 /* TextManipulation */ = {
+			isa = PBXGroup;
+			children = (
+				AA2967DD149AA04200363E44 /* HyphenationPatterns */,
+			);
+			path = TextManipulation;
+			sourceTree = "<group>";
+		};
+		AA2967DD149AA04200363E44 /* HyphenationPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				AA2967DE149AA05100363E44 /* hyphens.txt */,
+			);
+			path = HyphenationPatterns;
+			sourceTree = "<group>";
+		};
 		AA7DEF7F148AF85C00DD0E05 = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +231,7 @@
 		AA7DEF92148AF85C00DD0E05 /* AboundingNest */ = {
 			isa = PBXGroup;
 			children = (
+				AA2967DB149AA00400363E44 /* Resources */,
 				AA7DEFD3148AFD8F00DD0E05 /* AboundingNest.h */,
 				AA7DF011148B28FD00DD0E05 /* Mathematics */,
 				AA7DF024148B426700DD0E05 /* Operations */,
@@ -438,6 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA7DEF97148AF85C00DD0E05 /* InfoPlist.strings in Resources */,
+				AA2967DF149AA05100363E44 /* hyphens.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA7DEFAF148AF85C00DD0E05 /* InfoPlist.strings in Resources */,
+				AA2967E0149AA05100363E44 /* hyphens.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
