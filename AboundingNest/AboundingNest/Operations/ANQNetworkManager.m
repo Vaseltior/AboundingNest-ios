@@ -13,11 +13,13 @@
 
 // private properties
 
-@property (atomic, retain, readonly ) NSThread *             networkRunLoopThread;
+@property (atomic, retain, readonly ) NSThread * networkRunLoopThread;
 
-@property (nonatomic, retain, readonly ) NSOperationQueue *     queueForNetworkTransfers;
-@property (nonatomic, retain, readonly ) NSOperationQueue *     queueForNetworkManagement;
-@property (nonatomic, retain, readonly ) NSOperationQueue *     queueForCPU;
+@property (nonatomic, retain, readonly ) NSOperationQueue * queueForNetworkTransfers;
+@property (nonatomic, retain, readonly ) NSOperationQueue * queueForNetworkManagement;
+@property (nonatomic, retain, readonly ) NSOperationQueue * queueForCPU;
+@property (nonatomic, retain, readonly ) NSOperationQueue * queueForCPUBlock;
+
 
 @end
 
@@ -55,6 +57,9 @@ ANOBJECT_SINGLETON_BOILERPLATE(ANQNetworkManager, sharedInstance)
         
         self->_queueForCPU = [[NSOperationQueue alloc] init];
         assert(self->_queueForCPU != nil);
+        
+        self->_queueForCPUBlock = [[NSOperationQueue alloc] init];
+        assert(self->_queueForCPUBlock != nil);
         
         // Create two dictionaries to store the target and action for each queued operation. 
         // Note that we retain the operation and the target but there's no need to retain the 
@@ -193,6 +198,7 @@ ANOBJECT_SINGLETON_BOILERPLATE(ANQNetworkManager, sharedInstance)
 @synthesize queueForNetworkTransfers  = _queueForNetworkTransfers;
 @synthesize queueForNetworkManagement = _queueForNetworkManagement;
 @synthesize queueForCPU               = _queueForCPU;
+@synthesize queueForCPUBlock          = _queueForCPUBlock;
 
 - (void)addOperation:(NSOperation *)operation toQueue:(NSOperationQueue *)queue finishedTarget:(id)target action:(SEL)action
     // Core code to enqueue an operation on a queue.
@@ -299,6 +305,18 @@ ANOBJECT_SINGLETON_BOILERPLATE(ANQNetworkManager, sharedInstance)
     [self addOperation:operation toQueue:self.queueForCPU finishedTarget:target action:action];
 }
 
+- (void)addCPUBlockOperation:(NSBlockOperation *)operation {
+    NSOperationQueue * queue = self.queueForCPUBlock;
+    
+    // any thread
+    assert(operation != nil);
+    
+    // Queue the operation.  When the operation completes, -operationDone: is called.
+    
+    [queue addOperation:operation];
+}
+
+
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
     // any thread
@@ -399,9 +417,9 @@ ANOBJECT_SINGLETON_BOILERPLATE(ANQNetworkManager, sharedInstance)
     }
 }
 
-- (void)cancelOperation:(NSOperation *)operation
+
+- (void)cancelOperation:(NSOperation *)operation {
     // See comment in header.
-{
     id          target;
     SEL         action;
     NSThread *  thread;

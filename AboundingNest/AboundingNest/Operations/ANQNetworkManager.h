@@ -13,6 +13,7 @@
     NSOperationQueue *              _queueForNetworkManagement;
     NSOperationQueue *              _queueForNetworkTransfers;
     NSOperationQueue *              _queueForCPU;
+    NSOperationQueue *              _queueForCPUBlock;
     CFMutableDictionaryRef          _runningOperationToTargetMap;
     CFMutableDictionaryRef          _runningOperationToActionMap;
     CFMutableDictionaryRef          _runningOperationToThreadMap;
@@ -95,6 +96,7 @@
 - (void)addNetworkManagementOperation:(NSOperation *)operation finishedTarget:(id)target action:(SEL)action;
 - (void)addNetworkTransferOperation:(NSOperation *)operation finishedTarget:(id)target action:(SEL)action;
 - (void)addCPUOperation:(NSOperation *)operation finishedTarget:(id)target action:(SEL)action;
+- (void)addCPUBlockOperation:(NSBlockOperation *)operation;
 - (void)cancelOperation:(NSOperation *)operation;
 
 @end
