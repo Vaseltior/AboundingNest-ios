@@ -64,7 +64,7 @@
 		AA7DF03C148B448700DD0E05 /* ANQRetryingHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF03A148B448600DD0E05 /* ANQRetryingHTTPOperation.m */; };
 		AA7DF03D148B448700DD0E05 /* ANQRetryingHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF03A148B448600DD0E05 /* ANQRetryingHTTPOperation.m */; };
 		AA7DF03F148B833B00DD0E05 /* ANOperationsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF03E148B833A00DD0E05 /* ANOperationsHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F525C4BB14B30CEC00099133 /* NSDictionary+Merge.h in Headers */ = {isa = PBXBuildFile; fileRef = F525C4B914B30CEC00099133 /* NSDictionary+Merge.h */; };
+		F525C4BB14B30CEC00099133 /* NSDictionary+Merge.h in Headers */ = {isa = PBXBuildFile; fileRef = F525C4B914B30CEC00099133 /* NSDictionary+Merge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F525C4BC14B30CEC00099133 /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = F525C4BA14B30CEC00099133 /* NSDictionary+Merge.m */; };
 		F525C4BD14B30CEC00099133 /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = F525C4BA14B30CEC00099133 /* NSDictionary+Merge.m */; };
 /* End PBXBuildFile section */
@@ -392,8 +392,8 @@
 				AA7DF03B148B448700DD0E05 /* ANQRetryingHTTPOperation.h in Headers */,
 				AA2967DA149A9EB300363E44 /* ANTextManipulationHeader.h in Headers */,
 				AA2967D6149A9CDC00363E44 /* ANTextManipulationHyphenator.h in Headers */,
-				AA7DF00A148B023800DD0E05 /* ANMemory.h in Headers */,
 				F525C4BB14B30CEC00099133 /* NSDictionary+Merge.h in Headers */,
+				AA7DF00A148B023800DD0E05 /* ANMemory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
