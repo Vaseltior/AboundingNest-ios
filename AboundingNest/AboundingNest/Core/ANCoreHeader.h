@@ -15,6 +15,7 @@
 
 // Core Additions
 #import "NSDictionary+AboundingNest.h"
+#import "NSDictionary+Merge.h"
 #import "NSString+EMail.h"
 #import "NSString+HTML.h"
 
