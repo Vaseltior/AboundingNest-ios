@@ -64,6 +64,9 @@
 		AA7DF03C148B448700DD0E05 /* ANQRetryingHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF03A148B448600DD0E05 /* ANQRetryingHTTPOperation.m */; };
 		AA7DF03D148B448700DD0E05 /* ANQRetryingHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF03A148B448600DD0E05 /* ANQRetryingHTTPOperation.m */; };
 		AA7DF03F148B833B00DD0E05 /* ANOperationsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF03E148B833A00DD0E05 /* ANOperationsHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F525C4BB14B30CEC00099133 /* NSDictionary+Merge.h in Headers */ = {isa = PBXBuildFile; fileRef = F525C4B914B30CEC00099133 /* NSDictionary+Merge.h */; };
+		F525C4BC14B30CEC00099133 /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = F525C4BA14B30CEC00099133 /* NSDictionary+Merge.m */; };
+		F525C4BD14B30CEC00099133 /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = F525C4BA14B30CEC00099133 /* NSDictionary+Merge.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +134,8 @@
 		AA7DF039148B448600DD0E05 /* ANQRetryingHTTPOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANQRetryingHTTPOperation.h; sourceTree = "<group>"; };
 		AA7DF03A148B448600DD0E05 /* ANQRetryingHTTPOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANQRetryingHTTPOperation.m; sourceTree = "<group>"; };
 		AA7DF03E148B833A00DD0E05 /* ANOperationsHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANOperationsHeader.h; sourceTree = "<group>"; };
+		F525C4B914B30CEC00099133 /* NSDictionary+Merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Merge.h"; sourceTree = "<group>"; };
+		F525C4BA14B30CEC00099133 /* NSDictionary+Merge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Merge.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +297,8 @@
 				AA7DF018148B2D1500DD0E05 /* NSString+EMail.m */,
 				AA7DEFD6148AFDE300DD0E05 /* NSDictionary+AboundingNest.h */,
 				AA7DEFD7148AFDE300DD0E05 /* NSDictionary+AboundingNest.m */,
+				F525C4B914B30CEC00099133 /* NSDictionary+Merge.h */,
+				F525C4BA14B30CEC00099133 /* NSDictionary+Merge.m */,
 			);
 			name = Additions;
 			path = Core/Additions;
@@ -386,6 +393,7 @@
 				AA2967DA149A9EB300363E44 /* ANTextManipulationHeader.h in Headers */,
 				AA2967D6149A9CDC00363E44 /* ANTextManipulationHyphenator.h in Headers */,
 				AA7DF00A148B023800DD0E05 /* ANMemory.h in Headers */,
+				F525C4BB14B30CEC00099133 /* NSDictionary+Merge.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +562,7 @@
 				AA7DF037148B43AB00DD0E05 /* ANQNetworkManager.m in Sources */,
 				AA7DF03C148B448700DD0E05 /* ANQRetryingHTTPOperation.m in Sources */,
 				AA2967D7149A9CDC00363E44 /* ANTextManipulationHyphenator.m in Sources */,
+				F525C4BC14B30CEC00099133 /* NSDictionary+Merge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +583,7 @@
 				AA7DF038148B43AB00DD0E05 /* ANQNetworkManager.m in Sources */,
 				AA7DF03D148B448700DD0E05 /* ANQRetryingHTTPOperation.m in Sources */,
 				AA2967D8149A9CDC00363E44 /* ANTextManipulationHyphenator.m in Sources */,
+				F525C4BD14B30CEC00099133 /* NSDictionary+Merge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
