@@ -22,4 +22,6 @@
 // Memory
 #import "ANMemory.h"
 
+#import "ANNSString.h"
+
 #endif

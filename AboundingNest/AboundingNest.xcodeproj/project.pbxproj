@@ -67,6 +67,7 @@
 		F525C4BB14B30CEC00099133 /* NSDictionary+Merge.h in Headers */ = {isa = PBXBuildFile; fileRef = F525C4B914B30CEC00099133 /* NSDictionary+Merge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F525C4BC14B30CEC00099133 /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = F525C4BA14B30CEC00099133 /* NSDictionary+Merge.m */; };
 		F525C4BD14B30CEC00099133 /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = F525C4BA14B30CEC00099133 /* NSDictionary+Merge.m */; };
+		F5E79C4E14CA3D3300FD86CF /* ANNSString.h in Headers */ = {isa = PBXBuildFile; fileRef = F5E79C4D14CA3D3300FD86CF /* ANNSString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,7 @@
 		AA7DF03E148B833A00DD0E05 /* ANOperationsHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANOperationsHeader.h; sourceTree = "<group>"; };
 		F525C4B914B30CEC00099133 /* NSDictionary+Merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Merge.h"; sourceTree = "<group>"; };
 		F525C4BA14B30CEC00099133 /* NSDictionary+Merge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Merge.m"; sourceTree = "<group>"; };
+		F5E79C4D14CA3D3300FD86CF /* ANNSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANNSString.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				AA7DF00F148B0FD800DD0E05 /* ANCoreHeader.h */,
+				F5E79C4C14CA3D3300FD86CF /* ANNStrings */,
 				AA7DF007148B021800DD0E05 /* ANMemory */,
 				AA7DEFEC148AFEB800DD0E05 /* GoogleToolkitForMac */,
 				AA7DEFD5148AFDE300DD0E05 /* Additions */,
@@ -364,6 +367,15 @@
 			path = Operations;
 			sourceTree = "<group>";
 		};
+		F5E79C4C14CA3D3300FD86CF /* ANNStrings */ = {
+			isa = PBXGroup;
+			children = (
+				F5E79C4D14CA3D3300FD86CF /* ANNSString.h */,
+			);
+			name = ANNStrings;
+			path = "../../../../../_Archives/youmag/ios/third-party-libraries/abounding-nest/AboundingNest/AboundingNest/Core/ANNStrings";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -394,6 +406,7 @@
 				AA2967D6149A9CDC00363E44 /* ANTextManipulationHyphenator.h in Headers */,
 				F525C4BB14B30CEC00099133 /* NSDictionary+Merge.h in Headers */,
 				AA7DF00A148B023800DD0E05 /* ANMemory.h in Headers */,
+				F5E79C4E14CA3D3300FD86CF /* ANNSString.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
