@@ -32,7 +32,7 @@
 	return [encodedString autorelease];
 }
 
-- (NSString *)urlEncode {
+- (NSString *)URLEncode {
 	NSString *encodedString = (NSString *)CFURLCreateStringByAddingPercentEscapes(
 																				  NULL,
 																				  (CFStringRef)self,
@@ -41,5 +41,13 @@
 																				  kCFStringEncodingUTF8 );
 	return [encodedString autorelease];
 }
+
+- (NSString*)URLDecode {
+	NSString* urldecodedString = (NSString*)CFURLCreateStringByReplacingPercentEscapes(NULL, 
+                                                                                       (CFStringRef)self, 
+                                                                                       (CFStringRef)@"");
+	return [urldecodedString autorelease];
+}
+
 
 @end

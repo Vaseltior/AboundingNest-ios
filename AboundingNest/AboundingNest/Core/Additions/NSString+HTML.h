@@ -24,6 +24,7 @@
 @interface NSString (HTML)
 
 + (NSString *)stringByURLEncodingString:(NSString *)aString;
-- (NSString *)urlEncode;
+- (NSString *)URLEncode;
+- (NSString *)URLDecode;
 
 @end
