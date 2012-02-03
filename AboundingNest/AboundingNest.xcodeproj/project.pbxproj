@@ -137,7 +137,7 @@
 		AA7DF03E148B833A00DD0E05 /* ANOperationsHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANOperationsHeader.h; sourceTree = "<group>"; };
 		F525C4B914B30CEC00099133 /* NSDictionary+Merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Merge.h"; sourceTree = "<group>"; };
 		F525C4BA14B30CEC00099133 /* NSDictionary+Merge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Merge.m"; sourceTree = "<group>"; };
-		F5E79C4D14CA3D3300FD86CF /* ANNSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANNSString.h; sourceTree = "<group>"; };
+		F5E79C4D14CA3D3300FD86CF /* ANNSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ANNSString.h; path = AboundingNest/Core/ANNStrings/ANNSString.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
