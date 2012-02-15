@@ -20,4 +20,7 @@
 - (void)saveContexts;
 - (void)releaseControllers;
 
++ (NSManagedObjectContext *)managedObjectContextForKey:(NSString *)key
+                                         forMainThread:(BOOL)forMainThread;
+
 @end
