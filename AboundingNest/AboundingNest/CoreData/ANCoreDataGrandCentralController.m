@@ -90,8 +90,17 @@ ANOBJECT_SINGLETON_BOILERPLATE(ANCoreDataGrandCentralController, instance)
 
 
 #pragma GCC diagnostic ignored "-Wselector"
+
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-+ (NSManagedObjectContext *)managedObjectContextForKey:(NSString *)key
+- (void)removeObserveForManagedObjectContext:(NSManagedObjectContext *)moc {
+    NSNotificationCenter * nc = [NSNotificationCenter defaultCenter];
+    [nc removeObserver:self 
+                  name:NSManagedObjectContextDidSaveNotification 
+                object:moc];
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- (NSManagedObjectContext *)managedObjectContextForKey:(NSString *)key
                                          forMainThread:(BOOL)forMainThread {
     
     // Get a blank managed object context
