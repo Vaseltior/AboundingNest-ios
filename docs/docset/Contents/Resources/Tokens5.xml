@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ANQReachabilityOperation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ANQReachabilityOperation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQReachabilityOperation.h</DeclaredIn>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQReachabilityOperation/initWithHostName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQReachabilityOperation.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithHostName:(NSString *)hostName</Declaration>
+			
+			
+			<Anchor>//api/name/initWithHostName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQReachabilityOperation/setHostName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQReachabilityOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *hostName</Declaration>
+			
+			
+			<Anchor>//api/name/hostName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQReachabilityOperation/hostName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQReachabilityOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *hostName</Declaration>
+			
+			
+			<Anchor>//api/name/hostName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQReachabilityOperation/setFlagsTargetMask:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQReachabilityOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readwrite) NSUInteger flagsTargetMask</Declaration>
+			
+			
+			<Anchor>//api/name/flagsTargetMask</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQReachabilityOperation/flagsTargetMask</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQReachabilityOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readwrite) NSUInteger flagsTargetMask</Declaration>
+			
+			
+			<Anchor>//api/name/flagsTargetMask</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQReachabilityOperation/setFlagsTargetValue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQReachabilityOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readwrite) NSUInteger flagsTargetValue</Declaration>
+			
+			
+			<Anchor>//api/name/flagsTargetValue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQReachabilityOperation/flagsTargetValue</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQReachabilityOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readwrite) NSUInteger flagsTargetValue</Declaration>
+			
+			
+			<Anchor>//api/name/flagsTargetValue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQReachabilityOperation/setFlags:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQReachabilityOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSUInteger flags</Declaration>
+			
+			
+			<Anchor>//api/name/flags</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQReachabilityOperation/flags</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQReachabilityOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSUInteger flags</Declaration>
+			
+			
+			<Anchor>//api/name/flags</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQReachabilityOperation/dealloc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQReachabilityOperation.m</DeclaredIn>			
+			
+			<Declaration>- (void)dealloc</Declaration>
+			
+			
+			<Anchor>//api/name/dealloc</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQReachabilityOperation/operationDidStart</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQReachabilityOperation.m</DeclaredIn>			
+			
+			<Declaration>- (void)operationDidStart</Declaration>
+			
+			
+			<Anchor>//api/name/operationDidStart</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQReachabilityOperation/reachabilitySetFlags:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQReachabilityOperation.m</DeclaredIn>			
+			
+			<Declaration>- (void)reachabilitySetFlags:(NSUInteger)newValue</Declaration>
+			
+			
+			<Anchor>//api/name/reachabilitySetFlags:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQReachabilityOperation/operationWillFinish</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQReachabilityOperation.m</DeclaredIn>			
+			
+			<Declaration>- (void)operationWillFinish</Declaration>
+			
+			
+			<Anchor>//api/name/operationWillFinish</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

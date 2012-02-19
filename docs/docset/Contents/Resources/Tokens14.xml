@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ANQHTTPOperationAuthenticationDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ANQHTTPOperationAuthenticationDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQHTTPOperation.h</DeclaredIn>
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ANQHTTPOperationAuthenticationDelegate/httpOperation:canAuthenticateAgainstProtectionSpace:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQHTTPOperation.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)httpOperation:(ANQHTTPOperation *)operation canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *)protectionSpace</Declaration>
+			
+			
+			<Anchor>//api/name/httpOperation:canAuthenticateAgainstProtectionSpace:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ANQHTTPOperationAuthenticationDelegate/httpOperation:didReceiveAuthenticationChallenge:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQHTTPOperation.h</DeclaredIn>			
+			
+			<Declaration>- (void)httpOperation:(ANQHTTPOperation *)operation didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge</Declaration>
+			
+			
+			<Anchor>//api/name/httpOperation:didReceiveAuthenticationChallenge:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

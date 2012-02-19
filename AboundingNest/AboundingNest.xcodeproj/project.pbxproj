@@ -19,7 +19,6 @@
 		AA7DEFA2148AF85C00DD0E05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DEFA1148AF85C00DD0E05 /* UIKit.framework */; };
 		AA7DEFA3148AF85C00DD0E05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DEF90148AF85C00DD0E05 /* Foundation.framework */; };
 		AA7DEFA8148AF85C00DD0E05 /* AboundingNest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DEF8D148AF85C00DD0E05 /* AboundingNest.framework */; };
-		AA7DEFA9148AF85C00DD0E05 /* AboundingNest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DEF8D148AF85C00DD0E05 /* AboundingNest.framework */; };
 		AA7DEFAF148AF85C00DD0E05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA7DEFAD148AF85C00DD0E05 /* InfoPlist.strings */; };
 		AA7DEFB2148AF85C00DD0E05 /* AboundingNestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFB1148AF85C00DD0E05 /* AboundingNestTests.m */; };
 		AA7DEFD4148AFD9000DD0E05 /* AboundingNest.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFD3148AFD8F00DD0E05 /* AboundingNest.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -157,7 +156,6 @@
 				AA7DEFA2148AF85C00DD0E05 /* UIKit.framework in Frameworks */,
 				AA7DEFA3148AF85C00DD0E05 /* Foundation.framework in Frameworks */,
 				AA7DEFA8148AF85C00DD0E05 /* AboundingNest.framework in Frameworks */,
-				AA7DEFA9148AF85C00DD0E05 /* AboundingNest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,7 +458,7 @@
 		AA7DEF81148AF85C00DD0E05 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Samuel Grau";
 			};
 			buildConfigurationList = AA7DEF84148AF85C00DD0E05 /* Build configuration list for PBXProject "AboundingNest" */;
@@ -658,7 +656,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_SHADOW = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -679,7 +677,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_SHADOW = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -697,6 +695,7 @@
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AboundingNest/AboundingNest-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "AboundingNest/AboundingNest-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -717,6 +716,7 @@
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AboundingNest/AboundingNest-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "AboundingNest/AboundingNest-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";

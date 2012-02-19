@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ANCoreDataController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ANCoreDataController</TokenIdentifier>
+			<Abstract type="html">File:  ANCoreDataController.h</Abstract>
+			<DeclaredIn>ANCoreDataController.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANCoreDataController/setManagedObjectContext:</TokenIdentifier>
+			<Abstract type="html">Returns the managed object context for the application.
+If the context doesn't already exist, it is created and bound to the persistent store
+coordinator for the application.</Abstract>
+			<DeclaredIn>ANCoreDataController.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, retain) NSManagedObjectContext *managedObjectContext</Declaration>
+			
+			
+			<Anchor>//api/name/managedObjectContext</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANCoreDataController/managedObjectContext</TokenIdentifier>
+			<Abstract type="html">Returns the managed object context for the application.
+If the context doesn't already exist, it is created and bound to the persistent store
+coordinator for the application.</Abstract>
+			<DeclaredIn>ANCoreDataController.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, retain) NSManagedObjectContext *managedObjectContext</Declaration>
+			
+			
+			<Anchor>//api/name/managedObjectContext</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANCoreDataController/setManagedObjectModel:</TokenIdentifier>
+			<Abstract type="html">Returns the managed object model for the application.
+If the model doesn't already exist, it is created from the application's model.</Abstract>
+			<DeclaredIn>ANCoreDataController.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, retain) NSManagedObjectModel *managedObjectModel</Declaration>
+			
+			
+			<Anchor>//api/name/managedObjectModel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANCoreDataController/managedObjectModel</TokenIdentifier>
+			<Abstract type="html">Returns the managed object model for the application.
+If the model doesn't already exist, it is created from the application's model.</Abstract>
+			<DeclaredIn>ANCoreDataController.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, retain) NSManagedObjectModel *managedObjectModel</Declaration>
+			
+			
+			<Anchor>//api/name/managedObjectModel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANCoreDataController/setPersistentStoreCoordinator:</TokenIdentifier>
+			<Abstract type="html">Returns the persistent store coordinator for the application.
+If the coordinator doesn't already exist, it is created and the application's store added to it.</Abstract>
+			<DeclaredIn>ANCoreDataController.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator</Declaration>
+			
+			
+			<Anchor>//api/name/persistentStoreCoordinator</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANCoreDataController/persistentStoreCoordinator</TokenIdentifier>
+			<Abstract type="html">Returns the persistent store coordinator for the application.
+If the coordinator doesn't already exist, it is created and the application's store added to it.</Abstract>
+			<DeclaredIn>ANCoreDataController.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator</Declaration>
+			
+			
+			<Anchor>//api/name/persistentStoreCoordinator</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANCoreDataController/setResourceFileName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANCoreDataController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *resourceFileName</Declaration>
+			
+			
+			<Anchor>//api/name/resourceFileName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANCoreDataController/resourceFileName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANCoreDataController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *resourceFileName</Declaration>
+			
+			
+			<Anchor>//api/name/resourceFileName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANCoreDataController/setResourceFileExtension:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANCoreDataController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *resourceFileExtension</Declaration>
+			
+			
+			<Anchor>//api/name/resourceFileExtension</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANCoreDataController/resourceFileExtension</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANCoreDataController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *resourceFileExtension</Declaration>
+			
+			
+			<Anchor>//api/name/resourceFileExtension</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANCoreDataController/setPersistentStoreType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANCoreDataController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *persistentStoreType</Declaration>
+			
+			
+			<Anchor>//api/name/persistentStoreType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANCoreDataController/persistentStoreType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANCoreDataController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *persistentStoreType</Declaration>
+			
+			
+			<Anchor>//api/name/persistentStoreType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANCoreDataController/setPersistentStoreName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANCoreDataController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *persistentStoreName</Declaration>
+			
+			
+			<Anchor>//api/name/persistentStoreName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANCoreDataController/persistentStoreName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANCoreDataController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *persistentStoreName</Declaration>
+			
+			
+			<Anchor>//api/name/persistentStoreName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANCoreDataController/saveContext</TokenIdentifier>
+			<Abstract type="html">Saves the current context associated to that controller</Abstract>
+			<DeclaredIn>ANCoreDataController.h</DeclaredIn>			
+			
+			<Declaration>- (void)saveContext</Declaration>
+			
+			
+			<Anchor>//api/name/saveContext</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANCoreDataController/managedObjectContext</TokenIdentifier>
+			<Abstract type="html">Returns the managed object context for the application.
+If the context doesn't already exist, it is created and bound to the persistent store
+coordinator for the application.</Abstract>
+			<DeclaredIn>ANCoreDataController.h</DeclaredIn>			
+			
+			<Declaration>- (NSManagedObjectContext *)managedObjectContext</Declaration>
+			
+			
+			<Anchor>//api/name/managedObjectContext</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANCoreDataController/managedObjectModel</TokenIdentifier>
+			<Abstract type="html">Returns the managed object model for the application.
+If the model doesn't already exist, it is created from the application's model.</Abstract>
+			<DeclaredIn>ANCoreDataController.h</DeclaredIn>			
+			
+			<Declaration>- (NSManagedObjectModel *)managedObjectModel</Declaration>
+			
+			
+			<Anchor>//api/name/managedObjectModel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANCoreDataController/applicationDocumentsDirectory</TokenIdentifier>
+			<Abstract type="html">Returns the URL to the application's Documents directory.</Abstract>
+			<DeclaredIn>ANCoreDataController.h</DeclaredIn>			
+			
+			<Declaration>- (NSURL *)applicationDocumentsDirectory</Declaration>
+			
+			
+			<Anchor>//api/name/applicationDocumentsDirectory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANCoreDataController/lightweightDefaultMigrationOptionsDictionary</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANCoreDataController.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)lightweightDefaultMigrationOptionsDictionary</Declaration>
+			
+			
+			<Anchor>//api/name/lightweightDefaultMigrationOptionsDictionary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANCoreDataController/sqliteStoreOptionsDictionary</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANCoreDataController.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)sqliteStoreOptionsDictionary</Declaration>
+			
+			
+			<Anchor>//api/name/sqliteStoreOptionsDictionary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANCoreDataController/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANCoreDataController.m</DeclaredIn>			
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANCoreDataController/dealloc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANCoreDataController.m</DeclaredIn>			
+			
+			<Declaration>- (void)dealloc</Declaration>
+			
+			
+			<Anchor>//api/name/dealloc</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

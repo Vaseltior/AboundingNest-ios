@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ANQRunLoopOperation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ANQRunLoopOperation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.h</DeclaredIn>
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRunLoopOperation/setRunLoopThread:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readwrite) NSThread *runLoopThread</Declaration>
+			
+			
+			<Anchor>//api/name/runLoopThread</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQRunLoopOperation/runLoopThread</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readwrite) NSThread *runLoopThread</Declaration>
+			
+			
+			<Anchor>//api/name/runLoopThread</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRunLoopOperation/setRunLoopModes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readwrite) NSSet *runLoopModes</Declaration>
+			
+			
+			<Anchor>//api/name/runLoopModes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQRunLoopOperation/runLoopModes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readwrite) NSSet *runLoopModes</Declaration>
+			
+			
+			<Anchor>//api/name/runLoopModes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRunLoopOperation/setError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQRunLoopOperation/error</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRunLoopOperation/setState:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) ANQRunLoopOperationState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQRunLoopOperation/state</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) ANQRunLoopOperationState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRunLoopOperation/setActualRunLoopThread:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSThread *actualRunLoopThread</Declaration>
+			
+			
+			<Anchor>//api/name/actualRunLoopThread</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQRunLoopOperation/actualRunLoopThread</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSThread *actualRunLoopThread</Declaration>
+			
+			
+			<Anchor>//api/name/actualRunLoopThread</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRunLoopOperation/setIsActualRunLoopThread:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isActualRunLoopThread</Declaration>
+			
+			
+			<Anchor>//api/name/isActualRunLoopThread</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQRunLoopOperation/isActualRunLoopThread</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isActualRunLoopThread</Declaration>
+			
+			
+			<Anchor>//api/name/isActualRunLoopThread</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRunLoopOperation/setActualRunLoopModes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSSet *actualRunLoopModes</Declaration>
+			
+			
+			<Anchor>//api/name/actualRunLoopModes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQRunLoopOperation/actualRunLoopModes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSSet *actualRunLoopModes</Declaration>
+			
+			
+			<Anchor>//api/name/actualRunLoopModes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRunLoopOperation/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.m</DeclaredIn>			
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRunLoopOperation/dealloc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.m</DeclaredIn>			
+			
+			<Declaration>- (void)dealloc</Declaration>
+			
+			
+			<Anchor>//api/name/dealloc</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRunLoopOperation/startOnRunLoopThread</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.m</DeclaredIn>			
+			
+			<Declaration>- (void)startOnRunLoopThread</Declaration>
+			
+			
+			<Anchor>//api/name/startOnRunLoopThread</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRunLoopOperation/cancelOnRunLoopThread</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.m</DeclaredIn>			
+			
+			<Declaration>- (void)cancelOnRunLoopThread</Declaration>
+			
+			
+			<Anchor>//api/name/cancelOnRunLoopThread</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRunLoopOperation/finishWithError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.h</DeclaredIn>			
+			
+			<Declaration>- (void)finishWithError:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/finishWithError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRunLoopOperation/operationDidStart</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.h</DeclaredIn>			
+			
+			<Declaration>- (void)operationDidStart</Declaration>
+			
+			
+			<Anchor>//api/name/operationDidStart</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRunLoopOperation/operationWillFinish</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.h</DeclaredIn>			
+			
+			<Declaration>- (void)operationWillFinish</Declaration>
+			
+			
+			<Anchor>//api/name/operationWillFinish</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRunLoopOperation/isConcurrent</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.m</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isConcurrent</Declaration>
+			
+			
+			<Anchor>//api/name/isConcurrent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRunLoopOperation/isExecuting</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.m</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isExecuting</Declaration>
+			
+			
+			<Anchor>//api/name/isExecuting</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRunLoopOperation/isFinished</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.m</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isFinished</Declaration>
+			
+			
+			<Anchor>//api/name/isFinished</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRunLoopOperation/start</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.m</DeclaredIn>			
+			
+			<Declaration>- (void)start</Declaration>
+			
+			
+			<Anchor>//api/name/start</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRunLoopOperation/cancel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRunLoopOperation.m</DeclaredIn>			
+			
+			<Declaration>- (void)cancel</Declaration>
+			
+			
+			<Anchor>//api/name/cancel</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

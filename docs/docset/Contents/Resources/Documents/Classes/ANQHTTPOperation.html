@@ -1,0 +1,1182 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>ANQHTTPOperation Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 752)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AboundingNest </a></h1>
+				<a id="developerHome" href="../index.html">Samuel</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">ANQHTTPOperation Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/URL">&nbsp;&nbsp;&nbsp;&nbsp;URL</option>
+	
+	<option value="//api/name/acceptableContentTypes">&nbsp;&nbsp;&nbsp;&nbsp;acceptableContentTypes</option>
+	
+	<option value="//api/name/acceptableStatusCodes">&nbsp;&nbsp;&nbsp;&nbsp;acceptableStatusCodes</option>
+	
+	<option value="//api/name/authenticationDelegate">&nbsp;&nbsp;&nbsp;&nbsp;authenticationDelegate</option>
+	
+	<option value="//api/name/connection">&nbsp;&nbsp;&nbsp;&nbsp;connection</option>
+	
+	<option value="//api/name/contentTypeAcceptable">&nbsp;&nbsp;&nbsp;&nbsp;contentTypeAcceptable</option>
+	
+	<option value="//api/name/dataAccumulator">&nbsp;&nbsp;&nbsp;&nbsp;dataAccumulator</option>
+	
+	<option value="//api/name/debugDelay">&nbsp;&nbsp;&nbsp;&nbsp;debugDelay</option>
+	
+	<option value="//api/name/debugDelayTimer">&nbsp;&nbsp;&nbsp;&nbsp;debugDelayTimer</option>
+	
+	<option value="//api/name/debugError">&nbsp;&nbsp;&nbsp;&nbsp;debugError</option>
+	
+	<option value="//api/name/defaultResponseSize">&nbsp;&nbsp;&nbsp;&nbsp;defaultResponseSize</option>
+	
+	<option value="//api/name/firstData">&nbsp;&nbsp;&nbsp;&nbsp;firstData</option>
+	
+	<option value="//api/name/lastRequest">&nbsp;&nbsp;&nbsp;&nbsp;lastRequest</option>
+	
+	<option value="//api/name/lastResponse">&nbsp;&nbsp;&nbsp;&nbsp;lastResponse</option>
+	
+	<option value="//api/name/maximumResponseSize">&nbsp;&nbsp;&nbsp;&nbsp;maximumResponseSize</option>
+	
+	<option value="//api/name/request">&nbsp;&nbsp;&nbsp;&nbsp;request</option>
+	
+	<option value="//api/name/responseBody">&nbsp;&nbsp;&nbsp;&nbsp;responseBody</option>
+	
+	<option value="//api/name/responseOutputStream">&nbsp;&nbsp;&nbsp;&nbsp;responseOutputStream</option>
+	
+	<option value="//api/name/statusCodeAcceptable">&nbsp;&nbsp;&nbsp;&nbsp;statusCodeAcceptable</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/automaticallyNotifiesObserversOfAcceptableContentTypes">&nbsp;&nbsp;&nbsp;&nbsp;+ automaticallyNotifiesObserversOfAcceptableContentTypes</option>
+	
+	<option value="//api/name/automaticallyNotifiesObserversOfAcceptableStatusCodes">&nbsp;&nbsp;&nbsp;&nbsp;+ automaticallyNotifiesObserversOfAcceptableStatusCodes</option>
+	
+	<option value="//api/name/automaticallyNotifiesObserversOfAuthenticationDelegate">&nbsp;&nbsp;&nbsp;&nbsp;+ automaticallyNotifiesObserversOfAuthenticationDelegate</option>
+	
+	<option value="//api/name/automaticallyNotifiesObserversOfDefaultResponseSize">&nbsp;&nbsp;&nbsp;&nbsp;+ automaticallyNotifiesObserversOfDefaultResponseSize</option>
+	
+	<option value="//api/name/automaticallyNotifiesObserversOfMaximumResponseSize">&nbsp;&nbsp;&nbsp;&nbsp;+ automaticallyNotifiesObserversOfMaximumResponseSize</option>
+	
+	<option value="//api/name/automaticallyNotifiesObserversOfResponseOutputStream">&nbsp;&nbsp;&nbsp;&nbsp;+ automaticallyNotifiesObserversOfResponseOutputStream</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/connection:canAuthenticateAgainstProtectionSpace:">&nbsp;&nbsp;&nbsp;&nbsp;- connection:canAuthenticateAgainstProtectionSpace:</option>
+	
+	<option value="//api/name/connection:didFailWithError:">&nbsp;&nbsp;&nbsp;&nbsp;- connection:didFailWithError:</option>
+	
+	<option value="//api/name/connection:didReceiveAuthenticationChallenge:">&nbsp;&nbsp;&nbsp;&nbsp;- connection:didReceiveAuthenticationChallenge:</option>
+	
+	<option value="//api/name/connection:didReceiveData:">&nbsp;&nbsp;&nbsp;&nbsp;- connection:didReceiveData:</option>
+	
+	<option value="//api/name/connection:didReceiveResponse:">&nbsp;&nbsp;&nbsp;&nbsp;- connection:didReceiveResponse:</option>
+	
+	<option value="//api/name/connection:willSendRequest:redirectResponse:">&nbsp;&nbsp;&nbsp;&nbsp;- connection:willSendRequest:redirectResponse:</option>
+	
+	<option value="//api/name/connectionDidFinishLoading:">&nbsp;&nbsp;&nbsp;&nbsp;- connectionDidFinishLoading:</option>
+	
+	<option value="//api/name/dealloc">&nbsp;&nbsp;&nbsp;&nbsp;- dealloc</option>
+	
+	<option value="//api/name/debugDelayTimerDone:">&nbsp;&nbsp;&nbsp;&nbsp;- debugDelayTimerDone:</option>
+	
+	<option value="//api/name/finishWithError:">&nbsp;&nbsp;&nbsp;&nbsp;- finishWithError:</option>
+	
+	<option value="//api/name/initWithRequest:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithRequest:</option>
+	
+	<option value="//api/name/initWithURL:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithURL:</option>
+	
+	<option value="//api/name/operationDidStart">&nbsp;&nbsp;&nbsp;&nbsp;- operationDidStart</option>
+	
+	<option value="//api/name/operationWillFinish">&nbsp;&nbsp;&nbsp;&nbsp;- operationWillFinish</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Extension Methods">Extension Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/URL">URL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/acceptableContentTypes">acceptableContentTypes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/acceptableStatusCodes">acceptableStatusCodes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/authenticationDelegate">authenticationDelegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connection">connection</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentTypeAcceptable">contentTypeAcceptable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataAccumulator">dataAccumulator</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/debugDelay">debugDelay</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/debugDelayTimer">debugDelayTimer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/debugError">debugError</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultResponseSize">defaultResponseSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/firstData">firstData</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lastRequest">lastRequest</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lastResponse">lastResponse</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maximumResponseSize">maximumResponseSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/request">request</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/responseBody">responseBody</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/responseOutputStream">responseOutputStream</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/statusCodeAcceptable">statusCodeAcceptable</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/automaticallyNotifiesObserversOfAcceptableContentTypes">automaticallyNotifiesObserversOfAcceptableContentTypes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/automaticallyNotifiesObserversOfAcceptableStatusCodes">automaticallyNotifiesObserversOfAcceptableStatusCodes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/automaticallyNotifiesObserversOfAuthenticationDelegate">automaticallyNotifiesObserversOfAuthenticationDelegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/automaticallyNotifiesObserversOfDefaultResponseSize">automaticallyNotifiesObserversOfDefaultResponseSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/automaticallyNotifiesObserversOfMaximumResponseSize">automaticallyNotifiesObserversOfMaximumResponseSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/automaticallyNotifiesObserversOfResponseOutputStream">automaticallyNotifiesObserversOfResponseOutputStream</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connection:canAuthenticateAgainstProtectionSpace:">connection:canAuthenticateAgainstProtectionSpace:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connection:didFailWithError:">connection:didFailWithError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connection:didReceiveAuthenticationChallenge:">connection:didReceiveAuthenticationChallenge:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connection:didReceiveData:">connection:didReceiveData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connection:didReceiveResponse:">connection:didReceiveResponse:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connection:willSendRequest:redirectResponse:">connection:willSendRequest:redirectResponse:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectionDidFinishLoading:">connectionDidFinishLoading:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dealloc">dealloc</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/debugDelayTimerDone:">debugDelayTimerDone:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/finishWithError:">finishWithError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithRequest:">initWithRequest:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithURL:">initWithURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/operationDidStart">operationDidStart</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/operationWillFinish">operationWillFinish</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="ANQHTTPOperation Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">ANQHTTPOperation Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/ANQRunLoopOperation.html">ANQRunLoopOperation</a> : NSOperation</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">ANQHTTPOperation.h<br />ANQHTTPOperation.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<pre><code>ANQHTTPOperation is a general purpose NSOperation that runs an HTTP request. 
+You initialise it with an HTTP request and then, when you run the operation, 
+it sends the request and gathers the response.  It is quite a complex 
+object because it handles a wide variety of edge cases, but it's very 
+easy to use in simple cases:
+
+1. create the operation with the URL you want to get
+
+op = [[[ANQHTTPOperation alloc] initWithURL:url] autorelease];
+
+2. set up any non-default parameters, for example, set which HTTP 
+   content types are acceptable
+
+op.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+
+3. enqueue the operation
+
+[queue addOperation:op];
+
+4. finally, when the operation is done, use the lastResponse and 
+   error properties to find out how things went
+
+As mentioned above, ANQHTTPOperation is very general purpose.  There are a 
+large number of configuration and result options available to you.
+
+o You can specify a NSURLRequest rather than just a URL.
+
+o You can configure the run loop and modes on which the NSURLConnection is 
+  scheduled.
+
+o You can specify what HTTP status codes and content types are OK.
+
+o You can set an authentication delegate to handle authentication challenges.
+
+o You can accumulate responses in memory or in an NSOutputStream. 
+
+o For in-memory responses, you can specify a default response size 
+  (used to size the response buffer) and a maximum response size 
+  (to prevent unbounded memory use).
+
+o You can get at the last request and the last response, to track 
+  redirects.
+
+o There are a variety of funky debugging options to simulator errors 
+  and delays.
+
+Finally, it's perfectly reasonable to subclass QHTTPOperation to meet you 
+own specific needs.  Specifically, it's common for the subclass to 
+override connection:didReceiveResponse: in order to setup the output 
+stream based on the specific details of the response.
+</code></pre>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithRequest:">&ndash;&nbsp;initWithRequest:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithURL:">&ndash;&nbsp;initWithURL:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/request">&nbsp;&nbsp;request</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/URL">&nbsp;&nbsp;URL</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/acceptableStatusCodes">&nbsp;&nbsp;acceptableStatusCodes</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/acceptableContentTypes">&nbsp;&nbsp;acceptableContentTypes</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/authenticationDelegate">&nbsp;&nbsp;authenticationDelegate</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/debugError">&nbsp;&nbsp;debugError</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/debugDelay">&nbsp;&nbsp;debugDelay</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/responseOutputStream">&nbsp;&nbsp;responseOutputStream</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultResponseSize">&nbsp;&nbsp;defaultResponseSize</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maximumResponseSize">&nbsp;&nbsp;maximumResponseSize</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/statusCodeAcceptable">&nbsp;&nbsp;statusCodeAcceptable</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contentTypeAcceptable">&nbsp;&nbsp;contentTypeAcceptable</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lastRequest">&nbsp;&nbsp;lastRequest</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lastResponse">&nbsp;&nbsp;lastResponse</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/responseBody">&nbsp;&nbsp;responseBody</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dealloc">&ndash;&nbsp;dealloc</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/automaticallyNotifiesObserversOfAuthenticationDelegate">+&nbsp;automaticallyNotifiesObserversOfAuthenticationDelegate</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/automaticallyNotifiesObserversOfAcceptableStatusCodes">+&nbsp;automaticallyNotifiesObserversOfAcceptableStatusCodes</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/automaticallyNotifiesObserversOfAcceptableContentTypes">+&nbsp;automaticallyNotifiesObserversOfAcceptableContentTypes</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/automaticallyNotifiesObserversOfResponseOutputStream">+&nbsp;automaticallyNotifiesObserversOfResponseOutputStream</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/automaticallyNotifiesObserversOfDefaultResponseSize">+&nbsp;automaticallyNotifiesObserversOfDefaultResponseSize</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/automaticallyNotifiesObserversOfMaximumResponseSize">+&nbsp;automaticallyNotifiesObserversOfMaximumResponseSize</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/operationDidStart">&ndash;&nbsp;operationDidStart</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/operationWillFinish">&ndash;&nbsp;operationWillFinish</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/finishWithError:">&ndash;&nbsp;finishWithError:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/debugDelayTimerDone:">&ndash;&nbsp;debugDelayTimerDone:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connection:canAuthenticateAgainstProtectionSpace:">&ndash;&nbsp;connection:canAuthenticateAgainstProtectionSpace:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connection:didReceiveAuthenticationChallenge:">&ndash;&nbsp;connection:didReceiveAuthenticationChallenge:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connection:willSendRequest:redirectResponse:">&ndash;&nbsp;connection:willSendRequest:redirectResponse:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connection:didReceiveResponse:">&ndash;&nbsp;connection:didReceiveResponse:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connection:didReceiveData:">&ndash;&nbsp;connection:didReceiveData:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectionDidFinishLoading:">&ndash;&nbsp;connectionDidFinishLoading:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connection:didFailWithError:">&ndash;&nbsp;connection:didFailWithError:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h3 class="subsubtitle task-title">Extension Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connection">&nbsp;&nbsp;connection</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/firstData">&nbsp;&nbsp;firstData</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataAccumulator">&nbsp;&nbsp;dataAccumulator</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/debugDelayTimer">&nbsp;&nbsp;debugDelayTimer</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/URL" title="URL"></a>
+	<h3 class="subsubtitle method-title">URL</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/acceptableContentTypes" title="acceptableContentTypes"></a>
+	<h3 class="subsubtitle method-title">acceptableContentTypes</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/acceptableStatusCodes" title="acceptableStatusCodes"></a>
+	<h3 class="subsubtitle method-title">acceptableStatusCodes</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/authenticationDelegate" title="authenticationDelegate"></a>
+	<h3 class="subsubtitle method-title">authenticationDelegate</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connection" title="connection"></a>
+	<h3 class="subsubtitle method-title">connection</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/contentTypeAcceptable" title="contentTypeAcceptable"></a>
+	<h3 class="subsubtitle method-title">contentTypeAcceptable</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataAccumulator" title="dataAccumulator"></a>
+	<h3 class="subsubtitle method-title">dataAccumulator</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/debugDelay" title="debugDelay"></a>
+	<h3 class="subsubtitle method-title">debugDelay</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/debugDelayTimer" title="debugDelayTimer"></a>
+	<h3 class="subsubtitle method-title">debugDelayTimer</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/debugError" title="debugError"></a>
+	<h3 class="subsubtitle method-title">debugError</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultResponseSize" title="defaultResponseSize"></a>
+	<h3 class="subsubtitle method-title">defaultResponseSize</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/firstData" title="firstData"></a>
+	<h3 class="subsubtitle method-title">firstData</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lastRequest" title="lastRequest"></a>
+	<h3 class="subsubtitle method-title">lastRequest</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lastResponse" title="lastResponse"></a>
+	<h3 class="subsubtitle method-title">lastResponse</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maximumResponseSize" title="maximumResponseSize"></a>
+	<h3 class="subsubtitle method-title">maximumResponseSize</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/request" title="request"></a>
+	<h3 class="subsubtitle method-title">request</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/responseBody" title="responseBody"></a>
+	<h3 class="subsubtitle method-title">responseBody</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/responseOutputStream" title="responseOutputStream"></a>
+	<h3 class="subsubtitle method-title">responseOutputStream</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/statusCodeAcceptable" title="statusCodeAcceptable"></a>
+	<h3 class="subsubtitle method-title">statusCodeAcceptable</h3>
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/automaticallyNotifiesObserversOfAcceptableContentTypes" title="automaticallyNotifiesObserversOfAcceptableContentTypes"></a>
+	<h3 class="subsubtitle method-title">automaticallyNotifiesObserversOfAcceptableContentTypes</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/automaticallyNotifiesObserversOfAcceptableStatusCodes" title="automaticallyNotifiesObserversOfAcceptableStatusCodes"></a>
+	<h3 class="subsubtitle method-title">automaticallyNotifiesObserversOfAcceptableStatusCodes</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/automaticallyNotifiesObserversOfAuthenticationDelegate" title="automaticallyNotifiesObserversOfAuthenticationDelegate"></a>
+	<h3 class="subsubtitle method-title">automaticallyNotifiesObserversOfAuthenticationDelegate</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/automaticallyNotifiesObserversOfDefaultResponseSize" title="automaticallyNotifiesObserversOfDefaultResponseSize"></a>
+	<h3 class="subsubtitle method-title">automaticallyNotifiesObserversOfDefaultResponseSize</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/automaticallyNotifiesObserversOfMaximumResponseSize" title="automaticallyNotifiesObserversOfMaximumResponseSize"></a>
+	<h3 class="subsubtitle method-title">automaticallyNotifiesObserversOfMaximumResponseSize</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/automaticallyNotifiesObserversOfResponseOutputStream" title="automaticallyNotifiesObserversOfResponseOutputStream"></a>
+	<h3 class="subsubtitle method-title">automaticallyNotifiesObserversOfResponseOutputStream</h3>
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/connection:canAuthenticateAgainstProtectionSpace:" title="connection:canAuthenticateAgainstProtectionSpace:"></a>
+	<h3 class="subsubtitle method-title">connection:canAuthenticateAgainstProtectionSpace:</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connection:didFailWithError:" title="connection:didFailWithError:"></a>
+	<h3 class="subsubtitle method-title">connection:didFailWithError:</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connection:didReceiveAuthenticationChallenge:" title="connection:didReceiveAuthenticationChallenge:"></a>
+	<h3 class="subsubtitle method-title">connection:didReceiveAuthenticationChallenge:</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connection:didReceiveData:" title="connection:didReceiveData:"></a>
+	<h3 class="subsubtitle method-title">connection:didReceiveData:</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connection:didReceiveResponse:" title="connection:didReceiveResponse:"></a>
+	<h3 class="subsubtitle method-title">connection:didReceiveResponse:</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connection:willSendRequest:redirectResponse:" title="connection:willSendRequest:redirectResponse:"></a>
+	<h3 class="subsubtitle method-title">connection:willSendRequest:redirectResponse:</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectionDidFinishLoading:" title="connectionDidFinishLoading:"></a>
+	<h3 class="subsubtitle method-title">connectionDidFinishLoading:</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dealloc" title="dealloc"></a>
+	<h3 class="subsubtitle method-title">dealloc</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/debugDelayTimerDone:" title="debugDelayTimerDone:"></a>
+	<h3 class="subsubtitle method-title">debugDelayTimerDone:</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/finishWithError:" title="finishWithError:"></a>
+	<h3 class="subsubtitle method-title">finishWithError:</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithRequest:" title="initWithRequest:"></a>
+	<h3 class="subsubtitle method-title">initWithRequest:</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithURL:" title="initWithURL:"></a>
+	<h3 class="subsubtitle method-title">initWithURL:</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/operationDidStart" title="operationDidStart"></a>
+	<h3 class="subsubtitle method-title">operationDidStart</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/operationWillFinish" title="operationWillFinish"></a>
+	<h3 class="subsubtitle method-title">operationWillFinish</h3>
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Samuel. All rights reserved. (Last updated: 2012-02-19)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

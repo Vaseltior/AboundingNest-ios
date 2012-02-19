@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ANQRetryingHTTPOperation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ANQRetryingHTTPOperation</TokenIdentifier>
+			<Abstract type="html">    RetryingHTTPOperation is a run loop based concurrent operation that initiates 
+    an HTTP request and handles retrying the request if it fails.  There are a bunch 
+    of important points to note:
+      
+    o You should only use this class for idempotent requests, that is, requests that 
+      won't cause problems if they are retried.  See RFC 2616 for more info on this topic.
+      
+      http://www.ietf.org/rfc/rfc2616.txt
+    
+    o It only retries requests where the result is likely to change.  For example, 
+      there's no point retrying after an HTTP 404 status code.  The (private) method 
+      shouldRetryAfterError: controls what will and won't be retried.</Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.h</DeclaredIn>
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/initWithRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithRequest:(NSURLRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/initWithRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/setRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSURLRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQRetryingHTTPOperation/request</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSURLRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/setAcceptableContentTypes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readwrite) NSSet *acceptableContentTypes</Declaration>
+			
+			
+			<Anchor>//api/name/acceptableContentTypes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQRetryingHTTPOperation/acceptableContentTypes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readwrite) NSSet *acceptableContentTypes</Declaration>
+			
+			
+			<Anchor>//api/name/acceptableContentTypes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/setResponseFilePath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readwrite) NSString *responseFilePath</Declaration>
+			
+			
+			<Anchor>//api/name/responseFilePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQRetryingHTTPOperation/responseFilePath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readwrite) NSString *responseFilePath</Declaration>
+			
+			
+			<Anchor>//api/name/responseFilePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/setRetryState:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) ANQRetryingHTTPOperationState retryState</Declaration>
+			
+			
+			<Anchor>//api/name/retryState</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQRetryingHTTPOperation/retryState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) ANQRetryingHTTPOperationState retryState</Declaration>
+			
+			
+			<Anchor>//api/name/retryState</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/setRetryStateClient:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) ANQRetryingHTTPOperationState retryStateClient</Declaration>
+			
+			
+			<Anchor>//api/name/retryStateClient</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQRetryingHTTPOperation/retryStateClient</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) ANQRetryingHTTPOperationState retryStateClient</Declaration>
+			
+			
+			<Anchor>//api/name/retryStateClient</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/setHasHadRetryableFailure:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL hasHadRetryableFailure</Declaration>
+			
+			
+			<Anchor>//api/name/hasHadRetryableFailure</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQRetryingHTTPOperation/hasHadRetryableFailure</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL hasHadRetryableFailure</Declaration>
+			
+			
+			<Anchor>//api/name/hasHadRetryableFailure</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/setRetryCount:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSUInteger retryCount</Declaration>
+			
+			
+			<Anchor>//api/name/retryCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQRetryingHTTPOperation/retryCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSUInteger retryCount</Declaration>
+			
+			
+			<Anchor>//api/name/retryCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/setResponseMIMEType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *responseMIMEType</Declaration>
+			
+			
+			<Anchor>//api/name/responseMIMEType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQRetryingHTTPOperation/responseMIMEType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *responseMIMEType</Declaration>
+			
+			
+			<Anchor>//api/name/responseMIMEType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/setResponseContent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSData *responseContent</Declaration>
+			
+			
+			<Anchor>//api/name/responseContent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQRetryingHTTPOperation/responseContent</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSData *responseContent</Declaration>
+			
+			
+			<Anchor>//api/name/responseContent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/dealloc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>- (void)dealloc</Declaration>
+			
+			
+			<Anchor>//api/name/dealloc</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/syncRetryStateClient</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>- (void)syncRetryStateClient</Declaration>
+			
+			
+			<Anchor>//api/name/syncRetryStateClient</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/setHasHadRetryableFailureOnMainThread</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>- (void)setHasHadRetryableFailureOnMainThread</Declaration>
+			
+			
+			<Anchor>//api/name/setHasHadRetryableFailureOnMainThread</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/shouldRetryAfterError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>- (BOOL)shouldRetryAfterError:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/shouldRetryAfterError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/retryDelayWithinRangeAtIndex:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>- (NSTimeInterval)retryDelayWithinRangeAtIndex:(NSUInteger)rangeIndex</Declaration>
+			
+			
+			<Anchor>//api/name/retryDelayWithinRangeAtIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/shortRetryDelay</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>- (NSTimeInterval)shortRetryDelay</Declaration>
+			
+			
+			<Anchor>//api/name/shortRetryDelay</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/randomRetryDelay</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>- (NSTimeInterval)randomRetryDelay</Declaration>
+			
+			
+			<Anchor>//api/name/randomRetryDelay</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/operationDidStart</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>- (void)operationDidStart</Declaration>
+			
+			
+			<Anchor>//api/name/operationDidStart</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/startRequest</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>- (void)startRequest</Declaration>
+			
+			
+			<Anchor>//api/name/startRequest</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/networkOperationDone:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>- (void)networkOperationDone:(ANQHTTPOperation *)operation</Declaration>
+			
+			
+			<Anchor>//api/name/networkOperationDone:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/transferDidSucceed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>- (void)transferDidSucceed:(NSNotification *)note</Declaration>
+			
+			
+			<Anchor>//api/name/transferDidSucceed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/transferDidSucceedOnRunLoopThread</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>- (void)transferDidSucceedOnRunLoopThread</Declaration>
+			
+			
+			<Anchor>//api/name/transferDidSucceedOnRunLoopThread</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/startRetryAfterTimeInterval:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>- (void)startRetryAfterTimeInterval:(NSTimeInterval)delay</Declaration>
+			
+			
+			<Anchor>//api/name/startRetryAfterTimeInterval:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/retryTimerDone:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>- (void)retryTimerDone:(NSTimer *)timer</Declaration>
+			
+			
+			<Anchor>//api/name/retryTimerDone:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/startReachabilityReachable:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>- (void)startReachabilityReachable:(BOOL)reachable</Declaration>
+			
+			
+			<Anchor>//api/name/startReachabilityReachable:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/reachabilityOperationDone:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>- (void)reachabilityOperationDone:(ANQReachabilityOperation *)operation</Declaration>
+			
+			
+			<Anchor>//api/name/reachabilityOperationDone:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/operationWillFinish</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>- (void)operationWillFinish</Declaration>
+			
+			
+			<Anchor>//api/name/operationWillFinish</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/setResponse:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readwrite) NSHTTPURLResponse *response</Declaration>
+			
+			
+			<Anchor>//api/name/response</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQRetryingHTTPOperation/response</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readwrite) NSHTTPURLResponse *response</Declaration>
+			
+			
+			<Anchor>//api/name/response</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/setNetworkOperation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readwrite) ANQHTTPOperation *networkOperation</Declaration>
+			
+			
+			<Anchor>//api/name/networkOperation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQRetryingHTTPOperation/networkOperation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readwrite) ANQHTTPOperation *networkOperation</Declaration>
+			
+			
+			<Anchor>//api/name/networkOperation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/setRetryTimer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readwrite) NSTimer *retryTimer</Declaration>
+			
+			
+			<Anchor>//api/name/retryTimer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQRetryingHTTPOperation/retryTimer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readwrite) NSTimer *retryTimer</Declaration>
+			
+			
+			<Anchor>//api/name/retryTimer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/setReachabilityOperation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readwrite) ANQReachabilityOperation *reachabilityOperation</Declaration>
+			
+			
+			<Anchor>//api/name/reachabilityOperation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQRetryingHTTPOperation/reachabilityOperation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readwrite) ANQReachabilityOperation *reachabilityOperation</Declaration>
+			
+			
+			<Anchor>//api/name/reachabilityOperation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQRetryingHTTPOperation/setNotificationInstalled:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readwrite) BOOL notificationInstalled</Declaration>
+			
+			
+			<Anchor>//api/name/notificationInstalled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQRetryingHTTPOperation/notificationInstalled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQRetryingHTTPOperation.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readwrite) BOOL notificationInstalled</Declaration>
+			
+			
+			<Anchor>//api/name/notificationInstalled</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

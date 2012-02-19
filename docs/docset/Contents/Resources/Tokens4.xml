@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ANQNetworkManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ANQNetworkManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.h</DeclaredIn>
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ANQNetworkManager/sharedInstance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.h</DeclaredIn>			
+			
+			<Declaration>+ (ANQNetworkManager *)sharedInstance</Declaration>
+			
+			
+			<Anchor>//api/name/sharedInstance</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQNetworkManager/requestToGetURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.h</DeclaredIn>			
+			
+			<Declaration>- (NSMutableURLRequest *)requestToGetURL:(NSURL *)url</Declaration>
+			
+			
+			<Anchor>//api/name/requestToGetURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQNetworkManager/setNetworkInUse:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL networkInUse</Declaration>
+			
+			
+			<Anchor>//api/name/networkInUse</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQNetworkManager/networkInUse</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL networkInUse</Declaration>
+			
+			
+			<Anchor>//api/name/networkInUse</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQNetworkManager/addNetworkManagementOperation:finishedTarget:action:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)addNetworkManagementOperation:(NSOperation *)operation finishedTarget:(id)target action:(SEL)action</Declaration>
+			
+			
+			<Anchor>//api/name/addNetworkManagementOperation:finishedTarget:action:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQNetworkManager/addNetworkTransferOperation:finishedTarget:action:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)addNetworkTransferOperation:(NSOperation *)operation finishedTarget:(id)target action:(SEL)action</Declaration>
+			
+			
+			<Anchor>//api/name/addNetworkTransferOperation:finishedTarget:action:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQNetworkManager/addCPUOperation:finishedTarget:action:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)addCPUOperation:(NSOperation *)operation finishedTarget:(id)target action:(SEL)action</Declaration>
+			
+			
+			<Anchor>//api/name/addCPUOperation:finishedTarget:action:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQNetworkManager/addCPUBlockOperation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)addCPUBlockOperation:(NSBlockOperation *)operation</Declaration>
+			
+			
+			<Anchor>//api/name/addCPUBlockOperation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQNetworkManager/cancelOperation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)cancelOperation:(NSOperation *)operation</Declaration>
+			
+			
+			<Anchor>//api/name/cancelOperation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQNetworkManager/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.m</DeclaredIn>			
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQNetworkManager/dealloc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)dealloc</Declaration>
+			
+			
+			<Anchor>//api/name/dealloc</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQNetworkManager/networkRunLoopThreadEntry</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)networkRunLoopThreadEntry</Declaration>
+			
+			
+			<Anchor>//api/name/networkRunLoopThreadEntry</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQNetworkManager/incrementRunningNetworkTransferCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)incrementRunningNetworkTransferCount</Declaration>
+			
+			
+			<Anchor>//api/name/incrementRunningNetworkTransferCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQNetworkManager/decrementRunningNetworkTransferCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)decrementRunningNetworkTransferCount</Declaration>
+			
+			
+			<Anchor>//api/name/decrementRunningNetworkTransferCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQNetworkManager/addOperation:toQueue:finishedTarget:action:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)addOperation:(NSOperation *)operation toQueue:(NSOperationQueue *)queue finishedTarget:(id)target action:(SEL)action</Declaration>
+			
+			
+			<Anchor>//api/name/addOperation:toQueue:finishedTarget:action:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQNetworkManager/observeValueForKeyPath:ofObject:change:context:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context</Declaration>
+			
+			
+			<Anchor>//api/name/observeValueForKeyPath:ofObject:change:context:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQNetworkManager/operationDone:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.m</DeclaredIn>			
+			
+			<Declaration>- (void)operationDone:(NSOperation *)operation</Declaration>
+			
+			
+			<Anchor>//api/name/operationDone:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQNetworkManager/setNetworkRunLoopThread:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.m</DeclaredIn>			
+			
+			<Declaration>@property (atomic, retain, readonly) NSThread *networkRunLoopThread</Declaration>
+			
+			
+			<Anchor>//api/name/networkRunLoopThread</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQNetworkManager/networkRunLoopThread</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.m</DeclaredIn>			
+			
+			<Declaration>@property (atomic, retain, readonly) NSThread *networkRunLoopThread</Declaration>
+			
+			
+			<Anchor>//api/name/networkRunLoopThread</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQNetworkManager/setQueueForNetworkTransfers:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSOperationQueue *queueForNetworkTransfers</Declaration>
+			
+			
+			<Anchor>//api/name/queueForNetworkTransfers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQNetworkManager/queueForNetworkTransfers</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSOperationQueue *queueForNetworkTransfers</Declaration>
+			
+			
+			<Anchor>//api/name/queueForNetworkTransfers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQNetworkManager/setQueueForNetworkManagement:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSOperationQueue *queueForNetworkManagement</Declaration>
+			
+			
+			<Anchor>//api/name/queueForNetworkManagement</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQNetworkManager/queueForNetworkManagement</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSOperationQueue *queueForNetworkManagement</Declaration>
+			
+			
+			<Anchor>//api/name/queueForNetworkManagement</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQNetworkManager/setQueueForCPU:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSOperationQueue *queueForCPU</Declaration>
+			
+			
+			<Anchor>//api/name/queueForCPU</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQNetworkManager/queueForCPU</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSOperationQueue *queueForCPU</Declaration>
+			
+			
+			<Anchor>//api/name/queueForCPU</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ANQNetworkManager/setQueueForCPUBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSOperationQueue *queueForCPUBlock</Declaration>
+			
+			
+			<Anchor>//api/name/queueForCPUBlock</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ANQNetworkManager/queueForCPUBlock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANQNetworkManager.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSOperationQueue *queueForCPUBlock</Declaration>
+			
+			
+			<Anchor>//api/name/queueForCPUBlock</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

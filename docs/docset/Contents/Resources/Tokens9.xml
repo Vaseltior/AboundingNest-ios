@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/YAJL_ANBase64.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/YAJL_ANBase64</TokenIdentifier>
+			<Abstract type="html">The webSafe methods use different character set and also the results aren't
+always padded to a multiple of 4 characters.  This is done so the resulting
+data can be used in urls and url query arguments without needing any
+encoding.  You must use the webSafe* methods together, the data does not
+interop with the RFC methods.</Abstract>
+			<DeclaredIn>ANBase64.h</DeclaredIn>
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/YAJL_ANBase64/encodeData:</TokenIdentifier>
+			<Abstract type="html">Returns:
+   A new autoreleased NSData with the encoded payload.  nil for any error.</Abstract>
+			<DeclaredIn>ANBase64.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)encodeData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/encodeData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/YAJL_ANBase64/decodeData:</TokenIdentifier>
+			<Abstract type="html">Returns:
+   A new autoreleased NSData with the decoded payload.  nil for any error.</Abstract>
+			<DeclaredIn>ANBase64.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)decodeData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/decodeData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/YAJL_ANBase64/encodeBytes:length:</TokenIdentifier>
+			<Abstract type="html">Returns:
+   A new autoreleased NSData with the encoded payload.  nil for any error.</Abstract>
+			<DeclaredIn>ANBase64.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)encodeBytes:(const void *)bytes length:(NSUInteger)length</Declaration>
+			
+			
+			<Anchor>//api/name/encodeBytes:length:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/YAJL_ANBase64/decodeBytes:length:</TokenIdentifier>
+			<Abstract type="html">Returns:
+   A new autoreleased NSData with the encoded payload.  nil for any error.</Abstract>
+			<DeclaredIn>ANBase64.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)decodeBytes:(const void *)bytes length:(NSUInteger)length</Declaration>
+			
+			
+			<Anchor>//api/name/decodeBytes:length:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/YAJL_ANBase64/stringByEncodingData:</TokenIdentifier>
+			<Abstract type="html">Returns:
+   A new autoreleased NSString with the encoded payload.  nil for any error.</Abstract>
+			<DeclaredIn>ANBase64.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)stringByEncodingData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/stringByEncodingData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/YAJL_ANBase64/stringByEncodingBytes:length:</TokenIdentifier>
+			<Abstract type="html">Returns:
+   A new autoreleased NSString with the encoded payload.  nil for any error.</Abstract>
+			<DeclaredIn>ANBase64.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)stringByEncodingBytes:(const void *)bytes length:(NSUInteger)length</Declaration>
+			
+			
+			<Anchor>//api/name/stringByEncodingBytes:length:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/YAJL_ANBase64/decodeString:</TokenIdentifier>
+			<Abstract type="html">Returns:
+   A new autoreleased NSData with the decoded payload.  nil for any error.</Abstract>
+			<DeclaredIn>ANBase64.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)decodeString:(NSString *)string</Declaration>
+			
+			
+			<Anchor>//api/name/decodeString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/YAJL_ANBase64/webSafeEncodeData:padded:</TokenIdentifier>
+			<Abstract type="html">Returns:
+   A new autoreleased NSData with the encoded payload.  nil for any error.</Abstract>
+			<DeclaredIn>ANBase64.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)webSafeEncodeData:(NSData *)data padded:(BOOL)padded</Declaration>
+			
+			
+			<Anchor>//api/name/webSafeEncodeData:padded:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/YAJL_ANBase64/webSafeDecodeData:</TokenIdentifier>
+			<Abstract type="html">Returns:
+   A new autoreleased NSData with the decoded payload.  nil for any error.</Abstract>
+			<DeclaredIn>ANBase64.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)webSafeDecodeData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/webSafeDecodeData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/YAJL_ANBase64/webSafeEncodeBytes:length:padded:</TokenIdentifier>
+			<Abstract type="html">Returns:
+   A new autoreleased NSData with the encoded payload.  nil for any error.</Abstract>
+			<DeclaredIn>ANBase64.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)webSafeEncodeBytes:(const void *)bytes length:(NSUInteger)length padded:(BOOL)padded</Declaration>
+			
+			
+			<Anchor>//api/name/webSafeEncodeBytes:length:padded:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/YAJL_ANBase64/webSafeDecodeBytes:length:</TokenIdentifier>
+			<Abstract type="html">Returns:
+   A new autoreleased NSData with the encoded payload.  nil for any error.</Abstract>
+			<DeclaredIn>ANBase64.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)webSafeDecodeBytes:(const void *)bytes length:(NSUInteger)length</Declaration>
+			
+			
+			<Anchor>//api/name/webSafeDecodeBytes:length:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/YAJL_ANBase64/stringByWebSafeEncodingData:padded:</TokenIdentifier>
+			<Abstract type="html">Returns:
+   A new autoreleased NSString with the encoded payload.  nil for any error.</Abstract>
+			<DeclaredIn>ANBase64.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)stringByWebSafeEncodingData:(NSData *)data padded:(BOOL)padded</Declaration>
+			
+			
+			<Anchor>//api/name/stringByWebSafeEncodingData:padded:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/YAJL_ANBase64/stringByWebSafeEncodingBytes:length:padded:</TokenIdentifier>
+			<Abstract type="html">Returns:
+   A new autoreleased NSString with the encoded payload.  nil for any error.</Abstract>
+			<DeclaredIn>ANBase64.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)stringByWebSafeEncodingBytes:(const void *)bytes length:(NSUInteger)length padded:(BOOL)padded</Declaration>
+			
+			
+			<Anchor>//api/name/stringByWebSafeEncodingBytes:length:padded:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/YAJL_ANBase64/webSafeDecodeString:</TokenIdentifier>
+			<Abstract type="html">Returns:
+   A new autoreleased NSData with the decoded payload.  nil for any error.</Abstract>
+			<DeclaredIn>ANBase64.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)webSafeDecodeString:(NSString *)string</Declaration>
+			
+			
+			<Anchor>//api/name/webSafeDecodeString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/YAJL_ANBase64/baseEncode:length:charset:padded:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANBase64.m</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)baseEncode:(const void *)bytes length:(NSUInteger)length charset:(const char *)charset padded:(BOOL)padded</Declaration>
+			
+			
+			<Anchor>//api/name/baseEncode:length:charset:padded:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/YAJL_ANBase64/baseDecode:length:charset:requirePadding:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANBase64.m</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)baseDecode:(const void *)bytes length:(NSUInteger)length charset:(const char *)charset requirePadding:(BOOL)requirePadding</Declaration>
+			
+			
+			<Anchor>//api/name/baseDecode:length:charset:requirePadding:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/YAJL_ANBase64/baseEncode:srcLen:destBytes:destLen:charset:padded:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANBase64.m</DeclaredIn>			
+			
+			<Declaration>+ (NSUInteger)baseEncode:(const char *)srcBytes srcLen:(NSUInteger)srcLen destBytes:(char *)destBytes destLen:(NSUInteger)destLen charset:(const char *)charset padded:(BOOL)padded</Declaration>
+			
+			
+			<Anchor>//api/name/baseEncode:srcLen:destBytes:destLen:charset:padded:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/YAJL_ANBase64/baseDecode:srcLen:destBytes:destLen:charset:requirePadding:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ANBase64.m</DeclaredIn>			
+			
+			<Declaration>+ (NSUInteger)baseDecode:(const char *)srcBytes srcLen:(NSUInteger)srcLen destBytes:(char *)destBytes destLen:(NSUInteger)destLen charset:(const char *)charset requirePadding:(BOOL)requirePadding</Declaration>
+			
+			
+			<Anchor>//api/name/baseDecode:srcLen:destBytes:destLen:charset:requirePadding:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

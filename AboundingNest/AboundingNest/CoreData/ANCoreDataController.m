@@ -147,7 +147,8 @@
         return __managedObjectModel;
     }
     
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:_resourceFileName withExtension:_resourceFileExtension];
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:_resourceFileName 
+                                              withExtension:_resourceFileExtension];
     
     __managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return __managedObjectModel;

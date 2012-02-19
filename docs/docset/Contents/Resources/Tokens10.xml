@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSDictionary+AboundingNest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSDictionary(AboundingNest)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSDictionary+AboundingNest.h</DeclaredIn>
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(AboundingNest)/vfk:wd:et:dv:</TokenIdentifier>
+			<Abstract type="html">This method is an helper class and simple addition to NSDictionary
+That will do this :
+1. prevent crashes when trying to insert nil value in a dictionary
+2. checking class mismatch
+3. returning a default value if no object is found for the key</Abstract>
+			<DeclaredIn>NSDictionary+AboundingNest.h</DeclaredIn>			
+			
+			<Declaration>+ (id)vfk:(id)key wd:(NSDictionary *)aDict et:(Class)aClass dv:(id)defaultValue</Declaration>
+			
+			<ReturnValue><Abstract type="html">The value of the key in the dictionary aDict with the expected type aClass
+if it exist, else return the defaultValue</Abstract></ReturnValue>
+			<Anchor>//api/name/vfk:wd:et:dv:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
