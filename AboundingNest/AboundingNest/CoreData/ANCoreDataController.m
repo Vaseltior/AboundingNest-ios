@@ -160,74 +160,76 @@
  */
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
-    // No need to create a new persistent store if that one already exist
-    if (__persistentStoreCoordinator != nil) {
+    @synchronized(self) {
+        // No need to create a new persistent store if that one already exist
+        if (__persistentStoreCoordinator != nil) {
+            return __persistentStoreCoordinator;
+        }
+        
+        NSURL *appDir = [self applicationDocumentsDirectory];
+        NSURL *storeURL = [appDir URLByAppendingPathComponent:_persistentStoreName];
+        
+        NSError *error = nil;
+        NSManagedObjectModel *mom = [self managedObjectModel];
+        __persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:mom];
+        
+        NSMutableDictionary * options = [[NSMutableDictionary alloc] init];
+        [options addEntriesFromDictionary:[self lightweightDefaultMigrationOptionsDictionary]];
+        
+        // Getting SQLite Store options dictionary if the current store is an SQLite store
+        if ([_persistentStoreType isEqualToString:NSSQLiteStoreType]) {
+            [options addEntriesFromDictionary:[self sqliteStoreOptionsDictionary]];
+        }
+        
+        NSPersistentStore * ps = nil;
+        ps = [__persistentStoreCoordinator addPersistentStoreWithType:_persistentStoreType 
+                                                        configuration:nil 
+                                                                  URL:storeURL 
+                                                              options:options 
+                                                                error:&error];
+        if (!ps) {
+            /*
+             Replace this implementation with code to handle the error appropriately.
+             
+             abort() causes the application to generate a crash log and terminate. 
+             You should not use this function in a shipping application, although it may 
+             be useful during development. 
+             
+             Typical reasons for an error here include:
+             * The persistent store is not accessible;
+             * The schema for the persistent store is incompatible with current managed object model.
+             Check the error message to determine what the actual problem was.
+             
+             
+             If the persistent store is not accessible, there is typically something wrong 
+             with the file path. Often, a file URL is pointing into the application's 
+             resources directory instead of a writeable directory.
+             
+             If you encounter schema incompatibility errors during development, 
+             you can reduce their frequency by:
+             * Simply deleting the existing store:
+             [[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil]
+             
+             * Performing automatic lightweight migration by passing the following 
+             dictionary as the options parameter: 
+             [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES], 
+             NSMigratePersistentStoresAutomaticallyOption, 
+             [NSNumber numberWithBool:YES], 
+             NSInferMappingModelAutomaticallyOption, nil];
+             
+             Lightweight migration will only work for a limited set of schema changes; 
+             consult "Core Data Model Versioning and Data Migration Programming Guide" 
+             for details.
+             
+             */
+            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+            abort();
+        }    
+        
+        ANReleaseSafely(&options);
+        
         return __persistentStoreCoordinator;
     }
-    
-    NSURL *appDir = [self applicationDocumentsDirectory];
-    NSURL *storeURL = [appDir URLByAppendingPathComponent:_persistentStoreName];
-    
-    NSError *error = nil;
-    NSManagedObjectModel *mom = [self managedObjectModel];
-    __persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:mom];
-    
-    NSMutableDictionary * options = [[NSMutableDictionary alloc] init];
-    [options addEntriesFromDictionary:[self lightweightDefaultMigrationOptionsDictionary]];
-    
-    // Getting SQLite Store options dictionary if the current store is an SQLite store
-    if ([_persistentStoreType isEqualToString:NSSQLiteStoreType]) {
-        [options addEntriesFromDictionary:[self sqliteStoreOptionsDictionary]];
-    }
-    
-    NSPersistentStore * ps = nil;
-    ps = [__persistentStoreCoordinator addPersistentStoreWithType:_persistentStoreType 
-                                                    configuration:nil 
-                                                              URL:storeURL 
-                                                          options:options 
-                                                            error:&error];
-    if (!ps) {
-        /*
-         Replace this implementation with code to handle the error appropriately.
-         
-         abort() causes the application to generate a crash log and terminate. 
-         You should not use this function in a shipping application, although it may 
-         be useful during development. 
-         
-         Typical reasons for an error here include:
-         * The persistent store is not accessible;
-         * The schema for the persistent store is incompatible with current managed object model.
-         Check the error message to determine what the actual problem was.
-         
-         
-         If the persistent store is not accessible, there is typically something wrong 
-         with the file path. Often, a file URL is pointing into the application's 
-         resources directory instead of a writeable directory.
-         
-         If you encounter schema incompatibility errors during development, 
-         you can reduce their frequency by:
-         * Simply deleting the existing store:
-         [[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil]
-         
-         * Performing automatic lightweight migration by passing the following 
-         dictionary as the options parameter: 
-         [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES], 
-         NSMigratePersistentStoresAutomaticallyOption, 
-         [NSNumber numberWithBool:YES], 
-         NSInferMappingModelAutomaticallyOption, nil];
-         
-         Lightweight migration will only work for a limited set of schema changes; 
-         consult "Core Data Model Versioning and Data Migration Programming Guide" 
-         for details.
-         
-         */
-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        abort();
-    }    
-    
-    ANReleaseSafely(&options);
-    
-    return __persistentStoreCoordinator;
 }
 
 
