@@ -20,6 +20,12 @@
     NSUInteger                      _runningNetworkTransferCount;
 }
 
+@property (nonatomic, retain, readonly ) NSOperationQueue * queueForNetworkTransfers;
+@property (nonatomic, retain, readonly ) NSOperationQueue * queueForNetworkManagement;
+@property (nonatomic, retain, readonly ) NSOperationQueue * queueForCPU;
+@property (nonatomic, retain, readonly ) NSOperationQueue * queueForCPUBlock;
+
+
 + (ANQNetworkManager *)sharedInstance;
     // Returns the network manager singleton.
     //

@@ -15,12 +15,6 @@
 
 @property (atomic, retain, readonly ) NSThread * networkRunLoopThread;
 
-@property (nonatomic, retain, readonly ) NSOperationQueue * queueForNetworkTransfers;
-@property (nonatomic, retain, readonly ) NSOperationQueue * queueForNetworkManagement;
-@property (nonatomic, retain, readonly ) NSOperationQueue * queueForCPU;
-@property (nonatomic, retain, readonly ) NSOperationQueue * queueForCPUBlock;
-
-
 @end
 
 @implementation ANQNetworkManager
