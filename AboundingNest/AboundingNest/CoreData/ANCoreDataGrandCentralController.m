@@ -122,7 +122,8 @@ ANOBJECT_SINGLETON_BOILERPLATE(ANCoreDataGrandCentralController, instance)
     NSNotificationCenter * nc = [NSNotificationCenter defaultCenter];
     NSMutableDictionary * mocs = [self mocsDictionaryForKey:key];
     if (mocs) {
-        id object = [mocs objectForKey:moc];
+        NSNumber * n = [NSNumber numberWithUnsignedInteger:[moc hash]];
+        id object = [mocs objectForKey:n];
         if (object) {
             [nc removeObserver:object name:NSManagedObjectContextDidSaveNotification object:moc];
         }
@@ -169,7 +170,8 @@ ANOBJECT_SINGLETON_BOILERPLATE(ANCoreDataGrandCentralController, instance)
     // We get a reference to the 
     if (object) {
         NSMutableDictionary * mocs = [self mocsDictionaryForKey:key];
-        [mocs setObject:object forKey:moc];
+        NSNumber * n = [NSNumber numberWithUnsignedInteger:[moc hash]];
+        [mocs setObject:object forKey:n];
     }    
     
     return [moc autorelease];
