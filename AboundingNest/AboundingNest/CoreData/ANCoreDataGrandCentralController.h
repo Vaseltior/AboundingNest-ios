@@ -12,6 +12,7 @@
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @interface ANCoreDataGrandCentralController : NSObject {
     NSMutableDictionary * _coreDataControllers;
+    NSMutableDictionary * _threadedManagedObjectContexts;
 }
 
 + (ANCoreDataGrandCentralController *)instance;
@@ -20,8 +21,7 @@
 - (void)saveContexts;
 - (void)releaseControllers;
 
-- (void)removeObserveForManagedObjectContext:(NSManagedObjectContext *)moc;
-- (NSManagedObjectContext *)managedObjectContextForKey:(NSString *)key
-                                         forMainThread:(BOOL)forMainThread;
+- (void)removeObserveForManagedObjectContext:(NSManagedObjectContext *)moc withKey:(NSString *)key;
+- (NSManagedObjectContext *)managedObjectContextForKey:(NSString *)key forMainThread:(BOOL)forMainThread;
 
 @end

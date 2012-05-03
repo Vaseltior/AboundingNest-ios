@@ -27,6 +27,7 @@ ANOBJECT_SINGLETON_BOILERPLATE(ANCoreDataGrandCentralController, instance)
     self = [super init];
     if (self) {
         _coreDataControllers = [[NSMutableDictionary alloc] init];
+        _threadedManagedObjectContexts = [[NSMutableDictionary alloc] init];
     }
     return self;
 }
@@ -89,19 +90,47 @@ ANOBJECT_SINGLETON_BOILERPLATE(ANCoreDataGrandCentralController, instance)
 }
 
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- (void)createMutableDictionaryForKey:(id)key {
+    NSMutableDictionary * d = [[NSMutableDictionary alloc] init];
+    [_threadedManagedObjectContexts setObject:d forKey:key];
+    ANReleaseSafely(&d);
+} /* createMutableDictionaryForKey */
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- (NSMutableDictionary *)mocsDictionaryForKey:(id)key {
+    @synchronized(self) {
+        if ( [_threadedManagedObjectContexts objectForKey:key] == nil ) {
+            [self createMutableDictionaryForKey:key];
+        }
+        
+        NSMutableDictionary *vv = [_threadedManagedObjectContexts objectForKey:key];
+        
+        if ( ![vv isKindOfClass:[NSMutableDictionary class]] ) {
+            return nil;
+        }
+        
+        return vv;
+    }
+} /* usableImageForURL */
+
 #pragma GCC diagnostic ignored "-Wselector"
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- (void)removeObserveForManagedObjectContext:(NSManagedObjectContext *)moc {
+- (void)removeObserveForManagedObjectContext:(NSManagedObjectContext *)moc withKey:(NSString *)key {
     NSNotificationCenter * nc = [NSNotificationCenter defaultCenter];
-    [nc removeObserver:self 
-                  name:NSManagedObjectContextDidSaveNotification 
-                object:moc];
+    NSMutableDictionary * mocs = [self mocsDictionaryForKey:key];
+    if (mocs) {
+        id object = [mocs objectForKey:moc];
+        if (object) {
+            [nc removeObserver:object name:NSManagedObjectContextDidSaveNotification object:moc];
+        }
+    }
 }
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- (NSManagedObjectContext *)managedObjectContextForKey:(NSString *)key
-                                         forMainThread:(BOOL)forMainThread {
+- (NSManagedObjectContext *)managedObjectContextForKey:(NSString *)key forMainThread:(BOOL)forMainThread {
     
     // Get a blank managed object context
     ANCoreDataGrandCentralController * cdgcc = [ANCoreDataGrandCentralController instance];
@@ -117,24 +146,31 @@ ANOBJECT_SINGLETON_BOILERPLATE(ANCoreDataGrandCentralController, instance)
     [moc setPersistentStoreCoordinator:[cdc persistentStoreCoordinator]];
     [moc setUndoManager:nil];
     
-    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
-    [nc addObserverForName:NSManagedObjectContextDidSaveNotification 
-                    object:moc 
-                     queue:[NSOperationQueue mainQueue] 
-                usingBlock:^(NSNotification * note) {
-                    @try {
-                        ANCoreDataGrandCentralController * gcc = [ANCoreDataGrandCentralController instance];
-                        ANCoreDataController * c = [gcc controllerWithName:key];
-                        NSManagedObjectContext * mainContext = [c managedObjectContext];
-                        // Merge changes into the main context on the main thread
-                        SEL mergeSelector = @selector(mergeChangesFromContextDidSaveNotification:);
-                        [mainContext performSelectorOnMainThread:mergeSelector withObject:note waitUntilDone:YES];
-                    }
-                    @catch (NSException * e) {
-                        NSLog(@"Stopping on exception: %@", [e description]);
-                    }
-                    @finally {}
-                }];
+    NSNotificationCenter * nc = [NSNotificationCenter defaultCenter];
+    id object = [nc addObserverForName:NSManagedObjectContextDidSaveNotification 
+                                object:moc 
+                                 queue:[NSOperationQueue mainQueue] 
+                            usingBlock:^(NSNotification * note) {
+                                @try {
+                                    ANCoreDataGrandCentralController * gcc = [ANCoreDataGrandCentralController instance];
+                                    ANCoreDataController * c = [gcc controllerWithName:key];
+                                    NSManagedObjectContext * mainContext = [c managedObjectContext];
+                                    // Merge changes into the main context on the main thread
+                                    SEL mergeSelector = @selector(mergeChangesFromContextDidSaveNotification:);
+                                    [mainContext performSelectorOnMainThread:mergeSelector withObject:note waitUntilDone:YES];
+                                }
+                                @catch (NSException * e) {
+                                    NSLog(@"Stopping on exception: %@", [e description]);
+                                }
+                                @finally {}
+                            }];
+    
+    
+    // We get a reference to the 
+    if (object) {
+        NSMutableDictionary * mocs = [self mocsDictionaryForKey:key];
+        [mocs setObject:object forKey:moc];
+    }    
     
     return [moc autorelease];
 }
