@@ -208,7 +208,6 @@
              If you encounter schema incompatibility errors during development, 
              you can reduce their frequency by:
              * Simply deleting the existing store:
-             [[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil]
              
              * Performing automatic lightweight migration by passing the following 
              dictionary as the options parameter: 
@@ -223,7 +222,9 @@
              
              */
             NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-            abort();
+            [[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil];
+            return [self persistentStoreCoordinator];
+            //abort();
         }    
         
         ANReleaseSafely(&options);
