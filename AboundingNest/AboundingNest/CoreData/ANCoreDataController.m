@@ -221,7 +221,8 @@
              for details.
              
              */
-            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+            ANReleaseSafely(&options);
+            NSLog(@"============\nUnresolved error %@, %@\n============", error, [error userInfo]);
             [[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil];
             return [self persistentStoreCoordinator];
             //abort();

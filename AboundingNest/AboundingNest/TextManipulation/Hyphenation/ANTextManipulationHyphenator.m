@@ -190,7 +190,6 @@ ANOBJECT_SINGLETON_BOILERPLATE( ANTextManipulationHyphenator, sharedHyphenator )
 			tstr = nil;
 			tstr = [[NSMutableString alloc] init];
 		}
-		
 	}
 	
 	[retlist addObject:tstr];

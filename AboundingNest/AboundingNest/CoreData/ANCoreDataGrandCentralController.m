@@ -126,6 +126,8 @@ ANOBJECT_SINGLETON_BOILERPLATE(ANCoreDataGrandCentralController, instance)
         id object = [mocs objectForKey:n];
         if (object) {
             [nc removeObserver:object name:NSManagedObjectContextDidSaveNotification object:moc];
+            
+            NSLog(@"============\nObserver Removed %@, %@\n============", moc, key);
         }
     }
 }
@@ -152,10 +154,12 @@ ANOBJECT_SINGLETON_BOILERPLATE(ANCoreDataGrandCentralController, instance)
                                 object:moc 
                                  queue:[NSOperationQueue mainQueue] 
                             usingBlock:^(NSNotification * note) {
+                                
+                                ANCoreDataGrandCentralController * gcc = [ANCoreDataGrandCentralController instance];
+                                ANCoreDataController * c = [gcc controllerWithName:key];
+                                NSManagedObjectContext * mainContext = [c managedObjectContext];
+                                
                                 @try {
-                                    ANCoreDataGrandCentralController * gcc = [ANCoreDataGrandCentralController instance];
-                                    ANCoreDataController * c = [gcc controllerWithName:key];
-                                    NSManagedObjectContext * mainContext = [c managedObjectContext];
                                     // Merge changes into the main context on the main thread
                                     SEL mergeSelector = @selector(mergeChangesFromContextDidSaveNotification:);
                                     [mainContext performSelectorOnMainThread:mergeSelector withObject:note waitUntilDone:YES];
@@ -163,7 +167,9 @@ ANOBJECT_SINGLETON_BOILERPLATE(ANCoreDataGrandCentralController, instance)
                                 @catch (NSException * e) {
                                     NSLog(@"Stopping on exception: %@", [e description]);
                                 }
-                                @finally {}
+                                @finally {
+                                    NSLog(@"============\nNSManagedObjectContextDidSaveNotification %@ %@\n============", mainContext, note);
+                                }
                             }];
     
     
@@ -172,6 +178,8 @@ ANOBJECT_SINGLETON_BOILERPLATE(ANCoreDataGrandCentralController, instance)
         NSMutableDictionary * mocs = [self mocsDictionaryForKey:key];
         NSNumber * n = [NSNumber numberWithUnsignedInteger:[moc hash]];
         [mocs setObject:object forKey:n];
+        
+        NSLog(@"============\nObserver created %@, %@\n============", moc, key);
     }    
     
     return [moc autorelease];
