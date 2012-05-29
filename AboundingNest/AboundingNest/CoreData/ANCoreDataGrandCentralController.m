@@ -168,7 +168,7 @@ ANOBJECT_SINGLETON_BOILERPLATE(ANCoreDataGrandCentralController, instance)
                                     NSLog(@"Stopping on exception: %@", [e description]);
                                 }
                                 @finally {
-                                    NSLog(@"============\nNSManagedObjectContextDidSaveNotification %@ %@\n============", mainContext, note);
+                                    NSLog(@"============\nNSManagedObjectContextDidSaveNotification %@ \n============", mainContext);
                                 }
                             }];
     
