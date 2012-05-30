@@ -127,7 +127,7 @@ ANOBJECT_SINGLETON_BOILERPLATE(ANCoreDataGrandCentralController, instance)
         if (object) {
             [nc removeObserver:object name:NSManagedObjectContextDidSaveNotification object:moc];
             
-            NSLog(@"============\nObserver Removed %@, %@\n============", moc, key);
+            //NSLog(@"============\nObserver Removed %@, %@\n============", moc, key);
         }
     }
 }
@@ -168,7 +168,7 @@ ANOBJECT_SINGLETON_BOILERPLATE(ANCoreDataGrandCentralController, instance)
                                     NSLog(@"Stopping on exception: %@", [e description]);
                                 }
                                 @finally {
-                                    NSLog(@"============\nNSManagedObjectContextDidSaveNotification %@ \n============", mainContext);
+                                    //NSLog(@"============\nNSManagedObjectContextDidSaveNotification %@ \n============", mainContext);
                                 }
                             }];
     
@@ -179,7 +179,7 @@ ANOBJECT_SINGLETON_BOILERPLATE(ANCoreDataGrandCentralController, instance)
         NSNumber * n = [NSNumber numberWithUnsignedInteger:[moc hash]];
         [mocs setObject:object forKey:n];
         
-        NSLog(@"============\nObserver created %@, %@\n============", moc, key);
+        //NSLog(@"============\nObserver created %@, %@\n============", moc, key);
     }    
     
     return [moc autorelease];
