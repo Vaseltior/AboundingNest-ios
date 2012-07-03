@@ -109,6 +109,8 @@ ANOBJECT_SINGLETON_BOILERPLATE( ANTextManipulationHyphenator, sharedHyphenator )
 	
 	[points release];
 	
+    NSLog(@"%@", patmap);
+    
 	return YES;
 }
 
@@ -139,7 +141,7 @@ ANOBJECT_SINGLETON_BOILERPLATE( ANTextManipulationHyphenator, sharedHyphenator )
 	//points = new int[workingword.length() + 1];
 	
 	// label for a labeled continue
-	NSString *tmpword;
+	NSString *tmpword = nil;
 	
 	// for each char in the .word.
 	for (NSUInteger i = 0; i < [workingword length]; i++)  {
