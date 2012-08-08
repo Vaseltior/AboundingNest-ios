@@ -95,7 +95,7 @@ ANOBJECT_SINGLETON_BOILERPLATE(ANQNetworkManager, sharedInstance)
     // See comment in header.
 {
     NSMutableURLRequest *   result;
-    static NSString *       sUserAgentString;
+    //static NSString *       sUserAgentString;
 
     // any thread
     assert(url != nil);
@@ -107,13 +107,13 @@ ANOBJECT_SINGLETON_BOILERPLATE(ANQNetworkManager, sharedInstance)
     
     // Set up the user agent string.
     
-    if (sUserAgentString == nil) {
+    /*if (sUserAgentString == nil) {
         @synchronized ([self class]) {
             sUserAgentString = [[NSString alloc] initWithFormat:@"MVCNetworking/%@", [[[NSBundle mainBundle] infoDictionary] objectForKey:(id)kCFBundleVersionKey]];
             assert(sUserAgentString != nil);
         }
     }
-    [result setValue:sUserAgentString forHTTPHeaderField:@"User-Agent"];
+    [result setValue:sUserAgentString forHTTPHeaderField:@"User-Agent"];*/
     
     return result;
 }
