@@ -10,9 +10,7 @@
 
 @interface NSDictionary (Merge)
 
-+ (NSDictionary *)dictionaryByMerging:(NSDictionary *)dictionary1 
-                                 with:(NSDictionary *)dictionary2;
-
++ (NSDictionary *)dictionaryByMerging:(NSDictionary *)dictionary1 with:(NSDictionary *)dictionary2;
 - (NSDictionary *)dictionaryByMergingWith:(NSDictionary *)dict;
 - (BOOL)containsSomethingForKey:(id)key;
 
