@@ -63,6 +63,54 @@
 		AA7DF03C148B448700DD0E05 /* ANQRetryingHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF03A148B448600DD0E05 /* ANQRetryingHTTPOperation.m */; };
 		AA7DF03D148B448700DD0E05 /* ANQRetryingHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF03A148B448600DD0E05 /* ANQRetryingHTTPOperation.m */; };
 		AA7DF03F148B833B00DD0E05 /* ANOperationsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF03E148B833A00DD0E05 /* ANOperationsHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6CB7165E19ED001C9780 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DEF90148AF85C00DD0E05 /* Foundation.framework */; };
+		F50F6CBC165E19ED001C9780 /* AboundingNestStaticLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = F50F6CBB165E19ED001C9780 /* AboundingNestStaticLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6CBE165E19ED001C9780 /* AboundingNestStaticLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = F50F6CBD165E19ED001C9780 /* AboundingNestStaticLibrary.m */; };
+		F50F6CC5165E19ED001C9780 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DEF9F148AF85C00DD0E05 /* SenTestingKit.framework */; };
+		F50F6CC6165E19ED001C9780 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DEFA1148AF85C00DD0E05 /* UIKit.framework */; };
+		F50F6CC7165E19ED001C9780 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DEF90148AF85C00DD0E05 /* Foundation.framework */; };
+		F50F6CCA165E19ED001C9780 /* libAboundingNestStaticLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F50F6CB6165E19ED001C9780 /* libAboundingNestStaticLibrary.a */; };
+		F50F6CD0165E19ED001C9780 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F50F6CCE165E19ED001C9780 /* InfoPlist.strings */; };
+		F50F6CD3165E19ED001C9780 /* AboundingNestStaticLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F50F6CD2165E19ED001C9780 /* AboundingNestStaticLibraryTests.m */; };
+		F50F6D12165E1A49001C9780 /* ANQRetryingHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF03A148B448600DD0E05 /* ANQRetryingHTTPOperation.m */; };
+		F50F6D13165E1A49001C9780 /* ANQReachabilityOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF02B148B43AA00DD0E05 /* ANQReachabilityOperation.m */; };
+		F50F6D14165E1A49001C9780 /* ANQHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF02D148B43AA00DD0E05 /* ANQHTTPOperation.m */; };
+		F50F6D15165E1A49001C9780 /* ANQNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF02F148B43AB00DD0E05 /* ANQNetworkManager.m */; };
+		F50F6D16165E1A49001C9780 /* ANQRunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF026148B429000DD0E05 /* ANQRunLoopOperation.m */; };
+		F50F6D17165E1A49001C9780 /* ANTextManipulationHyphenator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2967D5149A9CDC00363E44 /* ANTextManipulationHyphenator.m */; };
+		F50F6D18165E1A49001C9780 /* ANCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFE3148AFE1F00DD0E05 /* ANCoreDataController.m */; };
+		F50F6D19165E1A49001C9780 /* ANCoreDataGrandCentralController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFE5148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.m */; };
+		F50F6D1A165E1A49001C9780 /* ANBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFEE148AFEB800DD0E05 /* ANBase64.m */; };
+		F50F6D1B165E1A49001C9780 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF01D148B2D4C00DD0E05 /* NSString+HTML.m */; };
+		F50F6D1C165E1A49001C9780 /* NSString+EMail.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF018148B2D1500DD0E05 /* NSString+EMail.m */; };
+		F50F6D1D165E1A49001C9780 /* NSDictionary+AboundingNest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFD7148AFDE300DD0E05 /* NSDictionary+AboundingNest.m */; };
+		F50F6D1E165E1A49001C9780 /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = F525C4BA14B30CEC00099133 /* NSDictionary+Merge.m */; };
+		F50F6D29165E341E001C9780 /* AboundingNest.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFD3148AFD8F00DD0E05 /* AboundingNest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D2A165E341E001C9780 /* ANMathematicsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF014148B295200DD0E05 /* ANMathematicsHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D2B165E341E001C9780 /* ANMathematics.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF012148B28FE00DD0E05 /* ANMathematics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D2C165E341E001C9780 /* ANOperationsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF03E148B833A00DD0E05 /* ANOperationsHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D2D165E341E001C9780 /* ANQRetryingHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF039148B448600DD0E05 /* ANQRetryingHTTPOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D2E165E341E001C9780 /* ANQReachabilityOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF02A148B43A900DD0E05 /* ANQReachabilityOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D2F165E341E001C9780 /* ANQHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF02C148B43AA00DD0E05 /* ANQHTTPOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D30165E341E001C9780 /* ANQNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF02E148B43AB00DD0E05 /* ANQNetworkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D31165E341E001C9780 /* ANQRunLoopOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF025148B429000DD0E05 /* ANQRunLoopOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D32165E341E001C9780 /* ANTextManipulationHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2967D9149A9EB300363E44 /* ANTextManipulationHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D33165E341E001C9780 /* ANTextManipulationHyphenator.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2967D4149A9CDC00363E44 /* ANTextManipulationHyphenator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D34165E341E001C9780 /* ANCoreDataHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF005148AFF6600DD0E05 /* ANCoreDataHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D35165E341E001C9780 /* ANCoreDataController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFE2148AFE1F00DD0E05 /* ANCoreDataController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D36165E341E001C9780 /* ANCoreDataGrandCentralController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFE4148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D37165E341E001C9780 /* ANCoreHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF00F148B0FD800DD0E05 /* ANCoreHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D38165E341E001C9780 /* ANNSString.h in Headers */ = {isa = PBXBuildFile; fileRef = F5E79C4D14CA3D3300FD86CF /* ANNSString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D39165E341E001C9780 /* ANMemory.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF008148B023800DD0E05 /* ANMemory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D3A165E341E001C9780 /* ANBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFED148AFEB800DD0E05 /* ANBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D3B165E341E001C9780 /* ANObjectSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFF3148AFEB800DD0E05 /* ANObjectSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D3C165E341E001C9780 /* ANDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFEF148AFEB800DD0E05 /* ANDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D3D165E341E001C9780 /* NSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF01C148B2D4B00DD0E05 /* NSString+HTML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D3E165E341E001C9780 /* NSString+EMail.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF017148B2D1500DD0E05 /* NSString+EMail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D3F165E341E001C9780 /* NSDictionary+AboundingNest.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFD6148AFDE300DD0E05 /* NSDictionary+AboundingNest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D40165E341E001C9780 /* NSDictionary+Merge.h in Headers */ = {isa = PBXBuildFile; fileRef = F525C4B914B30CEC00099133 /* NSDictionary+Merge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D4D165E36AA001C9780 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50F6D4C165E36A9001C9780 /* CoreData.framework */; };
+		F50F6D51165E39BD001C9780 /* hyphens.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA2967DE149AA05100363E44 /* hyphens.txt */; };
 		F525C4BB14B30CEC00099133 /* NSDictionary+Merge.h in Headers */ = {isa = PBXBuildFile; fileRef = F525C4B914B30CEC00099133 /* NSDictionary+Merge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F525C4BC14B30CEC00099133 /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = F525C4BA14B30CEC00099133 /* NSDictionary+Merge.m */; };
 		F525C4BD14B30CEC00099133 /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = F525C4BA14B30CEC00099133 /* NSDictionary+Merge.m */; };
@@ -84,7 +132,27 @@
 			remoteGlobalIDString = AA7DEF8C148AF85C00DD0E05;
 			remoteInfo = AboundingNest;
 		};
+		F50F6CC8165E19ED001C9780 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA7DEF81148AF85C00DD0E05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F50F6CB5165E19ED001C9780;
+			remoteInfo = AboundingNestStaticLibrary;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F50F6CB4165E19ED001C9780 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				F50F6D51165E39BD001C9780 /* hyphens.txt in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AA2967D4149A9CDC00363E44 /* ANTextManipulationHyphenator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANTextManipulationHyphenator.h; sourceTree = "<group>"; };
@@ -134,6 +202,16 @@
 		AA7DF039148B448600DD0E05 /* ANQRetryingHTTPOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANQRetryingHTTPOperation.h; sourceTree = "<group>"; };
 		AA7DF03A148B448600DD0E05 /* ANQRetryingHTTPOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANQRetryingHTTPOperation.m; sourceTree = "<group>"; };
 		AA7DF03E148B833A00DD0E05 /* ANOperationsHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANOperationsHeader.h; sourceTree = "<group>"; };
+		F50F6CB6165E19ED001C9780 /* libAboundingNestStaticLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAboundingNestStaticLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50F6CBA165E19ED001C9780 /* AboundingNestStaticLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AboundingNestStaticLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		F50F6CBB165E19ED001C9780 /* AboundingNestStaticLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboundingNestStaticLibrary.h; sourceTree = "<group>"; };
+		F50F6CBD165E19ED001C9780 /* AboundingNestStaticLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboundingNestStaticLibrary.m; sourceTree = "<group>"; };
+		F50F6CC4165E19ED001C9780 /* AboundingNestStaticLibraryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AboundingNestStaticLibraryTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50F6CCD165E19ED001C9780 /* AboundingNestStaticLibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AboundingNestStaticLibraryTests-Info.plist"; sourceTree = "<group>"; };
+		F50F6CCF165E19ED001C9780 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F50F6CD1165E19ED001C9780 /* AboundingNestStaticLibraryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboundingNestStaticLibraryTests.h; sourceTree = "<group>"; };
+		F50F6CD2165E19ED001C9780 /* AboundingNestStaticLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboundingNestStaticLibraryTests.m; sourceTree = "<group>"; };
+		F50F6D4C165E36A9001C9780 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		F525C4B914B30CEC00099133 /* NSDictionary+Merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Merge.h"; sourceTree = "<group>"; };
 		F525C4BA14B30CEC00099133 /* NSDictionary+Merge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Merge.m"; sourceTree = "<group>"; };
 		F5E79C4D14CA3D3300FD86CF /* ANNSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ANNSString.h; path = AboundingNest/Core/ANNStrings/ANNSString.h; sourceTree = SOURCE_ROOT; };
@@ -156,6 +234,26 @@
 				AA7DEFA2148AF85C00DD0E05 /* UIKit.framework in Frameworks */,
 				AA7DEFA3148AF85C00DD0E05 /* Foundation.framework in Frameworks */,
 				AA7DEFA8148AF85C00DD0E05 /* AboundingNest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50F6CB3165E19ED001C9780 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50F6D4D165E36AA001C9780 /* CoreData.framework in Frameworks */,
+				F50F6CB7165E19ED001C9780 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50F6CC0165E19ED001C9780 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50F6CC5165E19ED001C9780 /* SenTestingKit.framework in Frameworks */,
+				F50F6CC6165E19ED001C9780 /* UIKit.framework in Frameworks */,
+				F50F6CC7165E19ED001C9780 /* Foundation.framework in Frameworks */,
+				F50F6CCA165E19ED001C9780 /* libAboundingNestStaticLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,8 +305,11 @@
 		AA7DEF7F148AF85C00DD0E05 = {
 			isa = PBXGroup;
 			children = (
+				F50F6D4C165E36A9001C9780 /* CoreData.framework */,
 				AA7DEF92148AF85C00DD0E05 /* AboundingNest */,
 				AA7DEFAA148AF85C00DD0E05 /* AboundingNestTests */,
+				F50F6CB8165E19ED001C9780 /* AboundingNestStaticLibrary */,
+				F50F6CCB165E19ED001C9780 /* AboundingNestStaticLibraryTests */,
 				AA7DEF8F148AF85C00DD0E05 /* Frameworks */,
 				AA7DEF8E148AF85C00DD0E05 /* Products */,
 			);
@@ -219,6 +320,8 @@
 			children = (
 				AA7DEF8D148AF85C00DD0E05 /* AboundingNest.framework */,
 				AA7DEF9E148AF85C00DD0E05 /* AboundingNestTests.octest */,
+				F50F6CB6165E19ED001C9780 /* libAboundingNestStaticLibrary.a */,
+				F50F6CC4165E19ED001C9780 /* AboundingNestStaticLibraryTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -365,6 +468,43 @@
 			path = Operations;
 			sourceTree = "<group>";
 		};
+		F50F6CB8165E19ED001C9780 /* AboundingNestStaticLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				F50F6CBB165E19ED001C9780 /* AboundingNestStaticLibrary.h */,
+				F50F6CBD165E19ED001C9780 /* AboundingNestStaticLibrary.m */,
+				F50F6CB9165E19ED001C9780 /* Supporting Files */,
+			);
+			path = AboundingNestStaticLibrary;
+			sourceTree = "<group>";
+		};
+		F50F6CB9165E19ED001C9780 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F50F6CBA165E19ED001C9780 /* AboundingNestStaticLibrary-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F50F6CCB165E19ED001C9780 /* AboundingNestStaticLibraryTests */ = {
+			isa = PBXGroup;
+			children = (
+				F50F6CD1165E19ED001C9780 /* AboundingNestStaticLibraryTests.h */,
+				F50F6CD2165E19ED001C9780 /* AboundingNestStaticLibraryTests.m */,
+				F50F6CCC165E19ED001C9780 /* Supporting Files */,
+			);
+			path = AboundingNestStaticLibraryTests;
+			sourceTree = "<group>";
+		};
+		F50F6CCC165E19ED001C9780 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F50F6CCD165E19ED001C9780 /* AboundingNestStaticLibraryTests-Info.plist */,
+				F50F6CCE165E19ED001C9780 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F5E79C4C14CA3D3300FD86CF /* ANNStrings */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,6 +545,38 @@
 				F525C4BB14B30CEC00099133 /* NSDictionary+Merge.h in Headers */,
 				AA7DF00A148B023800DD0E05 /* ANMemory.h in Headers */,
 				F5E79C4E14CA3D3300FD86CF /* ANNSString.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50F6D50165E39A9001C9780 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50F6D29165E341E001C9780 /* AboundingNest.h in Headers */,
+				F50F6D2A165E341E001C9780 /* ANMathematicsHeader.h in Headers */,
+				F50F6D2B165E341E001C9780 /* ANMathematics.h in Headers */,
+				F50F6D2C165E341E001C9780 /* ANOperationsHeader.h in Headers */,
+				F50F6D2D165E341E001C9780 /* ANQRetryingHTTPOperation.h in Headers */,
+				F50F6D2E165E341E001C9780 /* ANQReachabilityOperation.h in Headers */,
+				F50F6D2F165E341E001C9780 /* ANQHTTPOperation.h in Headers */,
+				F50F6D30165E341E001C9780 /* ANQNetworkManager.h in Headers */,
+				F50F6D31165E341E001C9780 /* ANQRunLoopOperation.h in Headers */,
+				F50F6D32165E341E001C9780 /* ANTextManipulationHeader.h in Headers */,
+				F50F6D33165E341E001C9780 /* ANTextManipulationHyphenator.h in Headers */,
+				F50F6D34165E341E001C9780 /* ANCoreDataHeader.h in Headers */,
+				F50F6D35165E341E001C9780 /* ANCoreDataController.h in Headers */,
+				F50F6D36165E341E001C9780 /* ANCoreDataGrandCentralController.h in Headers */,
+				F50F6D37165E341E001C9780 /* ANCoreHeader.h in Headers */,
+				F50F6D38165E341E001C9780 /* ANNSString.h in Headers */,
+				F50F6D39165E341E001C9780 /* ANMemory.h in Headers */,
+				F50F6D3A165E341E001C9780 /* ANBase64.h in Headers */,
+				F50F6D3B165E341E001C9780 /* ANObjectSingleton.h in Headers */,
+				F50F6D3C165E341E001C9780 /* ANDefines.h in Headers */,
+				F50F6D3D165E341E001C9780 /* NSString+HTML.h in Headers */,
+				F50F6D3E165E341E001C9780 /* NSString+EMail.h in Headers */,
+				F50F6D3F165E341E001C9780 /* NSDictionary+AboundingNest.h in Headers */,
+				F50F6D40165E341E001C9780 /* NSDictionary+Merge.h in Headers */,
+				F50F6CBC165E19ED001C9780 /* AboundingNestStaticLibrary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +624,43 @@
 			productReference = AA7DEF9E148AF85C00DD0E05 /* AboundingNestTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		F50F6CB5165E19ED001C9780 /* AboundingNestStaticLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50F6CD8165E19ED001C9780 /* Build configuration list for PBXNativeTarget "AboundingNestStaticLibrary" */;
+			buildPhases = (
+				F50F6CB2165E19ED001C9780 /* Sources */,
+				F50F6CB3165E19ED001C9780 /* Frameworks */,
+				F50F6D50165E39A9001C9780 /* Headers */,
+				F50F6CB4165E19ED001C9780 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AboundingNestStaticLibrary;
+			productName = AboundingNestStaticLibrary;
+			productReference = F50F6CB6165E19ED001C9780 /* libAboundingNestStaticLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F50F6CC3165E19ED001C9780 /* AboundingNestStaticLibraryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50F6CD9165E19ED001C9780 /* Build configuration list for PBXNativeTarget "AboundingNestStaticLibraryTests" */;
+			buildPhases = (
+				F50F6CBF165E19ED001C9780 /* Sources */,
+				F50F6CC0165E19ED001C9780 /* Frameworks */,
+				F50F6CC1165E19ED001C9780 /* Resources */,
+				F50F6CC2165E19ED001C9780 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F50F6CC9165E19ED001C9780 /* PBXTargetDependency */,
+			);
+			name = AboundingNestStaticLibraryTests;
+			productName = AboundingNestStaticLibraryTests;
+			productReference = F50F6CC4165E19ED001C9780 /* AboundingNestStaticLibraryTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -475,6 +684,8 @@
 			targets = (
 				AA7DEF8C148AF85C00DD0E05 /* AboundingNest */,
 				AA7DEF9D148AF85C00DD0E05 /* AboundingNestTests */,
+				F50F6CB5165E19ED001C9780 /* AboundingNestStaticLibrary */,
+				F50F6CC3165E19ED001C9780 /* AboundingNestStaticLibraryTests */,
 			);
 		};
 /* End PBXProject section */
@@ -495,6 +706,14 @@
 			files = (
 				AA7DEFAF148AF85C00DD0E05 /* InfoPlist.strings in Resources */,
 				AA2967E0149AA05100363E44 /* hyphens.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50F6CC1165E19ED001C9780 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50F6CD0165E19ED001C9780 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +773,19 @@
 			shellPath = /bin/sh;
 			shellScript = "#!/bin/sh\npwd\ncd ..\n./builddocs.bash\n\necho \"DONE\"\n";
 		};
+		F50F6CC2165E19ED001C9780 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -598,6 +830,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F50F6CB2165E19ED001C9780 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50F6D12165E1A49001C9780 /* ANQRetryingHTTPOperation.m in Sources */,
+				F50F6D13165E1A49001C9780 /* ANQReachabilityOperation.m in Sources */,
+				F50F6D14165E1A49001C9780 /* ANQHTTPOperation.m in Sources */,
+				F50F6D15165E1A49001C9780 /* ANQNetworkManager.m in Sources */,
+				F50F6D16165E1A49001C9780 /* ANQRunLoopOperation.m in Sources */,
+				F50F6D17165E1A49001C9780 /* ANTextManipulationHyphenator.m in Sources */,
+				F50F6D18165E1A49001C9780 /* ANCoreDataController.m in Sources */,
+				F50F6D19165E1A49001C9780 /* ANCoreDataGrandCentralController.m in Sources */,
+				F50F6D1A165E1A49001C9780 /* ANBase64.m in Sources */,
+				F50F6D1B165E1A49001C9780 /* NSString+HTML.m in Sources */,
+				F50F6D1C165E1A49001C9780 /* NSString+EMail.m in Sources */,
+				F50F6D1D165E1A49001C9780 /* NSDictionary+AboundingNest.m in Sources */,
+				F50F6D1E165E1A49001C9780 /* NSDictionary+Merge.m in Sources */,
+				F50F6CBE165E19ED001C9780 /* AboundingNestStaticLibrary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50F6CBF165E19ED001C9780 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50F6CD3165E19ED001C9780 /* AboundingNestStaticLibraryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -610,6 +871,11 @@
 			isa = PBXTargetDependency;
 			target = AA7DEF8C148AF85C00DD0E05 /* AboundingNest */;
 			targetProxy = AA7DEFA6148AF85C00DD0E05 /* PBXContainerItemProxy */;
+		};
+		F50F6CC9165E19ED001C9780 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F50F6CB5165E19ED001C9780 /* AboundingNestStaticLibrary */;
+			targetProxy = F50F6CC8165E19ED001C9780 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -626,6 +892,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				AA7DEFAE148AF85C00DD0E05 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F50F6CCE165E19ED001C9780 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F50F6CCF165E19ED001C9780 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -658,6 +932,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				SDKROOT = iphoneos;
+				SYMROOT = "$(SRCROOT)/Build/Products";
 			};
 			name = Debug;
 		};
@@ -679,6 +954,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				SDKROOT = iphoneos;
+				SYMROOT = "$(SRCROOT)/Build/Products";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -748,6 +1024,86 @@
 			};
 			name = Release;
 		};
+		F50F6CD4165E19ED001C9780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/AboundingNestStaticLibrary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AboundingNestStaticLibrary/AboundingNestStaticLibrary-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F50F6CD5165E19ED001C9780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/AboundingNestStaticLibrary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AboundingNestStaticLibrary/AboundingNestStaticLibrary-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F50F6CD6165E19ED001C9780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AboundingNestStaticLibrary/AboundingNestStaticLibrary-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "AboundingNestStaticLibraryTests/AboundingNestStaticLibraryTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F50F6CD7165E19ED001C9780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AboundingNestStaticLibrary/AboundingNestStaticLibrary-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "AboundingNestStaticLibraryTests/AboundingNestStaticLibraryTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -774,6 +1130,24 @@
 			buildConfigurations = (
 				AA7DEFB9148AF85C00DD0E05 /* Debug */,
 				AA7DEFBA148AF85C00DD0E05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F50F6CD8165E19ED001C9780 /* Build configuration list for PBXNativeTarget "AboundingNestStaticLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50F6CD4165E19ED001C9780 /* Debug */,
+				F50F6CD5165E19ED001C9780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F50F6CD9165E19ED001C9780 /* Build configuration list for PBXNativeTarget "AboundingNestStaticLibraryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50F6CD6165E19ED001C9780 /* Debug */,
+				F50F6CD7165E19ED001C9780 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

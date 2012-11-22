@@ -171,6 +171,10 @@
         
         NSError *error = nil;
         NSManagedObjectModel *mom = [self managedObjectModel];
+        if (!mom) {
+            NSLog(@"%@ --- %@", appDir, storeURL);
+            return nil;
+        }
         __persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:mom];
         
         NSMutableDictionary * options = [[NSMutableDictionary alloc] init];
