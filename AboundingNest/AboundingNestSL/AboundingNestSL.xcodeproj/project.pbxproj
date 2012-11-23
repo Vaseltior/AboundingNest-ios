@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5B28C94165FC58100F6F848 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B28C93165FC58100F6F848 /* Foundation.framework */; };
+		F5B28CA3165FC58100F6F848 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B28CA2165FC58100F6F848 /* SenTestingKit.framework */; };
+		F5B28CA5165FC58100F6F848 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B28CA4165FC58100F6F848 /* UIKit.framework */; };
+		F5B28CA6165FC58100F6F848 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B28C93165FC58100F6F848 /* Foundation.framework */; };
+		F5B28CA9165FC58100F6F848 /* libAboundingNestSL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B28C90165FC58100F6F848 /* libAboundingNestSL.a */; };
+		F5B28CAF165FC58200F6F848 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5B28CAD165FC58200F6F848 /* InfoPlist.strings */; };
+		F5B28CB2165FC58200F6F848 /* AboundingNestSLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B28CB1165FC58200F6F848 /* AboundingNestSLTests.m */; };
+		F5B28CF1165FC5A100F6F848 /* NSDictionary+AboundingNest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B28CBF165FC5A100F6F848 /* NSDictionary+AboundingNest.m */; };
+		F5B28CF2165FC5A100F6F848 /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B28CC1165FC5A100F6F848 /* NSDictionary+Merge.m */; };
+		F5B28CF3165FC5A100F6F848 /* NSString+EMail.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B28CC3165FC5A100F6F848 /* NSString+EMail.m */; };
+		F5B28CF4165FC5A100F6F848 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B28CC5165FC5A100F6F848 /* NSString+HTML.m */; };
+		F5B28CF5165FC5A100F6F848 /* ANBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B28CCD165FC5A100F6F848 /* ANBase64.m */; };
+		F5B28CF6165FC5A100F6F848 /* ANCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B28CD2165FC5A100F6F848 /* ANCoreDataController.m */; };
+		F5B28CF7165FC5A100F6F848 /* ANCoreDataGrandCentralController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B28CD4165FC5A100F6F848 /* ANCoreDataGrandCentralController.m */; };
+		F5B28CF8165FC5A100F6F848 /* ANQHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B28CDF165FC5A100F6F848 /* ANQHTTPOperation.m */; };
+		F5B28CF9165FC5A100F6F848 /* ANQNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B28CE1165FC5A100F6F848 /* ANQNetworkManager.m */; };
+		F5B28CFA165FC5A100F6F848 /* ANQReachabilityOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B28CE3165FC5A100F6F848 /* ANQReachabilityOperation.m */; };
+		F5B28CFB165FC5A100F6F848 /* ANQRetryingHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B28CE5165FC5A100F6F848 /* ANQRetryingHTTPOperation.m */; };
+		F5B28CFC165FC5A100F6F848 /* ANQRunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B28CE7165FC5A100F6F848 /* ANQRunLoopOperation.m */; };
+		F5B28CFD165FC5A100F6F848 /* ANTextManipulationHyphenator.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B28CF0165FC5A100F6F848 /* ANTextManipulationHyphenator.m */; };
+		F5B28D96165FC85C00F6F848 /* AboundingNest.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CBB165FC5A100F6F848 /* AboundingNest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5B28D97165FC85C00F6F848 /* NSDictionary+AboundingNest.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CBE165FC5A100F6F848 /* NSDictionary+AboundingNest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5B28D98165FC85C00F6F848 /* NSDictionary+Merge.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CC0165FC5A100F6F848 /* NSDictionary+Merge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5B28D99165FC85C00F6F848 /* NSString+EMail.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CC2165FC5A100F6F848 /* NSString+EMail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5B28D9A165FC85C00F6F848 /* NSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CC4165FC5A100F6F848 /* NSString+HTML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5B28D9B165FC85C00F6F848 /* ANCoreHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CC6165FC5A100F6F848 /* ANCoreHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5B28D9C165FC85C00F6F848 /* ANMemory.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CC8165FC5A100F6F848 /* ANMemory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5B28D9D165FC85C00F6F848 /* ANNSString.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CCA165FC5A100F6F848 /* ANNSString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5B28D9E165FC85C00F6F848 /* ANBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CCC165FC5A100F6F848 /* ANBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5B28D9F165FC85C00F6F848 /* ANDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CCE165FC5A100F6F848 /* ANDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5B28DA0165FC85C00F6F848 /* ANObjectSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CCF165FC5A100F6F848 /* ANObjectSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5B28DA1165FC85C00F6F848 /* ANMathematics.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CDA165FC5A100F6F848 /* ANMathematics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5B28DA2165FC85C00F6F848 /* ANMathematicsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CDB165FC5A100F6F848 /* ANMathematicsHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5B28DA3165FC85C00F6F848 /* ANOperationsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CDD165FC5A100F6F848 /* ANOperationsHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5B28DA4165FC85C00F6F848 /* ANQHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CDE165FC5A100F6F848 /* ANQHTTPOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5B28DA5165FC85C00F6F848 /* ANQNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CE0165FC5A100F6F848 /* ANQNetworkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5B28DA6165FC85C00F6F848 /* ANQReachabilityOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CE2165FC5A100F6F848 /* ANQReachabilityOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5B28DA7165FC85C00F6F848 /* ANQRetryingHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CE4165FC5A100F6F848 /* ANQRetryingHTTPOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5B28DA8165FC85C00F6F848 /* ANQRunLoopOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CE6165FC5A100F6F848 /* ANQRunLoopOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5B28DA9165FC85C00F6F848 /* ANTextManipulationHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CED165FC5A100F6F848 /* ANTextManipulationHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5B28DAF165FCB0C00F6F848 /* ANTextManipulationHyphenator.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CEF165FC5A100F6F848 /* ANTextManipulationHyphenator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5B28CA7165FC58100F6F848 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5B28C87165FC58100F6F848 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5B28C8F165FC58100F6F848;
+			remoteInfo = AboundingNestSL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F5B28C8E165FC58100F6F848 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F5B28C90165FC58100F6F848 /* libAboundingNestSL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAboundingNestSL.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5B28C93165FC58100F6F848 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F5B28C97165FC58100F6F848 /* AboundingNestSL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AboundingNestSL-Prefix.pch"; sourceTree = "<group>"; };
+		F5B28CA1165FC58100F6F848 /* AboundingNestSLTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AboundingNestSLTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5B28CA2165FC58100F6F848 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F5B28CA4165FC58100F6F848 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F5B28CAC165FC58200F6F848 /* AboundingNestSLTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AboundingNestSLTests-Info.plist"; sourceTree = "<group>"; };
+		F5B28CAE165FC58200F6F848 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F5B28CB0165FC58200F6F848 /* AboundingNestSLTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboundingNestSLTests.h; sourceTree = "<group>"; };
+		F5B28CB1165FC58200F6F848 /* AboundingNestSLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboundingNestSLTests.m; sourceTree = "<group>"; };
+		F5B28CBB165FC5A100F6F848 /* AboundingNest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboundingNest.h; path = ../../AboundingNest/AboundingNest.h; sourceTree = "<group>"; };
+		F5B28CBE165FC5A100F6F848 /* NSDictionary+AboundingNest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+AboundingNest.h"; sourceTree = "<group>"; };
+		F5B28CBF165FC5A100F6F848 /* NSDictionary+AboundingNest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+AboundingNest.m"; sourceTree = "<group>"; };
+		F5B28CC0165FC5A100F6F848 /* NSDictionary+Merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Merge.h"; sourceTree = "<group>"; };
+		F5B28CC1165FC5A100F6F848 /* NSDictionary+Merge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Merge.m"; sourceTree = "<group>"; };
+		F5B28CC2165FC5A100F6F848 /* NSString+EMail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EMail.h"; sourceTree = "<group>"; };
+		F5B28CC3165FC5A100F6F848 /* NSString+EMail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EMail.m"; sourceTree = "<group>"; };
+		F5B28CC4165FC5A100F6F848 /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		F5B28CC5165FC5A100F6F848 /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
+		F5B28CC6165FC5A100F6F848 /* ANCoreHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCoreHeader.h; sourceTree = "<group>"; };
+		F5B28CC8165FC5A100F6F848 /* ANMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANMemory.h; sourceTree = "<group>"; };
+		F5B28CCA165FC5A100F6F848 /* ANNSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANNSString.h; sourceTree = "<group>"; };
+		F5B28CCC165FC5A100F6F848 /* ANBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANBase64.h; sourceTree = "<group>"; };
+		F5B28CCD165FC5A100F6F848 /* ANBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANBase64.m; sourceTree = "<group>"; };
+		F5B28CCE165FC5A100F6F848 /* ANDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANDefines.h; sourceTree = "<group>"; };
+		F5B28CCF165FC5A100F6F848 /* ANObjectSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANObjectSingleton.h; sourceTree = "<group>"; };
+		F5B28CD1165FC5A100F6F848 /* ANCoreDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCoreDataController.h; sourceTree = "<group>"; };
+		F5B28CD2165FC5A100F6F848 /* ANCoreDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANCoreDataController.m; sourceTree = "<group>"; };
+		F5B28CD3165FC5A100F6F848 /* ANCoreDataGrandCentralController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCoreDataGrandCentralController.h; sourceTree = "<group>"; };
+		F5B28CD4165FC5A100F6F848 /* ANCoreDataGrandCentralController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANCoreDataGrandCentralController.m; sourceTree = "<group>"; };
+		F5B28CD5165FC5A100F6F848 /* ANCoreDataHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCoreDataHeader.h; sourceTree = "<group>"; };
+		F5B28CD8165FC5A100F6F848 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		F5B28CDA165FC5A100F6F848 /* ANMathematics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANMathematics.h; sourceTree = "<group>"; };
+		F5B28CDB165FC5A100F6F848 /* ANMathematicsHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANMathematicsHeader.h; sourceTree = "<group>"; };
+		F5B28CDD165FC5A100F6F848 /* ANOperationsHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANOperationsHeader.h; sourceTree = "<group>"; };
+		F5B28CDE165FC5A100F6F848 /* ANQHTTPOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANQHTTPOperation.h; sourceTree = "<group>"; };
+		F5B28CDF165FC5A100F6F848 /* ANQHTTPOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANQHTTPOperation.m; sourceTree = "<group>"; };
+		F5B28CE0165FC5A100F6F848 /* ANQNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANQNetworkManager.h; sourceTree = "<group>"; };
+		F5B28CE1165FC5A100F6F848 /* ANQNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANQNetworkManager.m; sourceTree = "<group>"; };
+		F5B28CE2165FC5A100F6F848 /* ANQReachabilityOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANQReachabilityOperation.h; sourceTree = "<group>"; };
+		F5B28CE3165FC5A100F6F848 /* ANQReachabilityOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANQReachabilityOperation.m; sourceTree = "<group>"; };
+		F5B28CE4165FC5A100F6F848 /* ANQRetryingHTTPOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANQRetryingHTTPOperation.h; sourceTree = "<group>"; };
+		F5B28CE5165FC5A100F6F848 /* ANQRetryingHTTPOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANQRetryingHTTPOperation.m; sourceTree = "<group>"; };
+		F5B28CE6165FC5A100F6F848 /* ANQRunLoopOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANQRunLoopOperation.h; sourceTree = "<group>"; };
+		F5B28CE7165FC5A100F6F848 /* ANQRunLoopOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANQRunLoopOperation.m; sourceTree = "<group>"; };
+		F5B28CEB165FC5A100F6F848 /* hyphens.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hyphens.txt; sourceTree = "<group>"; };
+		F5B28CED165FC5A100F6F848 /* ANTextManipulationHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANTextManipulationHeader.h; sourceTree = "<group>"; };
+		F5B28CEF165FC5A100F6F848 /* ANTextManipulationHyphenator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANTextManipulationHyphenator.h; sourceTree = "<group>"; };
+		F5B28CF0165FC5A100F6F848 /* ANTextManipulationHyphenator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANTextManipulationHyphenator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5B28C8D165FC58100F6F848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B28C94165FC58100F6F848 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B28C9D165FC58100F6F848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B28CA3165FC58100F6F848 /* SenTestingKit.framework in Frameworks */,
+				F5B28CA5165FC58100F6F848 /* UIKit.framework in Frameworks */,
+				F5B28CA6165FC58100F6F848 /* Foundation.framework in Frameworks */,
+				F5B28CA9165FC58100F6F848 /* libAboundingNestSL.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5B28C85165FC58100F6F848 = {
+			isa = PBXGroup;
+			children = (
+				F5B28C95165FC58100F6F848 /* AboundingNestSL */,
+				F5B28CAA165FC58100F6F848 /* AboundingNestSLTests */,
+				F5B28C92165FC58100F6F848 /* Frameworks */,
+				F5B28C91165FC58100F6F848 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5B28C91165FC58100F6F848 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5B28C90165FC58100F6F848 /* libAboundingNestSL.a */,
+				F5B28CA1165FC58100F6F848 /* AboundingNestSLTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5B28C92165FC58100F6F848 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5B28C93165FC58100F6F848 /* Foundation.framework */,
+				F5B28CA2165FC58100F6F848 /* SenTestingKit.framework */,
+				F5B28CA4165FC58100F6F848 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5B28C95165FC58100F6F848 /* AboundingNestSL */ = {
+			isa = PBXGroup;
+			children = (
+				F5B28CBB165FC5A100F6F848 /* AboundingNest.h */,
+				F5B28CBC165FC5A100F6F848 /* Core */,
+				F5B28CD0165FC5A100F6F848 /* CoreData */,
+				F5B28CD6165FC5A100F6F848 /* en.lproj */,
+				F5B28CD9165FC5A100F6F848 /* Mathematics */,
+				F5B28CDC165FC5A100F6F848 /* Operations */,
+				F5B28CE8165FC5A100F6F848 /* Resources */,
+				F5B28CEC165FC5A100F6F848 /* TextManipulation */,
+				F5B28C96165FC58100F6F848 /* Supporting Files */,
+			);
+			path = AboundingNestSL;
+			sourceTree = "<group>";
+		};
+		F5B28C96165FC58100F6F848 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5B28C97165FC58100F6F848 /* AboundingNestSL-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5B28CAA165FC58100F6F848 /* AboundingNestSLTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5B28CB0165FC58200F6F848 /* AboundingNestSLTests.h */,
+				F5B28CB1165FC58200F6F848 /* AboundingNestSLTests.m */,
+				F5B28CAB165FC58200F6F848 /* Supporting Files */,
+			);
+			path = AboundingNestSLTests;
+			sourceTree = "<group>";
+		};
+		F5B28CAB165FC58200F6F848 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5B28CAC165FC58200F6F848 /* AboundingNestSLTests-Info.plist */,
+				F5B28CAD165FC58200F6F848 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5B28CBC165FC5A100F6F848 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F5B28CBD165FC5A100F6F848 /* Additions */,
+				F5B28CC6165FC5A100F6F848 /* ANCoreHeader.h */,
+				F5B28CC7165FC5A100F6F848 /* ANMemory */,
+				F5B28CC9165FC5A100F6F848 /* ANNStrings */,
+				F5B28CCB165FC5A100F6F848 /* GoogleToolkitForMac */,
+			);
+			name = Core;
+			path = ../../AboundingNest/Core;
+			sourceTree = "<group>";
+		};
+		F5B28CBD165FC5A100F6F848 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				F5B28CBE165FC5A100F6F848 /* NSDictionary+AboundingNest.h */,
+				F5B28CBF165FC5A100F6F848 /* NSDictionary+AboundingNest.m */,
+				F5B28CC0165FC5A100F6F848 /* NSDictionary+Merge.h */,
+				F5B28CC1165FC5A100F6F848 /* NSDictionary+Merge.m */,
+				F5B28CC2165FC5A100F6F848 /* NSString+EMail.h */,
+				F5B28CC3165FC5A100F6F848 /* NSString+EMail.m */,
+				F5B28CC4165FC5A100F6F848 /* NSString+HTML.h */,
+				F5B28CC5165FC5A100F6F848 /* NSString+HTML.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		F5B28CC7165FC5A100F6F848 /* ANMemory */ = {
+			isa = PBXGroup;
+			children = (
+				F5B28CC8165FC5A100F6F848 /* ANMemory.h */,
+			);
+			path = ANMemory;
+			sourceTree = "<group>";
+		};
+		F5B28CC9165FC5A100F6F848 /* ANNStrings */ = {
+			isa = PBXGroup;
+			children = (
+				F5B28CCA165FC5A100F6F848 /* ANNSString.h */,
+			);
+			path = ANNStrings;
+			sourceTree = "<group>";
+		};
+		F5B28CCB165FC5A100F6F848 /* GoogleToolkitForMac */ = {
+			isa = PBXGroup;
+			children = (
+				F5B28CCC165FC5A100F6F848 /* ANBase64.h */,
+				F5B28CCD165FC5A100F6F848 /* ANBase64.m */,
+				F5B28CCE165FC5A100F6F848 /* ANDefines.h */,
+				F5B28CCF165FC5A100F6F848 /* ANObjectSingleton.h */,
+			);
+			path = GoogleToolkitForMac;
+			sourceTree = "<group>";
+		};
+		F5B28CD0165FC5A100F6F848 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F5B28CD1165FC5A100F6F848 /* ANCoreDataController.h */,
+				F5B28CD2165FC5A100F6F848 /* ANCoreDataController.m */,
+				F5B28CD3165FC5A100F6F848 /* ANCoreDataGrandCentralController.h */,
+				F5B28CD4165FC5A100F6F848 /* ANCoreDataGrandCentralController.m */,
+				F5B28CD5165FC5A100F6F848 /* ANCoreDataHeader.h */,
+			);
+			name = CoreData;
+			path = ../../AboundingNest/CoreData;
+			sourceTree = "<group>";
+		};
+		F5B28CD6165FC5A100F6F848 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				F5B28CD7165FC5A100F6F848 /* InfoPlist.strings */,
+			);
+			name = en.lproj;
+			path = ../../AboundingNest/en.lproj;
+			sourceTree = "<group>";
+		};
+		F5B28CD9165FC5A100F6F848 /* Mathematics */ = {
+			isa = PBXGroup;
+			children = (
+				F5B28CDA165FC5A100F6F848 /* ANMathematics.h */,
+				F5B28CDB165FC5A100F6F848 /* ANMathematicsHeader.h */,
+			);
+			name = Mathematics;
+			path = ../../AboundingNest/Mathematics;
+			sourceTree = "<group>";
+		};
+		F5B28CDC165FC5A100F6F848 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				F5B28CDD165FC5A100F6F848 /* ANOperationsHeader.h */,
+				F5B28CDE165FC5A100F6F848 /* ANQHTTPOperation.h */,
+				F5B28CDF165FC5A100F6F848 /* ANQHTTPOperation.m */,
+				F5B28CE0165FC5A100F6F848 /* ANQNetworkManager.h */,
+				F5B28CE1165FC5A100F6F848 /* ANQNetworkManager.m */,
+				F5B28CE2165FC5A100F6F848 /* ANQReachabilityOperation.h */,
+				F5B28CE3165FC5A100F6F848 /* ANQReachabilityOperation.m */,
+				F5B28CE4165FC5A100F6F848 /* ANQRetryingHTTPOperation.h */,
+				F5B28CE5165FC5A100F6F848 /* ANQRetryingHTTPOperation.m */,
+				F5B28CE6165FC5A100F6F848 /* ANQRunLoopOperation.h */,
+				F5B28CE7165FC5A100F6F848 /* ANQRunLoopOperation.m */,
+			);
+			name = Operations;
+			path = ../../AboundingNest/Operations;
+			sourceTree = "<group>";
+		};
+		F5B28CE8165FC5A100F6F848 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F5B28CE9165FC5A100F6F848 /* TextManipulation */,
+			);
+			name = Resources;
+			path = ../../AboundingNest/Resources;
+			sourceTree = "<group>";
+		};
+		F5B28CE9165FC5A100F6F848 /* TextManipulation */ = {
+			isa = PBXGroup;
+			children = (
+				F5B28CEA165FC5A100F6F848 /* HyphenationPatterns */,
+			);
+			path = TextManipulation;
+			sourceTree = "<group>";
+		};
+		F5B28CEA165FC5A100F6F848 /* HyphenationPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				F5B28CEB165FC5A100F6F848 /* hyphens.txt */,
+			);
+			path = HyphenationPatterns;
+			sourceTree = "<group>";
+		};
+		F5B28CEC165FC5A100F6F848 /* TextManipulation */ = {
+			isa = PBXGroup;
+			children = (
+				F5B28CED165FC5A100F6F848 /* ANTextManipulationHeader.h */,
+				F5B28CEE165FC5A100F6F848 /* Hyphenation */,
+			);
+			name = TextManipulation;
+			path = ../../AboundingNest/TextManipulation;
+			sourceTree = "<group>";
+		};
+		F5B28CEE165FC5A100F6F848 /* Hyphenation */ = {
+			isa = PBXGroup;
+			children = (
+				F5B28CEF165FC5A100F6F848 /* ANTextManipulationHyphenator.h */,
+				F5B28CF0165FC5A100F6F848 /* ANTextManipulationHyphenator.m */,
+			);
+			path = Hyphenation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F5B28D94165FC84B00F6F848 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B28D96165FC85C00F6F848 /* AboundingNest.h in Headers */,
+				F5B28D97165FC85C00F6F848 /* NSDictionary+AboundingNest.h in Headers */,
+				F5B28D98165FC85C00F6F848 /* NSDictionary+Merge.h in Headers */,
+				F5B28D99165FC85C00F6F848 /* NSString+EMail.h in Headers */,
+				F5B28D9A165FC85C00F6F848 /* NSString+HTML.h in Headers */,
+				F5B28D9B165FC85C00F6F848 /* ANCoreHeader.h in Headers */,
+				F5B28D9C165FC85C00F6F848 /* ANMemory.h in Headers */,
+				F5B28D9D165FC85C00F6F848 /* ANNSString.h in Headers */,
+				F5B28D9E165FC85C00F6F848 /* ANBase64.h in Headers */,
+				F5B28D9F165FC85C00F6F848 /* ANDefines.h in Headers */,
+				F5B28DA0165FC85C00F6F848 /* ANObjectSingleton.h in Headers */,
+				F5B28DA1165FC85C00F6F848 /* ANMathematics.h in Headers */,
+				F5B28DA2165FC85C00F6F848 /* ANMathematicsHeader.h in Headers */,
+				F5B28DA3165FC85C00F6F848 /* ANOperationsHeader.h in Headers */,
+				F5B28DA4165FC85C00F6F848 /* ANQHTTPOperation.h in Headers */,
+				F5B28DA5165FC85C00F6F848 /* ANQNetworkManager.h in Headers */,
+				F5B28DA6165FC85C00F6F848 /* ANQReachabilityOperation.h in Headers */,
+				F5B28DA7165FC85C00F6F848 /* ANQRetryingHTTPOperation.h in Headers */,
+				F5B28DA8165FC85C00F6F848 /* ANQRunLoopOperation.h in Headers */,
+				F5B28DA9165FC85C00F6F848 /* ANTextManipulationHeader.h in Headers */,
+				F5B28DAF165FCB0C00F6F848 /* ANTextManipulationHyphenator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F5B28C8F165FC58100F6F848 /* AboundingNestSL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5B28CB5165FC58200F6F848 /* Build configuration list for PBXNativeTarget "AboundingNestSL" */;
+			buildPhases = (
+				F5B28C8C165FC58100F6F848 /* Sources */,
+				F5B28C8D165FC58100F6F848 /* Frameworks */,
+				F5B28C8E165FC58100F6F848 /* CopyFiles */,
+				F5B28D94165FC84B00F6F848 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AboundingNestSL;
+			productName = AboundingNestSL;
+			productReference = F5B28C90165FC58100F6F848 /* libAboundingNestSL.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F5B28CA0165FC58100F6F848 /* AboundingNestSLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5B28CB8165FC58200F6F848 /* Build configuration list for PBXNativeTarget "AboundingNestSLTests" */;
+			buildPhases = (
+				F5B28C9C165FC58100F6F848 /* Sources */,
+				F5B28C9D165FC58100F6F848 /* Frameworks */,
+				F5B28C9E165FC58100F6F848 /* Resources */,
+				F5B28C9F165FC58100F6F848 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5B28CA8165FC58100F6F848 /* PBXTargetDependency */,
+			);
+			name = AboundingNestSLTests;
+			productName = AboundingNestSLTests;
+			productReference = F5B28CA1165FC58100F6F848 /* AboundingNestSLTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5B28C87165FC58100F6F848 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Samuel Grau";
+			};
+			buildConfigurationList = F5B28C8A165FC58100F6F848 /* Build configuration list for PBXProject "AboundingNestSL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F5B28C85165FC58100F6F848;
+			productRefGroup = F5B28C91165FC58100F6F848 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5B28C8F165FC58100F6F848 /* AboundingNestSL */,
+				F5B28CA0165FC58100F6F848 /* AboundingNestSLTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5B28C9E165FC58100F6F848 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B28CAF165FC58200F6F848 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F5B28C9F165FC58100F6F848 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5B28C8C165FC58100F6F848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B28CF1165FC5A100F6F848 /* NSDictionary+AboundingNest.m in Sources */,
+				F5B28CF2165FC5A100F6F848 /* NSDictionary+Merge.m in Sources */,
+				F5B28CF3165FC5A100F6F848 /* NSString+EMail.m in Sources */,
+				F5B28CF4165FC5A100F6F848 /* NSString+HTML.m in Sources */,
+				F5B28CF5165FC5A100F6F848 /* ANBase64.m in Sources */,
+				F5B28CF6165FC5A100F6F848 /* ANCoreDataController.m in Sources */,
+				F5B28CF7165FC5A100F6F848 /* ANCoreDataGrandCentralController.m in Sources */,
+				F5B28CF8165FC5A100F6F848 /* ANQHTTPOperation.m in Sources */,
+				F5B28CF9165FC5A100F6F848 /* ANQNetworkManager.m in Sources */,
+				F5B28CFA165FC5A100F6F848 /* ANQReachabilityOperation.m in Sources */,
+				F5B28CFB165FC5A100F6F848 /* ANQRetryingHTTPOperation.m in Sources */,
+				F5B28CFC165FC5A100F6F848 /* ANQRunLoopOperation.m in Sources */,
+				F5B28CFD165FC5A100F6F848 /* ANTextManipulationHyphenator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B28C9C165FC58100F6F848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B28CB2165FC58200F6F848 /* AboundingNestSLTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5B28CA8165FC58100F6F848 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5B28C8F165FC58100F6F848 /* AboundingNestSL */;
+			targetProxy = F5B28CA7165FC58100F6F848 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5B28CAD165FC58200F6F848 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5B28CAE165FC58200F6F848 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F5B28CD7165FC5A100F6F848 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5B28CD8165FC5A100F6F848 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5B28CB3165FC58200F6F848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F5B28CB4165FC58200F6F848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5B28CB6165FC58200F6F848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AboundingNestSL.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AboundingNestSL/AboundingNestSL-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F5B28CB7165FC58200F6F848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AboundingNestSL.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AboundingNestSL/AboundingNestSL-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F5B28CB9165FC58200F6F848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AboundingNestSL/AboundingNestSL-Prefix.pch";
+				INFOPLIST_FILE = "AboundingNestSLTests/AboundingNestSLTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F5B28CBA165FC58200F6F848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AboundingNestSL/AboundingNestSL-Prefix.pch";
+				INFOPLIST_FILE = "AboundingNestSLTests/AboundingNestSLTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5B28C8A165FC58100F6F848 /* Build configuration list for PBXProject "AboundingNestSL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5B28CB3165FC58200F6F848 /* Debug */,
+				F5B28CB4165FC58200F6F848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5B28CB5165FC58200F6F848 /* Build configuration list for PBXNativeTarget "AboundingNestSL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5B28CB6165FC58200F6F848 /* Debug */,
+				F5B28CB7165FC58200F6F848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5B28CB8165FC58200F6F848 /* Build configuration list for PBXNativeTarget "AboundingNestSLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5B28CB9165FC58200F6F848 /* Debug */,
+				F5B28CBA165FC58200F6F848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5B28C87165FC58100F6F848 /* Project object */;
+}
