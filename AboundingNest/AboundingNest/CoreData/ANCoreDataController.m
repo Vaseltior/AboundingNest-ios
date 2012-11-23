@@ -171,7 +171,9 @@
         
         NSError *error = nil;
         NSManagedObjectModel *mom = [self managedObjectModel];
-        if (!mom) {
+        NSLog(@"%@", mom);
+        
+        if (mom == nil) {
             NSLog(@"%@ --- %@", appDir, storeURL);
             return nil;
         }
@@ -248,6 +250,16 @@
  */
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - (NSURL *)applicationDocumentsDirectory {
+    NSArray * pathArray = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString * documentsDirectory = [pathArray objectAtIndex:0];
+    NSString *textPath = [documentsDirectory stringByAppendingPathComponent:@"file1.txt"];
+    NSError *error = nil;
+    NSString *str = [NSString stringWithContentsOfFile:textPath encoding:NSUTF8StringEncoding error:&error];
+    if (error != nil) {
+        NSLog(@"There was an error: %@", [error description]);
+    } else {
+        NSLog(@"Text file data: %@", str);
+    }
     NSFileManager *fm = [NSFileManager defaultManager];
     return [[fm URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }

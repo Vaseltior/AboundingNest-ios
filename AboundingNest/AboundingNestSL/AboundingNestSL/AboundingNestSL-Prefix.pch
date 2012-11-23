@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'AboundingNestSL' target in the 'AboundingNestSL' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import "AboundingNest.h"
+#endif
