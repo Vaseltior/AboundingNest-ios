@@ -27,27 +27,27 @@
 		F5B28CFB165FC5A100F6F848 /* ANQRetryingHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B28CE5165FC5A100F6F848 /* ANQRetryingHTTPOperation.m */; };
 		F5B28CFC165FC5A100F6F848 /* ANQRunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B28CE7165FC5A100F6F848 /* ANQRunLoopOperation.m */; };
 		F5B28CFD165FC5A100F6F848 /* ANTextManipulationHyphenator.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B28CF0165FC5A100F6F848 /* ANTextManipulationHyphenator.m */; };
-		F5B28D96165FC85C00F6F848 /* AboundingNest.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CBB165FC5A100F6F848 /* AboundingNest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5B28D97165FC85C00F6F848 /* NSDictionary+AboundingNest.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CBE165FC5A100F6F848 /* NSDictionary+AboundingNest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5B28D98165FC85C00F6F848 /* NSDictionary+Merge.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CC0165FC5A100F6F848 /* NSDictionary+Merge.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5B28D99165FC85C00F6F848 /* NSString+EMail.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CC2165FC5A100F6F848 /* NSString+EMail.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5B28D9A165FC85C00F6F848 /* NSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CC4165FC5A100F6F848 /* NSString+HTML.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5B28D9B165FC85C00F6F848 /* ANCoreHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CC6165FC5A100F6F848 /* ANCoreHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5B28D9C165FC85C00F6F848 /* ANMemory.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CC8165FC5A100F6F848 /* ANMemory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5B28D9D165FC85C00F6F848 /* ANNSString.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CCA165FC5A100F6F848 /* ANNSString.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5B28D9E165FC85C00F6F848 /* ANBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CCC165FC5A100F6F848 /* ANBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5B28D9F165FC85C00F6F848 /* ANDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CCE165FC5A100F6F848 /* ANDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5B28DA0165FC85C00F6F848 /* ANObjectSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CCF165FC5A100F6F848 /* ANObjectSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5B28DA1165FC85C00F6F848 /* ANMathematics.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CDA165FC5A100F6F848 /* ANMathematics.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5B28DA2165FC85C00F6F848 /* ANMathematicsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CDB165FC5A100F6F848 /* ANMathematicsHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5B28DA3165FC85C00F6F848 /* ANOperationsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CDD165FC5A100F6F848 /* ANOperationsHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5B28DA4165FC85C00F6F848 /* ANQHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CDE165FC5A100F6F848 /* ANQHTTPOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5B28DA5165FC85C00F6F848 /* ANQNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CE0165FC5A100F6F848 /* ANQNetworkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5B28DA6165FC85C00F6F848 /* ANQReachabilityOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CE2165FC5A100F6F848 /* ANQReachabilityOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5B28DA7165FC85C00F6F848 /* ANQRetryingHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CE4165FC5A100F6F848 /* ANQRetryingHTTPOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5B28DA8165FC85C00F6F848 /* ANQRunLoopOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CE6165FC5A100F6F848 /* ANQRunLoopOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5B28DA9165FC85C00F6F848 /* ANTextManipulationHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CED165FC5A100F6F848 /* ANTextManipulationHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5B28DAF165FCB0C00F6F848 /* ANTextManipulationHyphenator.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CEF165FC5A100F6F848 /* ANTextManipulationHyphenator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5B28D96165FC85C00F6F848 /* AboundingNest.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CBB165FC5A100F6F848 /* AboundingNest.h */; settings = {ATTRIBUTES = (); }; };
+		F5B28D97165FC85C00F6F848 /* NSDictionary+AboundingNest.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CBE165FC5A100F6F848 /* NSDictionary+AboundingNest.h */; settings = {ATTRIBUTES = (); }; };
+		F5B28D98165FC85C00F6F848 /* NSDictionary+Merge.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CC0165FC5A100F6F848 /* NSDictionary+Merge.h */; settings = {ATTRIBUTES = (); }; };
+		F5B28D99165FC85C00F6F848 /* NSString+EMail.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CC2165FC5A100F6F848 /* NSString+EMail.h */; settings = {ATTRIBUTES = (); }; };
+		F5B28D9A165FC85C00F6F848 /* NSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CC4165FC5A100F6F848 /* NSString+HTML.h */; settings = {ATTRIBUTES = (); }; };
+		F5B28D9B165FC85C00F6F848 /* ANCoreHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CC6165FC5A100F6F848 /* ANCoreHeader.h */; settings = {ATTRIBUTES = (); }; };
+		F5B28D9C165FC85C00F6F848 /* ANMemory.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CC8165FC5A100F6F848 /* ANMemory.h */; settings = {ATTRIBUTES = (); }; };
+		F5B28D9D165FC85C00F6F848 /* ANNSString.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CCA165FC5A100F6F848 /* ANNSString.h */; settings = {ATTRIBUTES = (); }; };
+		F5B28D9E165FC85C00F6F848 /* ANBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CCC165FC5A100F6F848 /* ANBase64.h */; settings = {ATTRIBUTES = (); }; };
+		F5B28D9F165FC85C00F6F848 /* ANDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CCE165FC5A100F6F848 /* ANDefines.h */; settings = {ATTRIBUTES = (); }; };
+		F5B28DA0165FC85C00F6F848 /* ANObjectSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CCF165FC5A100F6F848 /* ANObjectSingleton.h */; settings = {ATTRIBUTES = (); }; };
+		F5B28DA1165FC85C00F6F848 /* ANMathematics.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CDA165FC5A100F6F848 /* ANMathematics.h */; settings = {ATTRIBUTES = (); }; };
+		F5B28DA2165FC85C00F6F848 /* ANMathematicsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CDB165FC5A100F6F848 /* ANMathematicsHeader.h */; settings = {ATTRIBUTES = (); }; };
+		F5B28DA3165FC85C00F6F848 /* ANOperationsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CDD165FC5A100F6F848 /* ANOperationsHeader.h */; settings = {ATTRIBUTES = (); }; };
+		F5B28DA4165FC85C00F6F848 /* ANQHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CDE165FC5A100F6F848 /* ANQHTTPOperation.h */; settings = {ATTRIBUTES = (); }; };
+		F5B28DA5165FC85C00F6F848 /* ANQNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CE0165FC5A100F6F848 /* ANQNetworkManager.h */; settings = {ATTRIBUTES = (); }; };
+		F5B28DA6165FC85C00F6F848 /* ANQReachabilityOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CE2165FC5A100F6F848 /* ANQReachabilityOperation.h */; settings = {ATTRIBUTES = (); }; };
+		F5B28DA7165FC85C00F6F848 /* ANQRetryingHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CE4165FC5A100F6F848 /* ANQRetryingHTTPOperation.h */; settings = {ATTRIBUTES = (); }; };
+		F5B28DA8165FC85C00F6F848 /* ANQRunLoopOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CE6165FC5A100F6F848 /* ANQRunLoopOperation.h */; settings = {ATTRIBUTES = (); }; };
+		F5B28DA9165FC85C00F6F848 /* ANTextManipulationHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CED165FC5A100F6F848 /* ANTextManipulationHeader.h */; settings = {ATTRIBUTES = (); }; };
+		F5B28DAF165FCB0C00F6F848 /* ANTextManipulationHyphenator.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CEF165FC5A100F6F848 /* ANTextManipulationHyphenator.h */; settings = {ATTRIBUTES = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -576,6 +576,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -594,6 +595,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
