@@ -48,6 +48,7 @@
 		F5B28DA8165FC85C00F6F848 /* ANQRunLoopOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CE6165FC5A100F6F848 /* ANQRunLoopOperation.h */; settings = {ATTRIBUTES = (); }; };
 		F5B28DA9165FC85C00F6F848 /* ANTextManipulationHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CED165FC5A100F6F848 /* ANTextManipulationHeader.h */; settings = {ATTRIBUTES = (); }; };
 		F5B28DAF165FCB0C00F6F848 /* ANTextManipulationHyphenator.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28CEF165FC5A100F6F848 /* ANTextManipulationHyphenator.h */; settings = {ATTRIBUTES = (); }; };
+		F5B28E9B1664B50400F6F848 /* ANMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B28E9A1664B50400F6F848 /* ANMemory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		F5B28CED165FC5A100F6F848 /* ANTextManipulationHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANTextManipulationHeader.h; sourceTree = "<group>"; };
 		F5B28CEF165FC5A100F6F848 /* ANTextManipulationHyphenator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANTextManipulationHyphenator.h; sourceTree = "<group>"; };
 		F5B28CF0165FC5A100F6F848 /* ANTextManipulationHyphenator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANTextManipulationHyphenator.m; sourceTree = "<group>"; };
+		F5B28E9A1664B50400F6F848 /* ANMemory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANMemory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				F5B28CC8165FC5A100F6F848 /* ANMemory.h */,
+				F5B28E9A1664B50400F6F848 /* ANMemory.m */,
 			);
 			path = ANMemory;
 			sourceTree = "<group>";
@@ -512,6 +515,7 @@
 				F5B28CFB165FC5A100F6F848 /* ANQRetryingHTTPOperation.m in Sources */,
 				F5B28CFC165FC5A100F6F848 /* ANQRunLoopOperation.m in Sources */,
 				F5B28CFD165FC5A100F6F848 /* ANTextManipulationHyphenator.m in Sources */,
+				F5B28E9B1664B50400F6F848 /* ANMemory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
