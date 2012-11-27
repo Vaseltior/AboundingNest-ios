@@ -64,7 +64,7 @@
 		AA7DF03D148B448700DD0E05 /* ANQRetryingHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF03A148B448600DD0E05 /* ANQRetryingHTTPOperation.m */; };
 		AA7DF03F148B833B00DD0E05 /* ANOperationsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF03E148B833A00DD0E05 /* ANOperationsHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F50F6CB7165E19ED001C9780 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DEF90148AF85C00DD0E05 /* Foundation.framework */; };
-		F50F6CBC165E19ED001C9780 /* AboundingNestStaticLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = F50F6CBB165E19ED001C9780 /* AboundingNestStaticLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6CBC165E19ED001C9780 /* AboundingNestStaticLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = F50F6CBB165E19ED001C9780 /* AboundingNestStaticLibrary.h */; settings = {ATTRIBUTES = (); }; };
 		F50F6CBE165E19ED001C9780 /* AboundingNestStaticLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = F50F6CBD165E19ED001C9780 /* AboundingNestStaticLibrary.m */; };
 		F50F6CC5165E19ED001C9780 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DEF9F148AF85C00DD0E05 /* SenTestingKit.framework */; };
 		F50F6CC6165E19ED001C9780 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DEFA1148AF85C00DD0E05 /* UIKit.framework */; };
@@ -85,32 +85,36 @@
 		F50F6D1C165E1A49001C9780 /* NSString+EMail.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DF018148B2D1500DD0E05 /* NSString+EMail.m */; };
 		F50F6D1D165E1A49001C9780 /* NSDictionary+AboundingNest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7DEFD7148AFDE300DD0E05 /* NSDictionary+AboundingNest.m */; };
 		F50F6D1E165E1A49001C9780 /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = F525C4BA14B30CEC00099133 /* NSDictionary+Merge.m */; };
-		F50F6D29165E341E001C9780 /* AboundingNest.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFD3148AFD8F00DD0E05 /* AboundingNest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F50F6D2A165E341E001C9780 /* ANMathematicsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF014148B295200DD0E05 /* ANMathematicsHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F50F6D2B165E341E001C9780 /* ANMathematics.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF012148B28FE00DD0E05 /* ANMathematics.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F50F6D2C165E341E001C9780 /* ANOperationsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF03E148B833A00DD0E05 /* ANOperationsHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F50F6D2D165E341E001C9780 /* ANQRetryingHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF039148B448600DD0E05 /* ANQRetryingHTTPOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F50F6D2E165E341E001C9780 /* ANQReachabilityOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF02A148B43A900DD0E05 /* ANQReachabilityOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F50F6D2F165E341E001C9780 /* ANQHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF02C148B43AA00DD0E05 /* ANQHTTPOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F50F6D30165E341E001C9780 /* ANQNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF02E148B43AB00DD0E05 /* ANQNetworkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F50F6D31165E341E001C9780 /* ANQRunLoopOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF025148B429000DD0E05 /* ANQRunLoopOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F50F6D32165E341E001C9780 /* ANTextManipulationHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2967D9149A9EB300363E44 /* ANTextManipulationHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F50F6D33165E341E001C9780 /* ANTextManipulationHyphenator.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2967D4149A9CDC00363E44 /* ANTextManipulationHyphenator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F50F6D34165E341E001C9780 /* ANCoreDataHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF005148AFF6600DD0E05 /* ANCoreDataHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F50F6D35165E341E001C9780 /* ANCoreDataController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFE2148AFE1F00DD0E05 /* ANCoreDataController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F50F6D36165E341E001C9780 /* ANCoreDataGrandCentralController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFE4148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F50F6D37165E341E001C9780 /* ANCoreHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF00F148B0FD800DD0E05 /* ANCoreHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F50F6D38165E341E001C9780 /* ANNSString.h in Headers */ = {isa = PBXBuildFile; fileRef = F5E79C4D14CA3D3300FD86CF /* ANNSString.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F50F6D39165E341E001C9780 /* ANMemory.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF008148B023800DD0E05 /* ANMemory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F50F6D3A165E341E001C9780 /* ANBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFED148AFEB800DD0E05 /* ANBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F50F6D3B165E341E001C9780 /* ANObjectSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFF3148AFEB800DD0E05 /* ANObjectSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F50F6D3C165E341E001C9780 /* ANDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFEF148AFEB800DD0E05 /* ANDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F50F6D3D165E341E001C9780 /* NSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF01C148B2D4B00DD0E05 /* NSString+HTML.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F50F6D3E165E341E001C9780 /* NSString+EMail.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF017148B2D1500DD0E05 /* NSString+EMail.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F50F6D3F165E341E001C9780 /* NSDictionary+AboundingNest.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFD6148AFDE300DD0E05 /* NSDictionary+AboundingNest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F50F6D40165E341E001C9780 /* NSDictionary+Merge.h in Headers */ = {isa = PBXBuildFile; fileRef = F525C4B914B30CEC00099133 /* NSDictionary+Merge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50F6D29165E341E001C9780 /* AboundingNest.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFD3148AFD8F00DD0E05 /* AboundingNest.h */; settings = {ATTRIBUTES = (); }; };
+		F50F6D2A165E341E001C9780 /* ANMathematicsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF014148B295200DD0E05 /* ANMathematicsHeader.h */; settings = {ATTRIBUTES = (); }; };
+		F50F6D2B165E341E001C9780 /* ANMathematics.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF012148B28FE00DD0E05 /* ANMathematics.h */; settings = {ATTRIBUTES = (); }; };
+		F50F6D2C165E341E001C9780 /* ANOperationsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF03E148B833A00DD0E05 /* ANOperationsHeader.h */; settings = {ATTRIBUTES = (); }; };
+		F50F6D2D165E341E001C9780 /* ANQRetryingHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF039148B448600DD0E05 /* ANQRetryingHTTPOperation.h */; settings = {ATTRIBUTES = (); }; };
+		F50F6D2E165E341E001C9780 /* ANQReachabilityOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF02A148B43A900DD0E05 /* ANQReachabilityOperation.h */; settings = {ATTRIBUTES = (); }; };
+		F50F6D2F165E341E001C9780 /* ANQHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF02C148B43AA00DD0E05 /* ANQHTTPOperation.h */; settings = {ATTRIBUTES = (); }; };
+		F50F6D30165E341E001C9780 /* ANQNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF02E148B43AB00DD0E05 /* ANQNetworkManager.h */; settings = {ATTRIBUTES = (); }; };
+		F50F6D31165E341E001C9780 /* ANQRunLoopOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF025148B429000DD0E05 /* ANQRunLoopOperation.h */; settings = {ATTRIBUTES = (); }; };
+		F50F6D32165E341E001C9780 /* ANTextManipulationHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2967D9149A9EB300363E44 /* ANTextManipulationHeader.h */; settings = {ATTRIBUTES = (); }; };
+		F50F6D33165E341E001C9780 /* ANTextManipulationHyphenator.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2967D4149A9CDC00363E44 /* ANTextManipulationHyphenator.h */; settings = {ATTRIBUTES = (); }; };
+		F50F6D34165E341E001C9780 /* ANCoreDataHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF005148AFF6600DD0E05 /* ANCoreDataHeader.h */; settings = {ATTRIBUTES = (); }; };
+		F50F6D35165E341E001C9780 /* ANCoreDataController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFE2148AFE1F00DD0E05 /* ANCoreDataController.h */; settings = {ATTRIBUTES = (); }; };
+		F50F6D36165E341E001C9780 /* ANCoreDataGrandCentralController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFE4148AFE1F00DD0E05 /* ANCoreDataGrandCentralController.h */; settings = {ATTRIBUTES = (); }; };
+		F50F6D37165E341E001C9780 /* ANCoreHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF00F148B0FD800DD0E05 /* ANCoreHeader.h */; settings = {ATTRIBUTES = (); }; };
+		F50F6D38165E341E001C9780 /* ANNSString.h in Headers */ = {isa = PBXBuildFile; fileRef = F5E79C4D14CA3D3300FD86CF /* ANNSString.h */; settings = {ATTRIBUTES = (); }; };
+		F50F6D39165E341E001C9780 /* ANMemory.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF008148B023800DD0E05 /* ANMemory.h */; settings = {ATTRIBUTES = (); }; };
+		F50F6D3A165E341E001C9780 /* ANBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFED148AFEB800DD0E05 /* ANBase64.h */; settings = {ATTRIBUTES = (); }; };
+		F50F6D3B165E341E001C9780 /* ANObjectSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFF3148AFEB800DD0E05 /* ANObjectSingleton.h */; settings = {ATTRIBUTES = (); }; };
+		F50F6D3C165E341E001C9780 /* ANDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFEF148AFEB800DD0E05 /* ANDefines.h */; settings = {ATTRIBUTES = (); }; };
+		F50F6D3D165E341E001C9780 /* NSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF01C148B2D4B00DD0E05 /* NSString+HTML.h */; settings = {ATTRIBUTES = (); }; };
+		F50F6D3E165E341E001C9780 /* NSString+EMail.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DF017148B2D1500DD0E05 /* NSString+EMail.h */; settings = {ATTRIBUTES = (); }; };
+		F50F6D3F165E341E001C9780 /* NSDictionary+AboundingNest.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7DEFD6148AFDE300DD0E05 /* NSDictionary+AboundingNest.h */; settings = {ATTRIBUTES = (); }; };
+		F50F6D40165E341E001C9780 /* NSDictionary+Merge.h in Headers */ = {isa = PBXBuildFile; fileRef = F525C4B914B30CEC00099133 /* NSDictionary+Merge.h */; settings = {ATTRIBUTES = (); }; };
 		F50F6D4D165E36AA001C9780 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50F6D4C165E36A9001C9780 /* CoreData.framework */; };
 		F50F6D51165E39BD001C9780 /* hyphens.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA2967DE149AA05100363E44 /* hyphens.txt */; };
+		F5167BD7166519050005CB6A /* ANMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = F5167BD6166519050005CB6A /* ANMemory.m */; };
+		F5167BD8166519080005CB6A /* ANMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = F5167BD6166519050005CB6A /* ANMemory.m */; };
+		F5167BD9166519080005CB6A /* ANMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = F5167BD6166519050005CB6A /* ANMemory.m */; };
+		F5167BDA166519090005CB6A /* ANMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = F5167BD6166519050005CB6A /* ANMemory.m */; };
 		F525C4BB14B30CEC00099133 /* NSDictionary+Merge.h in Headers */ = {isa = PBXBuildFile; fileRef = F525C4B914B30CEC00099133 /* NSDictionary+Merge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F525C4BC14B30CEC00099133 /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = F525C4BA14B30CEC00099133 /* NSDictionary+Merge.m */; };
 		F525C4BD14B30CEC00099133 /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = F525C4BA14B30CEC00099133 /* NSDictionary+Merge.m */; };
@@ -212,6 +216,7 @@
 		F50F6CD1165E19ED001C9780 /* AboundingNestStaticLibraryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboundingNestStaticLibraryTests.h; sourceTree = "<group>"; };
 		F50F6CD2165E19ED001C9780 /* AboundingNestStaticLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboundingNestStaticLibraryTests.m; sourceTree = "<group>"; };
 		F50F6D4C165E36A9001C9780 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F5167BD6166519050005CB6A /* ANMemory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANMemory.m; sourceTree = "<group>"; };
 		F525C4B914B30CEC00099133 /* NSDictionary+Merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Merge.h"; sourceTree = "<group>"; };
 		F525C4BA14B30CEC00099133 /* NSDictionary+Merge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Merge.m"; sourceTree = "<group>"; };
 		F5E79C4D14CA3D3300FD86CF /* ANNSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ANNSString.h; path = AboundingNest/Core/ANNStrings/ANNSString.h; sourceTree = SOURCE_ROOT; };
@@ -435,6 +440,7 @@
 		AA7DF007148B021800DD0E05 /* ANMemory */ = {
 			isa = PBXGroup;
 			children = (
+				F5167BD6166519050005CB6A /* ANMemory.m */,
 				AA7DF008148B023800DD0E05 /* ANMemory.h */,
 			);
 			name = ANMemory;
@@ -806,6 +812,7 @@
 				AA7DF03C148B448700DD0E05 /* ANQRetryingHTTPOperation.m in Sources */,
 				AA2967D7149A9CDC00363E44 /* ANTextManipulationHyphenator.m in Sources */,
 				F525C4BC14B30CEC00099133 /* NSDictionary+Merge.m in Sources */,
+				F5167BD7166519050005CB6A /* ANMemory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -827,6 +834,7 @@
 				AA7DF03D148B448700DD0E05 /* ANQRetryingHTTPOperation.m in Sources */,
 				AA2967D8149A9CDC00363E44 /* ANTextManipulationHyphenator.m in Sources */,
 				F525C4BD14B30CEC00099133 /* NSDictionary+Merge.m in Sources */,
+				F5167BD8166519080005CB6A /* ANMemory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -848,6 +856,7 @@
 				F50F6D1D165E1A49001C9780 /* NSDictionary+AboundingNest.m in Sources */,
 				F50F6D1E165E1A49001C9780 /* NSDictionary+Merge.m in Sources */,
 				F50F6CBE165E19ED001C9780 /* AboundingNestStaticLibrary.m in Sources */,
+				F5167BD9166519080005CB6A /* ANMemory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -856,6 +865,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F50F6CD3165E19ED001C9780 /* AboundingNestStaticLibraryTests.m in Sources */,
+				F5167BDA166519090005CB6A /* ANMemory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
