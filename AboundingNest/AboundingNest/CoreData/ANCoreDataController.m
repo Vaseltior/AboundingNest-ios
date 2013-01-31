@@ -249,7 +249,7 @@
  Returns the URL to the application's Documents directory.
  */
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- (NSURL *)applicationDocumentsDirectory {
+/*- (NSURL *)applicationDocumentsDirectory {
     NSArray * pathArray = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString * documentsDirectory = [pathArray objectAtIndex:0];
     NSString *textPath = [documentsDirectory stringByAppendingPathComponent:@"file1.txt"];
@@ -262,8 +262,17 @@
     }
     NSFileManager *fm = [NSFileManager defaultManager];
     return [[fm URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
-}
+}*/
 
+
+/**
+ Returns the URL to the application's Documents directory.
+ */
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- (NSURL *)applicationDocumentsDirectory {
+    NSFileManager *fm = [NSFileManager defaultManager];
+    return [[fm URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #pragma mark - Helper methods
