@@ -171,7 +171,7 @@
         
         NSError *error = nil;
         NSManagedObjectModel *mom = [self managedObjectModel];
-        NSLog(@"%@", mom);
+        //NSLog(@"%@", mom);
         
         if (mom == nil) {
             NSLog(@"%@ --- %@", appDir, storeURL);
