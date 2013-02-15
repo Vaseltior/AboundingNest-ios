@@ -20,7 +20,7 @@
 #import "NSString+HTML.h"
 
 
-@implementation NSString (HTML)
+@implementation NSString (ANHTML)
 
 + (NSString *)stringByURLEncodingString:(NSString *)aString {
 	NSString *encodedString = (NSString *)CFURLCreateStringByAddingPercentEscapes(
