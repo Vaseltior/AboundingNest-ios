@@ -21,7 +21,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface NSString (HTML)
+@interface NSString (ANHTML)
 
 + (NSString *)stringByURLEncodingString:(NSString *)aString;
 - (NSString *)URLEncode;
