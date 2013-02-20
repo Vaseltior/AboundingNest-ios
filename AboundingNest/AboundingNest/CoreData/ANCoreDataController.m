@@ -230,6 +230,7 @@
             ANReleaseSafely(&options);
             NSLog(@"============\nUnresolved error %@, %@\n============", error, [error userInfo]);
             [[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil];
+            ANReleaseSafely(&__persistentStoreCoordinator);
             return [self persistentStoreCoordinator];
             //abort();
         }    
